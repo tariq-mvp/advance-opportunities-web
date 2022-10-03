@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Theme Dark CSS -->
+    <link rel="stylesheet" href="assets/css/theme-dark.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>B-Seen</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .banner-call {
+            margin-top: -50px;
+        }
+
+        .process-item2 {
+            position: absolute;
+            top: 0;
+            width: 60px;
+            z-index: 1;
+            color: #000000;
+        }
+
+        .pp-right2 {
+            left: 12px;
+        }
+
+        .service-item-img {
+            display: inline-block;
+            /* font-size: 55px; */
+            height: 55px;
+            margin-bottom: 15px;
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+        }
+
+        .service-item-img {
+            display: inline-block;
+            /* font-size: 55px; */
+            height: 55px;
+            margin-bottom: 15px;
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+        }
+
+        .service-icon-img {
+            position: absolute;
+            right: 0;
+            top: 10;
+            height: 100px;
+            /* opacity: 0.2; */
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+            z-index: -1;
+        }
+
+        .service-item .service-content h3,
+        p {
+            z-index: 1;
+        }
+
+        .service-content {
+            z-index: -1;
+        }
+
+        .service-img img {
+            z-index: -5;
+            position: relative;
+        }
+
+        .work-area .work-item::after {
+            background-color: transparent;
+        }
+
+        .work-area .work-item::before {
+            background-color: transparent;
+        }
+
+        .banner-area-three::before {
+            /* opacity: 0; */
+        }
+
+        .desktop-qr {
+            display: block;
+        }
+
+        .mobile-qr {
+            display: none;
+        }
+
+        .trafficmoney {
+            text-transform: none;
+            margin-bottom: 26px;
+            font-size: 69px;
+            color: #ffffff;
+            font-weight: 800;
+            font-style: italic;
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .languagemobile {
+                bottom: 0;
+            }
+
+            .mean-container .mean-nav .navbar-nav {
+                height: 450px;
+                overflow-y: scroll;
+                position: relative;
+            }
+
+            .desktop-qr {
+                display: none;
+            }
+
+            .mobile-qr {
+                display: block;
+            }
+
+            .trafficmoney {
+                margin-bottom: 20px;
+                font-size: 31px;
+            }
+
+            .banner-text {
+                padding: 200px 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Start Navbar Area -->
+    <div class="navbar-area fixed-top">
+        <!-- Menu For Mobile Device -->
+        <div class="mobile-nav">
+            <a href="indexar.html" class="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <!-- Menu For Desktop Device -->
+        <div class="main-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="indexar.html">
+                        <img src="assets/img/logo.png" class="logo-one" alt="Logo">
+                        <img src="assets/img/logo-two.png" class="logo-two" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto navbar_m">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link ">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#howitworks" class="nav-link">How it Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#services" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#latestworks" class="nav-link ">Car Fleet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link active">For Advertisers</a>
+                            </li>
+                            <li class="nav-item languagemobile" style="position: absolute;right: 0;">
+                                <a href="#" class="nav-link dropdown-toggle">English</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link">English</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contactar.html" class="nav-link">العربية</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="cmn-btn">
+                     <a class="banner-btn-left" href="#">
+                         <i class='bx bxs-user-plus'></i>
+                         Sign In    
+                     </a>
+                     </div> -->
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Page Title -->
+    <div class="page-title-area"
+        style="padding:0;background-image: url('assets/img/home-three/banner-slider-three2.jpg');height:30vh;background-color: black;background-position: bottom;background-size: cover;background-repeat: no-repeat;">
+        <!-- <img src="assets/img/home-three/banner-slider-three.jpg" alt="Title"
+            style="position:relative;max-width: 100%;top:0"> -->
+        <div style="background-color: #000000;opacity: 0.6;position: absolute;height: 100%;width: 100%;"></div>
+        <div class="container" style="position: absolute;
+top: 50%;z-index:2;max-width: 100%;">
+            <div class="page-title-content">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Contact Area -->
+    <section class="contact-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="contact-item contact-left">
+                        <h3>B Seen App</h3>
+
+                        <ul>
+                            <li><a
+                                    href="https://www.google.com/maps/place/MVP+Application+and+Game+Design/@24.7483128,46.6508129,15z/data=!4m5!3m4!1s0x3e2ee3ef5328e115:0x47bd4bab37056b5d!8m2!3d24.7481968!4d46.6627864">
+                                    <i class='bx bx-location-plus'></i>
+
+                                    3184 Imam Saud Bin Abdulaziz Bin
+                                    Mohammed Rd - Al Muruj Dist - RIYADH 12281 - 6233
+                                </a>
+                            </li>
+                            <li>
+                                <i class='bx bx-mail-send'></i>
+                                <a href="mailto:info@b-seenapp.com">
+                                    info@b-seenapp.com
+                                </a>
+                            </li>
+                            <li>
+                                <i class='bx bx-phone-call'></i>
+                                <a href="tel:+966550418023">
+                                    +966 55 041 8023
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <div class="contact-item contact-right">
+                        <h3>Get In Touch</h3>
+                        <form id="contactForm ajax-form" name="ajax-form" action="sendmail.php" method="post"
+                            class="wpcf7">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="name" class="form-control" required
+                                            data-error="Please enter your name" placeholder="Name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control" required
+                                            data-error="Please enter your email" placeholder="Email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" name="companyname" id="companyname" class="form-control"
+                                            required data-error="Please enter your company name"
+                                            placeholder="Company Name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="phone_number" id="phone_number" required
+                                            data-error="Please enter your number" class="form-control"
+                                            placeholder="Phone Number">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="number" name="numcars" id="numcars" required
+                                            data-error="Please enter number of cars" class="form-control"
+                                            placeholder="Number of cars">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="form-group">
+                                        <h6>Advertisement Duration</h6>
+                                        <select class="form-select" aria-label="Default select example" name="adddur"
+                                            id="adddur">
+                                            <option value="1 Month">1 Month</option>
+                                            <option value="2 Months">2 Months</option>
+                                            <option value="3 Months">3 Months</option>
+                                            <option value="4 Months">4 Months</option>
+                                            <option value="5 Months">5 Months</option>
+                                            <option value="6 Months">6 Months</option>
+                                            <option value="7 Months">7 Months</option>
+                                            <option value="8 Months">8 Months</option>
+                                            <option value="9 Months">9 Months</option>
+                                            <option value="10 Months">10 Months</option>
+                                            <option value="11 Months">11 Months</option>
+                                            <option value="12+ Months">12+ Months</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12 col-lg-12">
+                                    <button type="submit" class="contact-btn btn">
+                                        Send Message
+                                    </button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Area -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-img" style="top: 0;">
+            <img src="assets/img/home-one/footer-car.png" alt="Footer">
+        </div>
+        <div class="container">
+            <!-- <div class="subscribe-area">
+                       <div class="subscribe-shape">
+                           <img src="assets/img/home-one/blog-shape.png" alt="Blog">
+                       </div>
+                       <h2>Subscribe Newsletter</h2>
+                       <form class="newsletter-form" data-toggle="validator">
+                           <input type="email" class="form-control" placeholder="Enter your email" name="EMAIL" required
+                               autocomplete="off">
+                       
+                           <button class="btn subscribe-btn" type="submit">
+                               Subscribe
+                           </button>
+                           <div id="validator-newsletter" class="form-result"></div>
+                       </form>
+                       </div> -->
+            <div class="row" style="padding-top:50px;">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo-two.png" alt="Logo">
+                            </a>
+                            <p>Earn money by advertising on your car</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/B-Seen-112447501483258" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/b_seenapp/" target="_blank">
+                                        <i class='bx bxl-instagram-alt'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/b_seenapp" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/80206673" target="_blank">
+                                        <i class='bx bxl-linkedin'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-service">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        <i class='bx bx-chevron-right'></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#howitworks">
+                                        <i class='bx bx-chevron-right'></i>
+                                        How it Works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#services">
+                                        <i class='bx bx-chevron-right'></i>
+                                        Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#latestworks">
+                                        <i class='bx bx-chevron-right'></i>
+                                        Car Fleet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#fordrivers">
+                                        <i class='bx bx-chevron-right'></i>
+                                        For Drivers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <i class='bx bx-chevron-right'></i>
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-service footer-find">
+                            <h3>Find Us</h3>
+                            <ul>
+                                <li>
+                                    <i class='bx bx-location-plus'></i>
+                                    <a
+                                        href="https://www.google.com/maps/place/MVP+Application+and+Game+Design/@24.7483128,46.6508129,15z/data=!4m5!3m4!1s0x3e2ee3ef5328e115:0x47bd4bab37056b5d!8m2!3d24.7481968!4d46.6627864">
+                                        3184 Imam Saud Bin Abdulaziz Bin
+                                        Mohammed Rd - Al Muruj Dist - RIYADH 12281 - 6233
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class='bx bx-phone-call'></i>
+                                    <a href="tel:+966550418023">
+                                        +966 55 041 8023
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class='bx bx-mail-send'></i>
+                                    <a href="mailto:info@b-seenapp.com">
+                                        info@b-seenapp.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="copyright-item">
+                            <p>
+                                Copyright @
+                                <script>document.write(new Date().getFullYear())</script> B-Seen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="copyright-item copyright-right">
+                            <ul>
+                                <li>
+                                    <a href="termsandconditions.html" target="_blank">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <span>-</span>
+                                </li>
+                                <li>
+                                    <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Essential JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Mixitup JS -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232920844-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-232920844-1');
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
