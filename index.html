@@ -240,7 +240,37 @@ display: block;
 
         }
    
-
+        .parallelogram {
+margin-top: -28px;
+	width: 100%;
+	height:32px;
+	transform: skew(347deg);
+	background: #f6c12e;
+    border-radius: 2px;
+}
+.social-media-wrapper{
+    margin-top: 28px;
+}
+.banner-sub-text{
+ position: absolute;
+ color: #fff;
+ top:4px;
+ font-size: 14px;
+ left:8px;
+}
+.trafficmoney{
+    margin-bottom: 8px;
+}
+.social-media-image{
+    width: 120px;
+    margin-bottom: 8px;
+}
+.banner-video{
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
     </style>
 </head>
 
@@ -329,44 +359,49 @@ display: block;
         </div>
     </div>
 
-    <section style="position:relative;">
-        <div class="container" style="position:absolute;left:5%;top:30%;z-index:9;">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="">
-                        <h1 class="trafficmoney">Traffic <br>is Money</h1>
-                        <p>Turning vehicles into moving billboards. </p>
-                        <div class="row" style="margin-right: 20px;">
-                            <div class="col-lg-4 col-6" style="margin-bottom:20px;">
-                                <a href="https://apps.apple.com/ae/app/b-seen/id1608872523">
-                                    <img src="img-appstore.png" style="width: 200px;margin:auto;">
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-6" style="margin-bottom:20px;">
-                                <a href="https://play.google.com/store/apps/details?id=com.mvpapps.bseen">
-                                    <img src="img-googleplay.png" style="width: 200px;margin:auto;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-right: 20px;">
-                            <div class="col-lg-4 col-6" style="margin-bottom:20px;">
-                                <a href="https://appgallery.huawei.com/app/C106557909">
-                                    <img src="huawei.png" style="width: 200px;margin:auto;">
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="banner-slider owl-theme owl-carousel"> 
+    <section style="position:relative;height: 90vh;">
+ 
+        <div class="banner-video"> 
             <video class="videoclass"playsinline autoplay muted loop style="border-radius: 1px;object-fit:cover;overflow:hidden;width:100%;height:100%;">
                 <source src="1.mp4" type="video/mp4"> 
               Your browser does not support the video tag.
               </video> 
         
         </div>
+        <div class="container" style="padding-top: 300px;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div>
+                        <h1 class="trafficmoney">Traffic <br>is Money</h1>
+                        <div style="position:relative;max-width: 298px;margin-top: 27px;">
+                            <div class="parallelogram">
+                            </div>
+                            <p class="banner-sub-text">Turning vehicles into moving billboards </p>
+                        </div>
+                     
+                        <div class="social-media-wrapper">
+      
+                                <a href="https://apps.apple.com/ae/app/b-seen/id1608872523">
+                                    <img src="img-appstore.png" class="social-media-image">
+                                </a>
+                       
+                  
+                                <a href="https://play.google.com/store/apps/details?id=com.mvpapps.bseen">
+                                    <img src="img-googleplay.png"class="social-media-image">
+                                </a>
+                   
+              
+                                <a href="https://appgallery.huawei.com/app/C106557909">
+                                    <img src="huawei.png" class="social-media-image">
+                                </a>
+                         
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
 
     </section>
 
