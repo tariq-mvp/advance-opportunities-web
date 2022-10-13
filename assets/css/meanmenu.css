@@ -175,7 +175,7 @@ a.meanmenu-reveal {
 }
 .main-nav nav .navbar-nav .nav-item {
     position: relative;
-    padding: 15px 0;
+  
 }
 .main-nav nav .navbar-nav .nav-item a {
     font-weight: 500;
@@ -310,4 +310,7 @@ a.meanmenu-reveal {
     .main-nav {
         display: none !important;
     }
+}
+.navbar-nav{
+    align-items: center;
 }
