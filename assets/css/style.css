@@ -4040,3 +4040,34 @@ footer .footer-img {
   background-color: #94be5d;
 }
 /*# sourceMappingURL=style.css.map */
+.parallelogram {
+  margin-top: -28px;
+    width: 100%;
+    height:32px;
+    transform: skew(347deg);
+    background: #f6c12e;
+      border-radius: 2px;
+  }
+  .social-media-wrapper{
+      margin-top: 28px;
+  }
+  .banner-sub-text{
+   position: absolute;
+   color: #fff;
+   top:4px;
+   font-size: 14px;
+   left:8px;
+  }
+  .trafficmoney{
+      margin-bottom: 8px;
+  }
+  .social-media-image{
+      width: 120px;
+      margin-bottom: 8px;
+  }
+  .banner-video{
+      height: 94vh;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+  }
