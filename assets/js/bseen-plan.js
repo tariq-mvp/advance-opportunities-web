@@ -120,7 +120,8 @@ function renderPackageDetails(package_no) {
           
               <div class="package-details animate__animated animate__zoomIn">
                 <h2>SAR ${element.price}</h2>
-                <h3> ${package.cars} Cars </h3>
+                <h3> ${element.months} Months </h3>
+                <p style="font-size:12px;">${ package.cars} Cars</p>
                   <button>Subscribe</button>
               </div>
             </label>
@@ -136,7 +137,7 @@ function renderPackageCategory() {
   let html = "";
   packages.forEach((element) => {
     html += `
-            <label>
+          <label>
             <input type="radio" ${element.id===3?'checked':''} value="${element.id}" name="package-tab-group" />
             <div class="animate__animated animate__fadeInUp">${element.label}</div>
           </label>
