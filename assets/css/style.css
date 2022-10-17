@@ -4218,7 +4218,7 @@ footer .footer-img {
   border: none;
   border-radius: 4px;
   width: 120px;
-  margin-top: 18px;
+  margin-top: 0px;
   font-size: 12px;
   padding: 8px;
 }
@@ -4277,4 +4277,13 @@ footer .footer-img {
 #packageModal .submit-btn:hover {
   background-color: #000000;
   transition: background-color 0.4s;
+}
+.recommended{
+  width: 84px;
+  display: block;
+  margin: auto;
+  margin-bottom: 18px;
+  position: absolute;
+  top: 6px;
+  left: 48px;
 }
