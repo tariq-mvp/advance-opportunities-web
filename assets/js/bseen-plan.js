@@ -121,8 +121,8 @@ function renderPackageDetails(package_no) {
               <div class="package-details animate__animated animate__zoomIn">
                 <h2>SAR ${element.price}</h2>
                 <h3> ${element.months} Months </h3>
-                <p style="font-size:12px;">${ package.cars} Cars</p>
-                  <button>Subscribe</button>
+                <p style="font-size:12px;">${package.cars} Cars</p>
+                  <button onClick="choosePackage(${package.id},${element.id})">Subscribe</button>
               </div>
             </label>
               `;
@@ -138,8 +138,12 @@ function renderPackageCategory() {
   packages.forEach((element) => {
     html += `
           <label>
-            <input type="radio" ${element.id===3?'checked':''} value="${element.id}" name="package-tab-group" />
-            <div class="animate__animated animate__fadeInUp">${element.label}</div>
+            <input type="radio" ${element.id === 3 ? "checked" : ""} value="${
+      element.id
+    }" name="package-tab-group" />
+            <div class="animate__animated animate__fadeInUp">${
+              element.label
+            }</div>
           </label>
                 `;
   });
@@ -160,3 +164,26 @@ function renderPackages() {
 }
 
 renderPackages();
+
+function choosePackage(main_package, sub_package) {
+  document.getElementsByName("package-details-group")[
+    sub_package - 1
+  ].checked = true;
+
+  const current_package = packages[main_package - 1];
+  const package_details = current_package.plans[sub_package - 1];
+
+  document.getElementById("selectedPackage").value = main_package;
+  document.getElementById("selectedPackageSub").value = sub_package;
+
+  const text = `Selected ${current_package.cars} cars X ${package_details.months} months for ${package_details.price} SAR`;
+
+  let packageSelected = document.getElementById("packageSelected");
+  packageSelected.innerHTML = text;
+
+  let packageModal = bootstrap.Modal.getOrCreateInstance(
+    document.getElementById("packageModal")
+  );
+
+  packageModal.show();
+}
