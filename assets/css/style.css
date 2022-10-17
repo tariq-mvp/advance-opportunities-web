@@ -4269,7 +4269,7 @@ footer .footer-img {
   border: 1px solid #333333;
 }
 
-#packageSelected{
+#packageSelected {
   text-align: center;
   margin-bottom: 28px;
 }
@@ -4278,12 +4278,19 @@ footer .footer-img {
   background-color: #000000;
   transition: background-color 0.4s;
 }
-.recommended{
-  width: 84px;
+
+.recommended {
   display: block;
-  margin: auto;
-  margin-bottom: 18px;
+  left: 28px;
   position: absolute;
-  top: 6px;
-  left: 48px;
+  top: 12px;
+  width: 120px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #151722;
+  color: #f6c12e;
+  padding: 4px;
+  border-radius: 8px;
+
 }

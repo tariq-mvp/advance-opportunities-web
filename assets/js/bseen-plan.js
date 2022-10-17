@@ -116,21 +116,15 @@ function renderPackageDetails(package_no) {
     package.plans.forEach((element) => {
       html += `
               <label>
-              <input type="radio" ${element.id === 3 ? "checked" : ""}  value="${
-                element.id
-              }" name="package-details-group" />
+              <input type="radio" ${
+                element.id === 3 ? "checked" : ""
+              }  value="${element.id}" name="package-details-group" />
           
               <div class="package-details animate__animated animate__zoomIn">
-              ${
+                ${
                 element.id === 3
-                  ? `<img
-              src="./assets/img/recommended.png"
-              class="recommended"
-              alt=""
-              srcset=""
-            />`
-                  : ""
-              }
+                  ? `<span class="recommended">RECOMMENDED</span>`: ""
+                }
                 <h2 style="margin-top: 38px;">SAR ${element.price}</h2>
                 <h3> ${element.months} Months </h3>
                 <p style="font-size:12px;">${package.cars} Cars</p>
