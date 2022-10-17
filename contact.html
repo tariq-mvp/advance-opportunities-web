@@ -387,6 +387,7 @@
                       </div>
                       <div class="col-sm-6 col-lg-6">
                         <div class="form-group">
+                          <label for="name">Name</label>
                           <input
                             type="text"
                             name="name"
@@ -402,6 +403,7 @@
 
                       <div class="col-sm-6 col-lg-6">
                         <div class="form-group">
+                          <label for="email">Email</label>
                           <input
                             type="email"
                             name="email"
@@ -416,6 +418,7 @@
                       </div>
                       <div class="col-sm-6 col-lg-6">
                         <div class="form-group">
+                          <label for="companyname">Company name</label>
                           <input
                             type="text"
                             name="companyname"
@@ -431,14 +434,17 @@
 
                       <div class="col-sm-6 col-lg-6">
                         <div class="form-group">
+                          <label for="phone_number">Phone number</label>
                           <input
-                            type="text"
+                            type="tel"
                             name="phone_number"
                             id="phone_number"
                             required
                             data-error="Please enter your number"
                             class="form-control"
-                            placeholder="Phone Number"
+                            placeholder="966-53764577" 
+                            pattern="[0-9]{3}-[0-9]{*}"
+                         
                           />
                           <div class="help-block with-errors"></div>
                         </div>
