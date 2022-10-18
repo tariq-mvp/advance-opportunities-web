@@ -416,7 +416,7 @@ display: block;
     <!-- Process -->
     <!-- End Banner Call -->
     <!-- Process -->
-    <section class="process-area process-area-two pt-100 pb-100" id="whybseen">
+    <section class="process-area process-area-two pt-100" id="whybseen">
         <div class="container" style="padding:5% 0">
             <div class="row">
                 <div class="col-lg-6">
@@ -440,6 +440,21 @@ display: block;
                     </div>    
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="process-area process-area-two" id="whybseen">
+        <div class="container" style="padding:0px">
+            <div class="row">
+                <div class="col-12">
+                    <div id="pdtViewer">
+                        <div id="car3"></div>
+                      </div>
+                      <div id="dummy"></div>
+                </div>
+            </div>
+            <p class="text-center">
+                Drag the mouse to see the 3D magic
+            </p>
         </div>
     </section>
     <!-- End Quality -->
@@ -1183,6 +1198,8 @@ left: 0;" data-aos="fade-up">
     <script src="assets/js/form-validator.min.js"></script>
     <!-- Contact JS -->
     <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/pdt360DegViewer.js"></script>
+    
     <!-- Wow JS -->
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom JS -->
@@ -1216,6 +1233,23 @@ left: 0;" data-aos="fade-up">
         $(".containeranim" ).hover();
         });
         </script>
+
+<script>
+    var path = "assets/carSlide/";
+    pdt360DegViewer(
+      "car3",
+      20,
+      path,
+      "png",
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ); //draggable
+  </script>
 </body>
 
 </html>
