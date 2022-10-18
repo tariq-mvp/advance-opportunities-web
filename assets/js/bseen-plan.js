@@ -139,7 +139,7 @@ function renderPackageDetails(package_no) {
 
                 <h2> <span style="font-size:14px;">SAR</span> ${element.price}</h2>
 
-                <div class="offer-text" > Save SAR 2,000</div>
+               
                
                   <button onClick="choosePackage(${package.id},${
         element.id
@@ -208,3 +208,5 @@ function choosePackage(main_package, sub_package) {
 
   packageModal.show();
 }
+
+//  <div class="offer-text" > Save SAR 2,000</div>
