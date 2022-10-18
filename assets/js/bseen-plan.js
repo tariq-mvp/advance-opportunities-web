@@ -116,13 +116,34 @@ function renderPackageDetails(package_no) {
     package.plans.forEach((element) => {
       html += `
               <label>
-              <input type="radio" value="${element.id}" name="package-details-group" />
+              <input type="radio" ${
+                element.id === 3 ? "checked" : ""
+              }  value="${element.id}" name="package-details-group" />
           
               <div class="package-details animate__animated animate__zoomIn">
-                <h2>SAR ${element.price}</h2>
-                <h3> ${element.months} Months </h3>
-                <p style="font-size:12px;">${ package.cars} Cars</p>
-                  <button>Subscribe</button>
+              <p style="font-size:16px;font-weight:700;color:#000">${package.cars} Cars</p>
+                ${
+                  element.id === 3
+                    ? `<img class="recommended" src="assets/img/recommended.svg"/>`
+                    : ""
+                }
+                <div class="month-details">
+                  <img  src="assets/img/calendar.svg" style="padding-right:18px;height:44px"/>
+                  <div>
+                  Duration 
+                  <div class="month"> ${element.months}  </div> Months
+                  </div>
+                </div>
+              
+              
+
+                <h2> <span style="font-size:14px;">SAR</span> ${element.price}</h2>
+
+               
+               
+                  <button onClick="choosePackage(${package.id},${
+        element.id
+      })">Subscribe</button>
               </div>
             </label>
               `;
@@ -138,8 +159,12 @@ function renderPackageCategory() {
   packages.forEach((element) => {
     html += `
           <label>
-            <input type="radio" ${element.id===3?'checked':''} value="${element.id}" name="package-tab-group" />
-            <div class="animate__animated animate__fadeInUp">${element.label}</div>
+            <input type="radio" ${element.id === 3 ? "checked" : ""} value="${
+      element.id
+    }" name="package-tab-group" />
+            <div class="animate__animated animate__fadeInUp">${
+              element.label
+            }</div>
           </label>
                 `;
   });
@@ -160,3 +185,28 @@ function renderPackages() {
 }
 
 renderPackages();
+
+function choosePackage(main_package, sub_package) {
+  document.getElementsByName("package-details-group")[
+    sub_package - 1
+  ].checked = true;
+
+  const current_package = packages[main_package - 1];
+  const package_details = current_package.plans[sub_package - 1];
+
+  document.getElementById("selectedPackage").value = main_package;
+  document.getElementById("selectedPackageSub").value = sub_package;
+
+  const text = `Selected ${current_package.cars} cars X ${package_details.months} months for ${package_details.price} SAR`;
+
+  let packageSelected = document.getElementById("packageSelected");
+  packageSelected.innerHTML = text;
+
+  let packageModal = bootstrap.Modal.getOrCreateInstance(
+    document.getElementById("packageModal")
+  );
+
+  packageModal.show();
+}
+
+//  <div class="offer-text" > Save SAR 2,000</div>

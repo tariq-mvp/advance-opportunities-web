@@ -416,15 +416,14 @@ display: block;
     <!-- Process -->
     <!-- End Banner Call -->
     <!-- Process -->
-    <section class="process-area process-area-two pt-100 pb-100" id="whybseen">
+    <section class="process-area process-area-two pt-100" id="whybseen">
         <div class="container" style="padding:5% 0">
             <div class="row">
                 <div class="col-lg-6">
                     
                     <h2 style="padding-left:10px;">Why B Seen?</h2>
                     <p style="color:black;padding-left:10px;">
-                            Are you struggling with outdoor advertising?
-                            <b>B Seen</b> helps solve this problem by providing new measurable outdoor advertising channel.
+                        B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression. Our cars are the perfect way to get your brand out there and make a lasting impression on your target audience. With B Seen, your business will be seen by thousands of people every day. We provide a dashboard to monitor the campaign performance, a heat-map & hotspots of car movement around the city, and a weekly campaign report too!
                     </p>
                     <p style="color:black;padding-left:10px;">
                         Measure the impact of the outdoor advertising we produce with our tracking technology.
@@ -443,6 +442,21 @@ display: block;
             </div>
         </div>
     </section>
+    <!-- <section class="process-area process-area-two" id="whybseen">
+        <div class="container" style="padding:0px">
+            <div class="row">
+                <div class="col-12">
+                    <div id="pdtViewer">
+                        <div id="car3"></div>
+                      </div>
+                      <div id="dummy"></div>
+                </div>
+            </div>
+            <p class="text-center">
+                Drag the mouse to see the 3D magic
+            </p>
+        </div>
+    </section> -->
     <!-- End Quality -->
     <section class="process-area process-area-two pt-100 pb-70" id="howitworks">
         <div class="process-shape">
@@ -503,6 +517,7 @@ display: block;
             </div>
         </div>
     </section>
+
 
     <!-- End Process -->
     <!-- Service -->
@@ -616,6 +631,141 @@ display: block;
             </div>
         </div>
     </section>
+    <section class="contact-area pt-100 pb-70">
+        <div class="container">
+          <div>
+            <div class="bseen-ad-plans-container">
+              <h1 style="font-size: 16px">Choose your package</h1>
+              <div class="bseen-ad-choose-tab" id="package-cateogry" style="margin-bottom:84px"></div>
+              <div class="bseen-ad-details" id="bseen-ad-details"></div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="packageModal"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title">Make a Package Request</h6>
+  
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      id="contactForm ajax-form"
+                      name="ajax-form"
+                      action="send_package_email.php"
+                      method="post"
+                      class="wpcf7"
+                    >
+                   
+                      <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                          <div id="packageSelected"></div>
+                          <input
+                            type="hidden"
+                            name="selectedPackage"
+                            id="selectedPackage"
+                          />
+                          <input
+                            type="hidden"
+                            name="selectedPackageSub"
+                            id="selectedPackageSub"
+                          />
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              class="form-control"
+                              required
+                              data-error="Please enter your name"
+                              placeholder="Name"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="form-control"
+                              required
+                              data-error="Please enter your email"
+                              placeholder="Email"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="companyname">Company name</label>
+                            <input
+                              type="text"
+                              name="companyname"
+                              id="companyname"
+                              class="form-control"
+                              required
+                              data-error="Please enter your company name"
+                              placeholder="Company Name"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="phone_number">Phone number</label>
+                            <input
+                              type="tel"
+                              name="phone_number"
+                              id="phone_number"
+                              required
+                              data-error="Please enter your number"
+                              class="form-control"
+                              placeholder="966-53764577" 
+                              pattern="[0-9]{3}-[0-9]{*}"
+                           
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-md-12 col-lg-12">
+                          <button type="submit" class="submit-btn btn">
+                            Submit Request
+                          </button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+        </div>
+      </section>
     <!-- End Service -->
     <!-- Quality -->
     <section class="quality-area quality-area-three">
@@ -1184,8 +1334,11 @@ left: 0;" data-aos="fade-up">
     <script src="assets/js/form-validator.min.js"></script>
     <!-- Contact JS -->
     <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/pdt360DegViewer.js"></script>
+    
     <!-- Wow JS -->
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bseen-plan.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -1217,6 +1370,23 @@ left: 0;" data-aos="fade-up">
         $(".containeranim" ).hover();
         });
         </script>
+
+<script>
+    var path = "assets/carSlide/";
+    pdt360DegViewer(
+      "car3",
+      20,
+      path,
+      "png",
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ); //draggable
+  </script>
 </body>
 
 </html>
