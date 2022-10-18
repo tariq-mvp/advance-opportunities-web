@@ -4187,22 +4187,33 @@ footer .footer-img {
 }
 
 .bseen-ad-details [type="radio"]:checked+div {
-  border: 1px solid #f6c12e;
+  outline: 1px solid #f6c12e;
+  background-color: #fffdf7;
+  box-shadow: 0px 0px 5px 0px #f6c12e;
+  -webkit-box-shadow: 0px 0px 5px 0px #f6c12e;
+  -moz-box-shadow: 0px 0px 5px 0px #f6c12e;
+  transform: scale(1.01);
 }
 
 .package-details {
   margin: 12px;
-  border: 1px solid #efefef;
   border-radius: 12px;
   background: #fff;
-  min-width: 180px;
-  padding: 12px;
+  min-width: 224px;
+  padding: 12px 0px;
   text-align: center;
   cursor: pointer;
+  box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  padding-bottom: 38px;
 }
 
 .package-details h2 {
-  margin-bottom: 4px;
+  margin: 12px 0px;
 }
 
 .package-details .package-offer {
@@ -4218,10 +4229,19 @@ footer .footer-img {
   border: none;
   border-radius: 4px;
   width: 120px;
-  margin-top: 0px;
+  margin-top: 24px;
   font-size: 12px;
-  padding: 8px;
+  padding: 4px;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  bottom: -12px;
+  margin: auto;
+  box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
 }
+
 
 .package-details button:hover {
   background-color: #000000;
@@ -4232,6 +4252,8 @@ footer .footer-img {
   box-shadow: 0px 0px 5px 0px rgb(199 199 199 / 75%);
   -webkit-box-shadow: 0px 0px 5px 0px rgb(199 199 199 / 75%);
   -moz-box-shadow: 0px 0px 5px 0px rgb(199 199 199 / 75%);
+  transform: scale(1.01);
+
 }
 
 .modal-content {
@@ -4281,16 +4303,37 @@ footer .footer-img {
 
 .recommended {
   display: block;
-  left: 28px;
+  left: -4px;
   position: absolute;
-  top: 12px;
-  width: 120px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
-  background-color: #151722;
-  color: #f6c12e;
-  padding: 4px;
-  border-radius: 8px;
+  top: -7px;
+  width: 64px;
+}
 
+.month-details {
+  background-color: #f7f7f7;
+  padding: 12px 0px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.month-details .month {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bseen-ad-details [type="radio"]:checked+div .month-details {
+  background-color: #fff9e8;
+}
+
+.offer-text {
+  color: #65d89b;
+  right: 8px;
+  bottom: 24px;
+  font-size: 12px;
+  position: absolute;
 }

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81.644" height="83.739" viewBox="0 0 81.644 83.739">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="81.644" height="81.772" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_11" data-name="Path 11" d="M78.282,2.535l.037.031-.089-.083.052.052M55.994,0A8.651,8.651,0,0,0,49.88,2.535L2.528,49.635A8.634,8.634,0,0,0,0,55.755v16.7A8.634,8.634,0,0,0,2.332,78.34a3.413,3.413,0,0,1,.1-4.726l2.446-2.446L71.027,5.014l2.446-2.449a3.425,3.425,0,0,1,4.757-.083A8.642,8.642,0,0,0,72.167,0Z" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.147" y1="0.882" x2="0.174" y2="0.882" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c20b00"/>
+      <stop offset="0.068" stop-color="#b51000"/>
+      <stop offset="0.172" stop-color="#a91500"/>
+      <stop offset="0.277" stop-color="#a61700"/>
+      <stop offset="0.456" stop-color="#aa1500"/>
+      <stop offset="0.639" stop-color="#b61100"/>
+      <stop offset="0.753" stop-color="#c20d00"/>
+      <stop offset="1" stop-color="#ff5040"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_6" data-name="Group 6" transform="translate(-389.356 -467.034)">
+    <g id="Group_5" data-name="Group 5" transform="translate(389.356 469)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+        <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
+          <path id="Path_9" data-name="Path 9" d="M30.464,1.513l2.449,2.449H23.176l2.446-2.449a3.426,3.426,0,0,1,4.842,0" transform="translate(47.854 1.055)" fill="#8c1622"/>
+          <path id="Path_10" data-name="Path 10" d="M1.467,30.511,3.916,32.96V23.22L1.467,25.669a3.426,3.426,0,0,0,0,4.842" transform="translate(0.96 47.945)" fill="#8d1622"/>
+        </g>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(0)">
+        <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path-2)">
+          <rect id="Rectangle_4" data-name="Rectangle 4" width="110.776" height="110.776" transform="translate(-39.173 39.17) rotate(-45)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <text id="Selling_Fast" data-name="Selling Fast" transform="translate(426.648 501.682) rotate(-45)" fill="#fff" font-size="13" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="-0.04em"><tspan x="-34.697" y="0">Selling Fast</tspan></text>
+  </g>
+</svg>

@@ -121,13 +121,26 @@ function renderPackageDetails(package_no) {
               }  value="${element.id}" name="package-details-group" />
           
               <div class="package-details animate__animated animate__zoomIn">
+              <p style="font-size:16px;font-weight:700;color:#000">${package.cars} Cars</p>
                 ${
-                element.id === 3
-                  ? `<span class="recommended">RECOMMENDED</span>`: ""
+                  element.id === 3
+                    ? `<img class="recommended" src="assets/img/recommended.svg"/>`
+                    : ""
                 }
-                <h2 style="margin-top: 38px;">SAR ${element.price}</h2>
-                <h3> ${element.months} Months </h3>
-                <p style="font-size:12px;">${package.cars} Cars</p>
+                <div class="month-details">
+                  <img  src="assets/img/calendar.svg" style="padding-right:18px;height:44px"/>
+                  <div>
+                  Duration 
+                  <div class="month"> ${element.months}  </div> Months
+                  </div>
+                </div>
+              
+              
+
+                <h2> <span style="font-size:14px;">SAR</span> ${element.price}</h2>
+
+                <div class="offer-text" > Save SAR 2,000</div>
+               
                   <button onClick="choosePackage(${package.id},${
         element.id
       })">Subscribe</button>
