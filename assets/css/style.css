@@ -4104,11 +4104,17 @@ footer .footer-img {
 .bseen-ad-choose-tab {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   overflow:hidden;
   padding-top: 12px;
   align-items: end;
   flex-wrap: wrap;
   
+=======
+  overflow: hidden;
+  padding-top: 12px;
+  align-items: end;
+>>>>>>> 6139cb656bd6f2e0fe9b64ed9c1c60b740d8dbaf
 }
 
 .bseen-ad-choose-tab div {
@@ -4456,6 +4462,7 @@ img.keys {
 }
 
 
+<<<<<<< HEAD
 /* Rotating car end */
 
 
@@ -4476,3 +4483,6 @@ img.keys {
   width:180px;
   border-radius:12px;
 }
+=======
+/* Rotating car end */
+>>>>>>> 6139cb656bd6f2e0fe9b64ed9c1c60b740d8dbaf
