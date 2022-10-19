@@ -12,6 +12,14 @@
     </script>
 <meta name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="title" content="Bseen">
+    <meta name="description" content="B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression">
+    <meta name="keywords" content="Bseen,best,online,advertisements,nft,collections,company">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="2 days">
+    <meta name="author" content="MVP Applications and Game Design">
 
 
     <!-- Bootstrap CSS -->
@@ -326,6 +334,11 @@
             .mainbannersec{
                 max-height:600px;
             }
+            .trafficmoney {
+                font-size: 48px;
+                line-height: 46px;
+              
+            }
         }
         .mean-bar .cs-btn{
             display: none;
@@ -451,7 +464,7 @@
 
                 </div>
                 <div class="col-lg-8">
-                    <div style=" direction: rtl;">
+                    <div style=" direction: rtl;  margin-right: 18px;">
                         <h1 class="trafficmoney animate__animated animate__lightSpeedInLeft">اعلانك يتجول <br/> في الرياض</h1>
                         <div style="position:relative;max-width: 298px;margin-top: 47px;" class="animate__animated animate__fadeInRight">
                             <div class="parallelogram">
@@ -544,6 +557,22 @@
                     <img src="whybseenimg.png" width="100%">
                 </div>
             </div>
+        </div>
+    </section>
+  
+    <section class="process-area process-area-two " id="whybseen">
+        <div class="container" style="padding:0px">
+            <div class="row">
+                <div class="col-12">
+                    <div id="pdtViewer">
+                        <div id="car3"></div>
+                      </div>
+                      <div id="dummy"></div>
+                </div>
+            </div>
+            <p class="text-center">
+                Drag the mouse to see the 3D magic
+            </p>
         </div>
     </section>
     <section class="process-area process-area-two pt-100 pb-70" id="howitworks">
@@ -713,6 +742,250 @@
             </div>
         </div>
     </section>
+    <section class="contact-area pt-100 pb-70">
+        <div class="container">
+            <div class="section-title">
+
+                <h2>الاشتراكات الشهرية </h2>
+     
+            </div>
+          <div>
+            <div class="bseen-ad-plans-container">
+     
+              <div class="bseen-ad-choose-tab" id="package-cateogry" style="margin-bottom:84px"></div>
+              <div class="bseen-ad-details" id="bseen-ad-details"></div>
+            </div>
+            <div style="text-align: center;margin-top: 84px;">
+                <!-- Button trigger modal -->
+                <button type="button" class="custom-btn" data-bs-toggle="modal" data-bs-target="#customPlanModal">
+                    باقة خاصة
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade packageModal"  id="customPlanModal" tabindex="-1" aria-labelledby="#customPlanModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title">طلب باقة خاصة</h6>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="contactForm ajax-form" name="ajax-form" action="sendmail.php"
+                            method="post" class="wpcf7">
+
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-12">
+                                  
+                                    <input type="hidden" name="selectedPackage" id="selectedPackage" />
+                                    <input type="hidden" name="selectedPackageSub" id="selectedPackageSub" />
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="name" style="width: 100%;
+                                        text-align: initial;" >Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" required
+                                            data-error="Please enter your name" placeholder="Name" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="email" style="width: 100%;
+                                        text-align: initial;">Email</label>
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            required data-error="Please enter your email" placeholder="Email" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="companyname" style="width: 100%;
+                                        text-align: initial;">Company name</label>
+                                        <input type="text" name="companyname" id="companyname"
+                                            class="form-control" required
+                                            data-error="Please enter your company name"
+                                            placeholder="Company Name" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="phone_number" style="width: 100%;
+                                        text-align: initial;">Phone number</label>
+                                        <input type="tel" name="phone_number" id="phone_number" required
+                                            data-error="Please enter your number" class="form-control"
+                                            placeholder="966-53764577" pattern="[0-9]{3}-[0-9]{*}" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="adddur" style="width: 100%;
+                                        text-align: initial;">Add Duration in Months</label>
+                                        <input type="number" name="adddur" id="adddur" required
+                                            data-error="Please enter add duration" class="form-control"
+                                            placeholder="4" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="numcars" style="width: 100%;
+                                        text-align: initial;">Number of Cars</label>
+                                        <input type="number" name="numcars" id="numcars" required
+                                            data-error="Please enter add duration" class="form-control"
+                                            placeholder="1000" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-12">
+                                    <button type="submit" class="submit-btn btn">
+                                        اشترك الآن
+                                    </button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade packageModal"
+              id="packageModal"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title">طلب باقة خاصة</h6>
+  
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      id="contactForm ajax-form"
+                      name="ajax-form"
+                      action="send_package_email.php"
+                      method="post"
+                      class="wpcf7"
+                    >
+                   
+                      <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                          <div id="packageSelected"></div>
+                          <input
+                            type="hidden"
+                            name="selectedPackage"
+                            id="selectedPackage"
+                          />
+                          <input
+                            type="hidden"
+                            name="selectedPackageSub"
+                            id="selectedPackageSub"
+                          />
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              class="form-control"
+                              required
+                              data-error="Please enter your name"
+                              placeholder="Name"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="form-control"
+                              required
+                              data-error="Please enter your email"
+                              placeholder="Email"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="companyname">Company name</label>
+                            <input
+                              type="text"
+                              name="companyname"
+                              id="companyname"
+                              class="form-control"
+                              required
+                              data-error="Please enter your company name"
+                              placeholder="Company Name"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="phone_number">Phone number</label>
+                            <input
+                              type="tel"
+                              name="phone_number"
+                              id="phone_number"
+                              required
+                              data-error="Please enter your number"
+                              class="form-control"
+                              placeholder="966-53764577" 
+                              pattern="[0-9]{3}-[0-9]{*}"
+                           
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-md-12 col-lg-12">
+                          <button type="submit" class="submit-btn btn">
+                            اشترك الآن
+                          </button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+        </div>
+      </section>
     <!-- End Service -->
     <!-- Quality -->
     <section class="quality-area quality-area-three">
@@ -851,6 +1124,49 @@
                     </div>
                 </div>
             </section>
+        </div>
+    </section>
+
+    <section class="work-area  pb-70" id="latestworks">
+        <div class="container">
+            <div class="section-title">
+
+                <h2> مجموعة الـ NFT </h2>
+     
+            </div>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a class="package-details animate__animated animate__zoomIn nft-card" target="_blank" href="https://nft-plus.me/view-nft/FjqqbFjztWDyd77bDJHPi76PN7vV5Em6HafFNGutKaEv">
+                    <img src="assets/nft/nft1.gif" alt="" srcset="">
+                    <div class="d-flex justify-content-between mt-2 p-2" style="color: black;">
+                        <div style="text-align:left">
+                            <strong>B Seen - Riyadh</strong>
+                            <p style="font-size:12px ;">
+                                Advertising on cars in Riyadh
+                            </p>
+                        </div>
+                        <div style="font-weight: 600;">
+                          1.5 SOL
+                        </div>
+                    </div>
+                    <button>اشتري الآن</button>
+                </a>
+                <a class="package-details animate__animated animate__zoomIn nft-card" target="_blank" href="https://nft-plus.me/view-nft/4PH76BXwgYycsavhV5Kx6UTP5yzhNDRNUC3DRQkLFqgB">
+                    <img src="assets/nft/nft2.gif" alt="" srcset="">
+                    <div class="d-flex justify-content-between mt-2 p-2" style="color: black;">
+                        <div style="text-align:left">
+                            <strong> B Seen - Desert</strong> 
+                            <p style="font-size:12px ;">
+                                Advertising on cars
+                            </p>
+                     
+                        </div>
+                        <div style="font-weight: 600;">
+                          1.2 SOL
+                        </div>
+                    </div>
+                    <button>اشتري الآن</button>
+                </a>         
+            </div>
         </div>
     </section>
     <!-- End Work -->
@@ -1013,6 +1329,7 @@
             </div>
         </div>
     </section>
+
     <section class="work-area pt-50 " id="latestworks">
         <div style="position: relative;height: 100%;" class="desktop-qr">
 
@@ -1204,10 +1521,13 @@
     <script src="assets/js/form-validator.min.js"></script>
     <!-- Contact JS -->
     <script src="assets/js/contact-form-script.js"></script>
+    <!-- Package info -->
+    <script src="assets/js/bseen-plan-ar.js"></script>
     <!-- Wow JS -->
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/pdt360DegViewer.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232920844-1">
     </script>
@@ -1220,6 +1540,23 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    
+    <script>
+        var path = "assets/carSlide/";
+        pdt360DegViewer(
+            "car3",
+            20,
+            path,
+            "png",
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false
+        ); //draggable
     </script>
 </body>
 
