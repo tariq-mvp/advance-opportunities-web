@@ -4455,3 +4455,22 @@ img.keys {
 
 
 /* Rotating car end */
+
+
+.nft-card{
+  padding: 12px;
+  border-radius: 12px;
+  margin:12px;
+  box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  margin-bottom: 18px;
+
+}
+.nft-card img{
+  width:180px;
+  border-radius:12px;
+}
