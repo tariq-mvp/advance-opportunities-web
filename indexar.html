@@ -713,6 +713,141 @@
             </div>
         </div>
     </section>
+    <section class="contact-area pt-100 pb-70">
+        <div class="container">
+          <div>
+            <div class="bseen-ad-plans-container">
+              <h1 style="font-size: 16px">الاشتراكات الشهرية</h1>
+              <div class="bseen-ad-choose-tab" id="package-cateogry" style="margin-bottom:84px"></div>
+              <div class="bseen-ad-details" id="bseen-ad-details"></div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="packageModal"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title">طلب باقة خاصة</h6>
+  
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      id="contactForm ajax-form"
+                      name="ajax-form"
+                      action="send_package_email.php"
+                      method="post"
+                      class="wpcf7"
+                    >
+                   
+                      <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                          <div id="packageSelected"></div>
+                          <input
+                            type="hidden"
+                            name="selectedPackage"
+                            id="selectedPackage"
+                          />
+                          <input
+                            type="hidden"
+                            name="selectedPackageSub"
+                            id="selectedPackageSub"
+                          />
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              class="form-control"
+                              required
+                              data-error="Please enter your name"
+                              placeholder="Name"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="form-control"
+                              required
+                              data-error="Please enter your email"
+                              placeholder="Email"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="companyname">Company name</label>
+                            <input
+                              type="text"
+                              name="companyname"
+                              id="companyname"
+                              class="form-control"
+                              required
+                              data-error="Please enter your company name"
+                              placeholder="Company Name"
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="phone_number">Phone number</label>
+                            <input
+                              type="tel"
+                              name="phone_number"
+                              id="phone_number"
+                              required
+                              data-error="Please enter your number"
+                              class="form-control"
+                              placeholder="966-53764577" 
+                              pattern="[0-9]{3}-[0-9]{*}"
+                           
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+  
+                        <div class="col-md-12 col-lg-12">
+                          <button type="submit" class="submit-btn btn">
+                            اشترك الآن
+                          </button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+        </div>
+      </section>
     <!-- End Service -->
     <!-- Quality -->
     <section class="quality-area quality-area-three">
@@ -1204,6 +1339,8 @@
     <script src="assets/js/form-validator.min.js"></script>
     <!-- Contact JS -->
     <script src="assets/js/contact-form-script.js"></script>
+    <!-- Package info -->
+    <script src="assets/js/bseen-plan-ar.js"></script>
     <!-- Wow JS -->
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom JS -->
