@@ -123,7 +123,7 @@ function renderPackageDetails(package_no) {
               <div class="package-details animate__animated animate__zoomIn">
               <p style="font-size:16px;font-weight:700;color:#000">${
                 package.cars
-              } سيارات</p>
+              } ${package.id === 1 ? "سيارات" : "سيارة"} </p>
                 ${
                   element.id === 3
                     ? `<img class="recommended" src="assets/img/recommended.svg"/>`
@@ -201,7 +201,9 @@ function choosePackage(main_package, sub_package) {
   document.getElementById("selectedPackage").value = main_package;
   document.getElementById("selectedPackageSub").value = sub_package;
 
-  const text = ` سيارة ${current_package.cars}`+ ` لمدة  ${package_details.months} اشهر بمبلغ ${package_details.price} ريال  `;
+  const text =
+    ` سيارة ${current_package.cars}` +
+    ` لمدة  ${package_details.months} اشهر بمبلغ ${package_details.price} ريال  `;
 
   let packageSelected = document.getElementById("packageSelected");
   packageSelected.innerHTML = text;
