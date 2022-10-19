@@ -326,6 +326,11 @@
             .mainbannersec{
                 max-height:600px;
             }
+            .trafficmoney {
+                font-size: 48px;
+                line-height: 46px;
+              
+            }
         }
         .mean-bar .cs-btn{
             display: none;
@@ -451,7 +456,7 @@
 
                 </div>
                 <div class="col-lg-8">
-                    <div style=" direction: rtl;">
+                    <div style=" direction: rtl;  margin-right: 18px;">
                         <h1 class="trafficmoney animate__animated animate__lightSpeedInLeft">اعلانك يتجول <br/> في الرياض</h1>
                         <div style="position:relative;max-width: 298px;margin-top: 47px;" class="animate__animated animate__fadeInRight">
                             <div class="parallelogram">
@@ -550,7 +555,7 @@
         <div class="container">
             <div class="section-title">
 
-                <h2>NFT Collections</h2>
+                <h2>NFT مجموعة الـ</h2>
      
             </div>
             <div class="d-flex justify-content-center flex-wrap">
@@ -567,7 +572,7 @@
                           1.5 SOL
                         </div>
                     </div>
-                    <button>Buy</button>
+                    <button>اشتري الآن</button>
                 </a>
                 <a class="package-details animate__animated animate__zoomIn nft-card" target="_blank" href="https://nft-plus.me/view-nft/4PH76BXwgYycsavhV5Kx6UTP5yzhNDRNUC3DRQkLFqgB">
                     <img src="assets/nft/nft2.gif" alt="" srcset="">
@@ -583,9 +588,24 @@
                           1.2 SOL
                         </div>
                     </div>
-                    <button>Buy</button>
+                    <button>اشتري الآن</button>
                 </a>         
             </div>
+        </div>
+    </section>
+    <section class="process-area process-area-two " id="whybseen">
+        <div class="container" style="padding:0px">
+            <div class="row">
+                <div class="col-12">
+                    <div id="pdtViewer">
+                        <div id="car3"></div>
+                      </div>
+                      <div id="dummy"></div>
+                </div>
+            </div>
+            <p class="text-center">
+                Drag the mouse to see the 3D magic
+            </p>
         </div>
     </section>
     <section class="process-area process-area-two pt-100 pb-70" id="howitworks">
@@ -1387,6 +1407,7 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/pdt360DegViewer.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232920844-1">
     </script>
@@ -1399,6 +1420,23 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    
+    <script>
+        var path = "assets/carSlide/";
+        pdt360DegViewer(
+            "car3",
+            20,
+            path,
+            "png",
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false
+        ); //draggable
     </script>
 </body>
 

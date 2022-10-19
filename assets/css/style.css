@@ -4104,9 +4104,11 @@ footer .footer-img {
 .bseen-ad-choose-tab {
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  overflow:hidden;
   padding-top: 12px;
   align-items: end;
+  flex-wrap: wrap;
+  
 }
 
 .bseen-ad-choose-tab div {
