@@ -4107,6 +4107,8 @@ footer .footer-img {
   overflow: hidden;
   padding-top: 12px;
   align-items: end;
+  flex-wrap: wrap;
+
 }
 
 .bseen-ad-choose-tab div {
@@ -4261,7 +4263,7 @@ footer .footer-img {
   border-radius: 8px;
 }
 
-#packageModal input {
+.packageModal input {
   border: 1px solid #f6c12e;
   border-radius: 0;
   height: 36px;
@@ -4272,7 +4274,7 @@ footer .footer-img {
   font-size: 12px;
 }
 
-#packageModal .submit-btn {
+.packageModal .submit-btn {
   background-color: #f6c12e;
   color: #fff;
   border: none;
@@ -4285,7 +4287,7 @@ footer .footer-img {
   display: block;
 }
 
-#packageModal input:focus {
+.packageModal input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid #333333;
@@ -4296,7 +4298,7 @@ footer .footer-img {
   margin-bottom: 28px;
 }
 
-#packageModal .submit-btn:hover {
+.packageModal .submit-btn:hover {
   background-color: #000000;
   transition: background-color 0.4s;
 }
@@ -4345,19 +4347,23 @@ footer .footer-img {
   position: relative;
   margin: 0px 0;
 }
+
 #pdtViewer {
   width: 67%;
   margin: 0 auto;
 }
+
 #pdtViewer img {
   padding: 0px;
   border: 0.5px solid #eee;
   user-select: none;
   -moz-user-select: none;
 }
+
 #dummy {
   display: none;
 }
+
 .loader {
   width: 100%;
   height: 100%;
@@ -4366,6 +4372,7 @@ footer .footer-img {
   z-index: 1;
   top: 0;
 }
+
 .three-bounce {
   text-align: center;
   font-size: 26px;
@@ -4373,6 +4380,7 @@ footer .footer-img {
   top: 50%;
   left: 50%;
 }
+
 .three-bounce div {
   display: inline-block;
   width: 18px;
@@ -4382,10 +4390,12 @@ footer .footer-img {
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
   animation: bouncedelay 1.4s infinite ease-in-out both;
 }
+
 .three-bounce .one {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
+
 .three-bounce .two {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
@@ -4395,59 +4405,73 @@ footer .footer-img {
 img.draggable {
   cursor: e-resize;
 }
+
 img.keys {
   cursor: pointer;
 }
+
 @keyframes bouncedelay {
+
   0%,
   80%,
   100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   40% {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
 }
+
 @-webkit-keyframes bouncedelay {
+
   0%,
   80%,
   100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   40% {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
 }
+
 @media screen and (max-width: 1030px) {
   #pdtViewer img {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 992px) {
   .hidePhone {
     display: none;
   }
+
   .btnDiv {
     zoom: 0.7;
   }
 }
+
 @media screen and (max-width: 1250px) {
   #pdtViewer img {
     padding: 40px 0;
   }
+
   #pdtViewer {
     width: 95%;
   }
 }
+
 @media screen and (max-width: 767px) {
   .fork {
     width: 100px;
     position: absolute !important;
   }
+
   h1 {
     margin-top: 60px;
   }
@@ -4455,3 +4479,42 @@ img.keys {
 
 
 /* Rotating car end */
+
+
+.nft-card {
+  padding: 12px;
+  border-radius: 12px;
+  margin: 12px;
+  box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  margin-bottom: 18px;
+
+}
+
+.nft-card img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+
+.custom-btn {
+  background-color: #f6c12e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px 18px;
+  box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+  -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
+}
+
+
+.custom-btn:hover {
+  background-color: #000000;
+  transition: background-color 0.4s;
+}
