@@ -4518,3 +4518,43 @@ img.keys {
   background-color: #000000;
   transition: background-color 0.4s;
 }
+
+.language-btn{
+    width: 58px;
+    height: 38px;
+    position: absolute;
+    top:16px;
+    right: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 2px rgb(215 215 215 / 63%);
+  -webkit-box-shadow: 0px 0px 12px 2px rgb(215 215 215 / 63%);
+  -moz-box-shadow: 0px 0px 12px 2px rgb(215 215 215 / 63%);
+  z-index: 9999;
+  
+}
+  
+.language-btn img{
+  width: 24px;
+  margin-left: 17px;
+  margin-top: 6px;
+}
+.language-btn:hover{
+
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px 2px rgba(190, 190, 190, 0.63);
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(190, 190, 190, 0.63);
+  -moz-box-shadow: 0px 0px 12px 2px rgba(190, 190, 190, 0.63);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.mobile-lang-btn{
+  top:8px;
+  right: 68px;
+  height: 34px;
+  top:10px;
+}
+.mobile-lang-btn img{
+  margin-top: 5px;
+}
