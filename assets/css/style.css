@@ -4582,7 +4582,11 @@ img.keys {
   border-radius: 8px;
   font-size: 15px;
   position: relative;
+<<<<<<< assets/css/style.css
+  min-height: 280px;
+=======
   height: 280px;
+>>>>>>> assets/css/style.css
   text-align: center;
 
 }
