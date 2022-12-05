@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://b-seenapp.com/</loc>
+  <lastmod>2022-11-09T12:38:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/index.html</loc>
+  <lastmod>2022-11-09T12:38:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/indexar.html</loc>
+  <lastmod>2022-11-02T14:09:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/about.html</loc>
+  <lastmod>2022-10-20T09:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/contact.html</loc>
+  <lastmod>2022-10-20T09:05:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/termsandconditions.html</loc>
+  <lastmod>2022-10-12T12:50:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/privacypolicy.html</loc>
+  <lastmod>2022-10-12T12:50:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/contactar.html</loc>
+  <lastmod>2022-10-20T09:05:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/termsandconditionsar.html</loc>
+  <lastmod>2022-10-12T12:50:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/aboutar.html</loc>
+  <lastmod>2022-10-20T09:05:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/cinemon/</loc>
+  <lastmod>2022-10-20T09:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/kleen/</loc>
+  <lastmod>2022-10-20T09:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/zara1/</loc>
+  <lastmod>2022-10-20T09:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://b-seenapp.com/kiko/</loc>
+  <lastmod>2022-10-20T09:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
