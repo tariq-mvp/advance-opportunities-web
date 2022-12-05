@@ -4631,6 +4631,7 @@ img.keys {
   margin-top: 18px;
   margin-bottom: 68px;
   display: flex;
+  justify-content: center;
   overflow-x: auto;
 }
 
