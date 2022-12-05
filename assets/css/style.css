@@ -4652,7 +4652,7 @@ img.keys {
 
 .partners-logo a {
   cursor: pointer;
-  width: 100%;
+  min-width: 100px;
 }
 
 
