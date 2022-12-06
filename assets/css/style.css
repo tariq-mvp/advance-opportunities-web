@@ -4626,16 +4626,17 @@ img.keys {
 
 .partners-logo {
 
-  width: fit-content;
-  margin: auto;
-  margin-top: 68px;
+  width: 140%;
+  margin: 0px;
+  margin-top: 18px;
   margin-bottom: 68px;
   display: flex;
+  justify-content: center;
   overflow-x: auto;
 }
 
 .partners-logo img {
-  height: 28px;
+  height: 50x;
   margin: 8px 28px;
 }
 
@@ -4652,6 +4653,7 @@ img.keys {
 
 .partners-logo a {
   cursor: pointer;
+  min-width: 100px;
 }
 
 
