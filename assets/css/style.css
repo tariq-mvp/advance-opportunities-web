@@ -4582,11 +4582,7 @@ img.keys {
   border-radius: 8px;
   font-size: 15px;
   position: relative;
-<<<<<<< assets/css/style.css
   min-height: 280px;
-=======
-  height: 280px;
->>>>>>> assets/css/style.css
   text-align: center;
 
 }
@@ -4626,7 +4622,7 @@ img.keys {
 
 .partners-logo {
 
-  width: 140%;
+  width: 100%;
   margin: 0px;
   margin-top: 18px;
   margin-bottom: 68px;
@@ -4636,7 +4632,7 @@ img.keys {
 }
 
 .partners-logo img {
-  height: 50x;
+  height: 50px;
   margin: 8px 28px;
 }
 
