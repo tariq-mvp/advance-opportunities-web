@@ -212,7 +212,7 @@
         .banner-area-three::before {
             opacity: 0.3;
         }
-
+        .caro-child > img { height: auto; }
         * {
             font-family: 'FF Shamel Rounded', sans-serif;
             /* direction: rtl; */
@@ -264,7 +264,8 @@
             }
 
             .mean-container .mean-nav .navbar-nav {
-                height: 450px;
+                height: auto;
+                max-height: 450px;
                 overflow-y: scroll;
                 position: relative;
             }
@@ -494,7 +495,7 @@
         <div class="banner-slider owl-theme owl-carousel">
 
             <div class="banner-slider owl-theme owl-carousel"> 
-                <video class="videoclass" playsinline autoplay muted loop style="border-radius: 1px;object-fit:cover;overflow:hidden;width:100%;height:90vh;">
+                <video class="videoclass"  autoplay loop muted playsinline style="border-radius: 1px;object-fit:cover;overflow:hidden;width:100%;height:90vh;">
                     <source src="1.mp4" type="video/mp4"> 
                   Your browser does not support the video tag.
                   </video> 
@@ -600,8 +601,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="process-item">
-                        <div class="process-img">
-                            <img src="assets/img/Mockup_of_lateral_of_a_luxury_car.png" alt="Process" data-aos="fade-up">
+                        <div>
+                            <img style="width:100%" src="assets/img/Mockup_of_lateral_of_a_luxury_car.png" alt="Process"
+                                data-aos="fade-up">
                         </div>
                     </div>
                 </div>

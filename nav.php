@@ -38,6 +38,9 @@
                             <a href="/about.html" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
+                <a href="https://blog.b-seenapp.com" target="_blank" class="nav-link">Blog</a>
+              </li>
+                        <li class="nav-item">
                             <a href="/contact.html" class="nav-link">For Advertisers</a>
                         </li>
                         <li class="nav-item">
