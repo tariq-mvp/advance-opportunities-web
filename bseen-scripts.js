@@ -32,7 +32,7 @@ function setup() {
 var d = new Date();
 n = d.getMonth();
 
-if (n == 11 || n == 1) {
+if (n == 11 || n == 0) {
     setup();
     console.log("Happy Xmas")
 }
