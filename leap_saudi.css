@@ -8,7 +8,7 @@
 .leap_saudi {
     background-color: #ffe53b;
     background-image: linear-gradient(147deg, #FFD245 0%, #EEB400 74%);
-    min-height: 100vh;
+    min-height: 80vh;
     font-family: "Fira Sans", sans-serif;
     display: flex;
 }
