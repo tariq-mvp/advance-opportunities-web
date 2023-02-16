@@ -195,6 +195,9 @@
     .blog-slider__content {
         padding: 0;
     }
+        .leap_saudi{
+            max-height:70vh;
+        }
 }
 
 .blog-slider__content>* {
