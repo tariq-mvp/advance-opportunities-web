@@ -10,8 +10,8 @@ const swiper = new Swiper(".swiper", {
     delay: 2000,
   },
 });
-swiper.on("slideChange", function () {
-  const noSlides = document.querySelectorAll(".swiper-slide").length - 2;
+swiper.on("slideChange", function (e) {
+  const noSlides = 6;
   const currentSlide = swiper.activeIndex > noSlides ? 1 : swiper.activeIndex;
   for (let i = 1; i <= noSlides; i++) {
     if (i != currentSlide) {
@@ -36,5 +36,6 @@ swiper.on("slideChange", function () {
 });
 // Function to change advertiser quote
 function changeTestimonial(advertiser) {
+  console.log(advertiser)
   swiper.slideTo(advertiser, 400);
 }
