@@ -461,7 +461,6 @@ button:focus {
 .section-title p {
   margin-bottom: 0;
   margin-top: 10px;
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1372,7 +1371,8 @@ button:focus {
   }
 
   100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+      scale(1.5);
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
   }
@@ -1386,7 +1386,8 @@ button:focus {
   }
 
   100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+      scale(1.5);
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
   }
@@ -2145,7 +2146,8 @@ footer .footer-img {
   }
 
   100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+      scale(1.5);
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
   }
@@ -2444,7 +2446,8 @@ footer .footer-img {
   }
 
   100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+      scale(1.5);
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
   }
@@ -2523,7 +2526,12 @@ footer .footer-img {
   color: #333333;
 }
 
-.service-details-area .service-details-item .service-details-left ul li a:hover {
+.service-details-area
+  .service-details-item
+  .service-details-left
+  ul
+  li
+  a:hover {
   color: #f6c12e;
 }
 
@@ -2536,7 +2544,11 @@ footer .footer-img {
   margin-bottom: 20px;
 }
 
-.service-details-area .service-details-item .service-details-contact ul li:last-child {
+.service-details-area
+  .service-details-item
+  .service-details-contact
+  ul
+  li:last-child {
   margin-bottom: 0;
 }
 
@@ -2579,7 +2591,7 @@ footer .footer-img {
   margin-bottom: 30px;
 }
 
-.service-details-area .owl-theme .owl-nav.disabled+.owl-dots {
+.service-details-area .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 0;
   position: absolute;
   left: 0;
@@ -3140,7 +3152,7 @@ footer .footer-img {
   vertical-align: middle;
 }
 
-.cart-wrap .table> :not(:first-child) {
+.cart-wrap .table > :not(:first-child) {
   border-top: 0;
 }
 
@@ -3933,7 +3945,7 @@ footer .footer-img {
   text-align: center;
 }
 
-.spinner>div {
+.spinner > div {
   width: 18px;
   height: 18px;
   background-color: #ffffff;
@@ -3954,7 +3966,6 @@ footer .footer-img {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-
   0%,
   80%,
   100% {
@@ -3969,7 +3980,6 @@ footer .footer-img {
 }
 
 @keyframes sk-bouncedelay {
-
   0%,
   80%,
   100% {
@@ -4064,6 +4074,9 @@ footer .footer-img {
 
 .social-media-wrapper {
   margin-top: 28px;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
 }
 
 .banner-sub-text {
@@ -4076,6 +4089,8 @@ footer .footer-img {
 
 .trafficmoney {
   margin-bottom: 8px;
+  position: relative;
+  z-index: 5;
 }
 
 .social-media-image {
@@ -4090,11 +4105,9 @@ footer .footer-img {
   z-index: -1;
 }
 
-
 /* Choose packages */
 .bseen-ad-plans-container {
   margin-bottom: 28px;
-
 }
 
 .bseen-ad-plans-container h1 {
@@ -4108,7 +4121,6 @@ footer .footer-img {
   padding-top: 12px;
   align-items: end;
   flex-wrap: wrap;
-
 }
 
 .bseen-ad-choose-tab div {
@@ -4123,7 +4135,6 @@ footer .footer-img {
 }
 
 .bseen-ad-details {
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -4145,13 +4156,14 @@ footer .footer-img {
   display: none;
 }
 
-.bseen-ad-choose-tab [type="radio"]:checked+div {
+.bseen-ad-choose-tab [type="radio"]:checked + div {
   box-shadow: -1px 0px 5px 0px rgb(212 212 212 / 75%);
   -webkit-box-shadow: -1px 0px 5px 0px rgb(212 212 212 / 75%);
   -moz-box-shadow: -1px 0px 5px 0px rgb(212 212 212 / 75%);
   background-color: #fff;
   height: 58px !important;
-  -webkit-animation: scale-up-ver-bottom 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: scale-up-ver-bottom 0.2s
+    cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-ver-bottom 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   line-height: 38px;
 }
@@ -4188,7 +4200,7 @@ footer .footer-img {
   }
 }
 
-.bseen-ad-details [type="radio"]:checked+div {
+.bseen-ad-details [type="radio"]:checked + div {
   outline: 1px solid #f6c12e;
   background-color: #fffdf7;
   box-shadow: 0px 0px 5px 0px #f6c12e;
@@ -4208,9 +4220,9 @@ footer .footer-img {
   box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
   -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
   -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   padding-bottom: 38px;
 }
 
@@ -4244,7 +4256,6 @@ footer .footer-img {
   -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
 }
 
-
 .package-details button:hover {
   background-color: #000000;
   transition: background-color 0.4s;
@@ -4255,7 +4266,6 @@ footer .footer-img {
   -webkit-box-shadow: 0px 0px 5px 0px rgb(199 199 199 / 75%);
   -moz-box-shadow: 0px 0px 5px 0px rgb(199 199 199 / 75%);
   transform: scale(1.01);
-
 }
 
 .modal-content {
@@ -4328,7 +4338,7 @@ footer .footer-img {
   font-weight: 700;
 }
 
-.bseen-ad-details [type="radio"]:checked+div .month-details {
+.bseen-ad-details [type="radio"]:checked + div .month-details {
   background-color: #fff9e8;
 }
 
@@ -4339,7 +4349,6 @@ footer .footer-img {
   font-size: 12px;
   position: absolute;
 }
-
 
 /* Rotating car */
 
@@ -4401,7 +4410,6 @@ footer .footer-img {
   animation-delay: -0.16s;
 }
 
-
 img.draggable {
   cursor: e-resize;
 }
@@ -4411,7 +4419,6 @@ img.keys {
 }
 
 @keyframes bouncedelay {
-
   0%,
   80%,
   100% {
@@ -4426,7 +4433,6 @@ img.keys {
 }
 
 @-webkit-keyframes bouncedelay {
-
   0%,
   80%,
   100% {
@@ -4477,9 +4483,7 @@ img.keys {
   }
 }
 
-
 /* Rotating car end */
-
 
 .nft-card {
   padding: 12px;
@@ -4488,18 +4492,16 @@ img.keys {
   box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
   -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
   -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   margin-bottom: 18px;
-
 }
 
 .nft-card img {
   width: 180px;
   border-radius: 12px;
 }
-
 
 .custom-btn {
   background-color: #f6c12e;
@@ -4512,7 +4514,6 @@ img.keys {
   -webkit-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
   -moz-box-shadow: 0px 0px 12px 2px rgb(231 231 231 / 63%);
 }
-
 
 .custom-btn:hover {
   background-color: #000000;
@@ -4531,7 +4532,6 @@ img.keys {
   -webkit-box-shadow: 0px 0px 12px 2px rgb(215 215 215 / 63%);
   -moz-box-shadow: 0px 0px 12px 2px rgb(215 215 215 / 63%);
   z-index: 9999;
-
 }
 
 .language-btn img {
@@ -4541,13 +4541,12 @@ img.keys {
 }
 
 .language-btn:hover {
-
   border-radius: 6px;
   box-shadow: 0px 0px 12px 2px rgba(190, 190, 190, 0.63);
   -webkit-box-shadow: 0px 0px 12px 2px rgba(190, 190, 190, 0.63);
   -moz-box-shadow: 0px 0px 12px 2px rgba(190, 190, 190, 0.63);
   cursor: pointer;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .mobile-lang-btn {
@@ -4562,7 +4561,7 @@ img.keys {
 }
 
 .service-height {
-  min-height: 231px
+  min-height: 231px;
 }
 
 /* Feedback style start from here */
@@ -4584,10 +4583,7 @@ img.keys {
   position: relative;
   min-height: 280px;
   text-align: center;
-
 }
-
-
 
 .feedback-card .quote-top {
   position: absolute;
@@ -4609,7 +4605,6 @@ img.keys {
   padding: 18px;
   padding-bottom: 48px;
   line-height: 28px;
-
 }
 
 .advertiser-details img {
@@ -4619,9 +4614,7 @@ img.keys {
   border-radius: 100%;
 }
 
-
 .partners-logo {
-
   width: 100%;
   margin: 0px;
   margin-top: 18px;
@@ -4651,7 +4644,6 @@ img.keys {
   cursor: pointer;
   min-width: 100px;
 }
-
 
 .adc-bounce {
   animation: adc-bounce 650ms;
