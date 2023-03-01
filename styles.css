@@ -62,11 +62,10 @@
   animation: scroll var(--iteration-time) linear infinite;
   display: flex;
   flex-direction: column;
-
   flex: 0 0 auto;
   width: 200px;
   height: var(--slide-height);
-  padding:20px;
+  padding: 20px;
   box-sizing: border-box;
   /*border: 1px dotted darkblue;*/
 }
@@ -103,7 +102,7 @@
     --slides-in-view: 4;
     --slide-width: 40%;
     --slide-height: 500px;
-    --iteration-time: 10s;
+    --iteration-time: 15s;
   }
   .krkr {
     height: auto;
