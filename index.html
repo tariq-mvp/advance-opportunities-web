@@ -2361,7 +2361,7 @@
     <script>
       let analytics = () => {
         console.log("muttu");
-        fetch("/analytics.php")
+        fetch("https://beta.b-seenapp.com/analytics.php")
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
