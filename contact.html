@@ -308,15 +308,17 @@
   <!-- End Page Title -->
 
   <!-- Contact Area -->
+
   <section class="contact-area pt-100 pb-70">
     <div class="container">
+      <!-- 
       <div>
         <div class="bseen-ad-plans-container">
           <h1 style="font-size: 16px">Choose your package</h1>
           <div class="bseen-ad-choose-tab" id="package-cateogry" style="margin-bottom:84px"></div>
           <div class="bseen-ad-details" id="bseen-ad-details"></div>
         </div>
-        <!-- Modal -->
+       
         <div class="modal fade" id="packageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -387,6 +389,93 @@
         </div>
       </div>
 
+    -->
+      <button type="button" class="custom-btn" data-bs-toggle="modal" data-bs-target="#customPlanModal">
+        Custom Plan
+      </button>
+
+      <div class="modal fade packageModal" id="customPlanModal" tabindex="-1" aria-labelledby="#customPlanModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Make a custom Package Request</h6>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="contactForm ajax-form" name="ajax-form" action="sendmail.php" method="post" class="wpcf7">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-12">
+                    <input type="hidden" name="selectedPackage" id="selectedPackage" />
+                    <input type="hidden" name="selectedPackageSub" id="selectedPackageSub" />
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="name" style="width: 100%; text-align: initial">Name</label>
+                      <input type="text" name="name" id="name" class="form-control" required
+                        data-error="Please enter your name" placeholder="Name" />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="email" style="width: 100%; text-align: initial">Email</label>
+                      <input type="email" name="email" id="email" class="form-control" required
+                        data-error="Please enter your email" placeholder="Email" />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="companyname" style="width: 100%; text-align: initial">Company name</label>
+                      <input type="text" name="companyname" id="companyname" class="form-control" required
+                        data-error="Please enter your company name" placeholder="Company Name" />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="phone_number" style="width: 100%; text-align: initial">Phone number</label>
+                      <input type="tel" name="phone_number" id="phone_number" required
+                        data-error="Please enter your number" class="form-control" placeholder="966-53764577"
+                        pattern="[0-9]{3}-[0-9]{*}" />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="adddur" style="width: 100%; text-align: initial">Add Duration in Months</label>
+                      <input type="number" name="adddur" id="adddur" required data-error="Please enter add duration"
+                        class="form-control" placeholder="4" />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="numcars" style="width: 100%; text-align: initial">Number of Cars</label>
+                      <input type="number" name="numcars" id="numcars" required data-error="Please enter add duration"
+                        class="form-control" placeholder="1000" />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-lg-12">
+                    <button type="submit" class="submit-btn btn">
+                      Submit Request
+                    </button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- End Contact Area -->
@@ -394,158 +483,158 @@
   <!-- Footer -->
   <footer>
     <div class="footer-img" style="top: 0;">
-        <img src="assets/img/home-one/footer-car.png" alt="Footer">
+      <img src="assets/img/home-one/footer-car.png" alt="Footer">
     </div>
     <div class="container">
 
-        <div class="row" style="padding-top:50px;">
-            <div class="col-sm-6 col-lg-4">
-                <div class="footer-item">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img src="assets/img/logo-two.png" alt="Logo">
-                        </a>
-                        <p>We utilize cars for advertisements.</p>
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/B-Seen-112447501483258" target="_blank">
-                                    <i class='bx bxl-facebook'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/b_seenapp/" target="_blank">
-                                    <i class='bx bxl-instagram-alt'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/b_seenapp" target="_blank">
-                                    <i class='bx bxl-twitter'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/80206673" target="_blank">
-                                    <i class='bx bxl-linkedin'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crunchbase.com/organization/b-seen" target="_blank">
-                                    <img src="cbicon.png" style="height:25px;margin-top:15px;">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="row" style="padding-top:50px;">
+        <div class="col-sm-6 col-lg-4">
+          <div class="footer-item">
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="assets/img/logo-two.png" alt="Logo">
+              </a>
+              <p>We utilize cars for advertisements.</p>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/B-Seen-112447501483258" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/b_seenapp/" target="_blank">
+                    <i class='bx bxl-instagram-alt'></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/b_seenapp" target="_blank">
+                    <i class='bx bxl-twitter'></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/80206673" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.crunchbase.com/organization/b-seen" target="_blank">
+                    <img src="cbicon.png" style="height:25px;margin-top:15px;">
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="footer-item">
-                    <div class="footer-service">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class='bx bx-chevron-right'></i>
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#howitworks">
-                                    <i class='bx bx-chevron-right'></i>
-                                    How it Works
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#services">
-                                    <i class='bx bx-chevron-right'></i>
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#latestworks">
-                                    <i class='bx bx-chevron-right'></i>
-                                    Car Fleet
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#fordrivers">
-                                    <i class='bx bx-chevron-right'></i>
-                                    For Drivers
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://blog.b-seenapp.com" target="_blank">
-                                    <i class='bx bx-chevron-right'></i>
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html">
-                                    <i class='bx bx-chevron-right'></i>
-                                    Contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="footer-item">
-                    <div class="footer-service footer-find">
-                        <h3>Find Us</h3>
-                        <ul>
-                            <li>
-                                <i class='bx bx-location-plus'></i>
-                                <a
-                                    href="https://www.google.com/maps/place/MVP+Application+and+Game+Design/@24.7483128,46.6508129,15z/data=!4m5!3m4!1s0x3e2ee3ef5328e115:0x47bd4bab37056b5d!8m2!3d24.7481968!4d46.6627864">
-                                    3184 Imam Saud Bin Abdulaziz Bin
-                                    Mohammed Rd - Al Muruj Dist - RIYADH 12281 - 6233
-                                </a>
-                            </li>
-                            <li>
-                                <i class='bx bx-phone-call'></i>
-                                <a href="tel:+966550418023">
-                                    +966 55 041 8023
-                                </a>
-                            </li>
-                            <li>
-                                <i class='bx bx-mail-send'></i>
-                                <a href="mailto:info@b-seenapp.com">
-                                    info@b-seenapp.com
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="copyright-area">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="copyright-item">
-                        <p>
-                            Copyright @
-                            <script>document.write(new Date().getFullYear())</script> B-Seen
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="copyright-item copyright-right">
-                        <ul>
-                            <li>
-                                <a href="termsandconditions.html" target="_blank">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <span>-</span>
-                            </li>
-                            <li>
-                                <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="footer-item">
+            <div class="footer-service">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class='bx bx-chevron-right'></i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#howitworks">
+                    <i class='bx bx-chevron-right'></i>
+                    How it Works
+                  </a>
+                </li>
+                <li>
+                  <a href="#services">
+                    <i class='bx bx-chevron-right'></i>
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#latestworks">
+                    <i class='bx bx-chevron-right'></i>
+                    Car Fleet
+                  </a>
+                </li>
+                <li>
+                  <a href="#fordrivers">
+                    <i class='bx bx-chevron-right'></i>
+                    For Drivers
+                  </a>
+                </li>
+                <li>
+                  <a href="https://blog.b-seenapp.com" target="_blank">
+                    <i class='bx bx-chevron-right'></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <i class='bx bx-chevron-right'></i>
+                    Contact us
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="footer-item">
+            <div class="footer-service footer-find">
+              <h3>Find Us</h3>
+              <ul>
+                <li>
+                  <i class='bx bx-location-plus'></i>
+                  <a
+                    href="https://www.google.com/maps/place/MVP+Application+and+Game+Design/@24.7483128,46.6508129,15z/data=!4m5!3m4!1s0x3e2ee3ef5328e115:0x47bd4bab37056b5d!8m2!3d24.7481968!4d46.6627864">
+                    3184 Imam Saud Bin Abdulaziz Bin
+                    Mohammed Rd - Al Muruj Dist - RIYADH 12281 - 6233
+                  </a>
+                </li>
+                <li>
+                  <i class='bx bx-phone-call'></i>
+                  <a href="tel:+966550418023">
+                    +966 55 041 8023
+                  </a>
+                </li>
+                <li>
+                  <i class='bx bx-mail-send'></i>
+                  <a href="mailto:info@b-seenapp.com">
+                    info@b-seenapp.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="copyright-item">
+              <p>
+                Copyright @
+                <script>document.write(new Date().getFullYear())</script> B-Seen
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="copyright-item copyright-right">
+              <ul>
+                <li>
+                  <a href="termsandconditions.html" target="_blank">Terms & Conditions</a>
+                </li>
+                <li>
+                  <span>-</span>
+                </li>
+                <li>
+                  <a href="privacypolicy.html" target="_blank">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <!-- End Footer -->
   <!-- Essential JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
