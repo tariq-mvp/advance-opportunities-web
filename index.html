@@ -2,19 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="alternate" href="https://b-seenapp.com/" hreflang="x-default" />
-  <link rel="alternate" href="https://b-seenapp.com/" hreflang="en" />
-  <link rel="alternate" href="https://b-seenapp.com/indexar.html" hreflang="ar" />
-  <link rel="stylesheet" href="./sldier/slider.css" />
-  <link rel="stylesheet" href="./sldier/car.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="./sldier/text/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-
+  <meta charset="UTF-8" /> 
   <meta property="al:ios:app_name" content="BSEEN" />
   <meta property="al:ios:app_store_id" content="1608872523" />
   <script type="text/javascript">
@@ -31,6 +19,7 @@
       y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "e1vqfzee5q");
   </script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="title" content="Bseen" />
   <meta name="description"
     content="B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression" />
@@ -41,7 +30,7 @@
   <meta name="revisit-after" content="2 days" />
   <meta name="author" content="MVP Applications and Game Design" />
   <meta name="apple-itunes-app" content="app-id=1608872523" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+ 
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -58,6 +47,17 @@
   <meta property="twitter:description"
     content="B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression" />
   <meta property="twitter:image" content="https://b-seenapp.com/logo.jpg" />
+  <link rel="alternate" href="https://b-seenapp.com/" hreflang="x-default" />
+  <link rel="alternate" href="https://b-seenapp.com/" hreflang="en" />
+  <link rel="alternate" href="https://b-seenapp.com/indexar.html" hreflang="ar" />
+  <link rel="stylesheet" href="./slider/slider.css" />
+  <link rel="stylesheet" href="./slider/car.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="./slider/text/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -80,7 +80,7 @@
   <link rel="stylesheet" href="assets/css/theme-dark.css" />
   <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="bseen-styles.css" />
+  <link rel="stylesheet" href="css/bseen-styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
   <link rel="stylesheet" href="leap_saudi.css" />
   <!--END LEAP SAUDI -->
@@ -88,232 +88,10 @@
   <title>B-Seen</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <style>
-    .banner-call {
-      margin-top: -50px;
-    }
+  <link href="css/engcss.css" rel="stylesheet" />
 
-    .process-item2 {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      width: 60px;
-      z-index: 1;
-      color: #000000;
-    }
-
-    .pp-right2 {
-      left: 12px;
-    }
-
-    .service-item-img {
-      display: inline-block;
-      /* font-size: 55px; */
-      height: 55px;
-      margin-bottom: 15px;
-      -webkit-transition: 0.5s all ease;
-      transition: 0.5s all ease;
-    }
-
-    .service-item-img {
-      display: inline-block;
-      /* font-size: 55px; */
-      height: 55px;
-      margin-bottom: 15px;
-      -webkit-transition: 0.5s all ease;
-      transition: 0.5s all ease;
-    }
-
-    .service-icon-img {
-      position: absolute;
-      right: 0;
-      top: 10;
-      height: 100px;
-      /* opacity: 0.2; */
-      -webkit-transition: 0.5s all ease;
-      transition: 0.5s all ease;
-      z-index: -1;
-    }
-
-    .service-item .service-content h3,
-    p {
-      z-index: 1;
-    }
-
-    .service-content {
-      z-index: -1;
-    }
-
-    .service-img img {
-      z-index: -5;
-      position: relative;
-    }
-
-    .work-area .work-item::after {
-      background-color: transparent;
-    }
-
-    .work-area .work-item::before {
-      background-color: transparent;
-    }
-
-    .desktop-qr {
-      display: block;
-    }
-
-    .mobile-qr {
-      display: none;
-    }
-
-    .trafficmoney {
-      text-transform: none;
-      margin-bottom: 26px;
-      font-size: 30px;
-      color: #ffffff;
-      font-weight: 800;
-      letter-spacing: -1px;
-      /* font-style: italic; */
-    }
-
-    .containeranim {
-      position: relative;
-      width: 100%;
-
-      background: rgba(0, 0, 0, 0);
-      transition: 0.5s;
-      margin-bottom: 100px;
-      height: auto;
-    }
-
-    .containeranim img {
-      position: absolute;
-      width: 40%;
-      left: 35%;
-      transition: 0.5s;
-    }
-
-    .containeranim:hover img:nth-child(4) {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-
-    .containeranim:hover img:nth-child(3) {
-      transform: translate(-200px, 0);
-      opacity: 1;
-    }
-
-    .containeranim:hover img:nth-child(2) {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-
-    .containeranim:hover img:nth-child(1) {
-      transform: translate(200px, 0);
-      opacity: 1;
-    }
-
-    .containeranim {
-      display: block;
-    }
-
-    .containeranimmobile {
-      display: none;
-    }
-
-    @media only screen and (max-width: 1000px) {
-      .banner-text {
-        padding: 350px 0 !important;
-      }
-    }
-
-    @media only screen and (max-width: 750px) {
-      .languagemobile {
-        bottom: 0;
-      }
-
-      .container-sec {
-        bottom: 100px !important;
-      }
-
-      .mean-container .mean-nav .navbar-nav {
-        height: 450px;
-        overflow-y: scroll;
-        position: relative;
-      }
-
-      .desktop-qr {
-        display: none;
-      }
-
-      .mobile-qr {
-        display: block;
-      }
-
-      .trafficmoney {
-        margin-bottom: 20px;
-        font-size: 31px;
-      }
-
-      .banner-text {
-        padding: 350px 0 !important;
-      }
-
-      .videoclass {
-        padding-bottom: 100px;
-        background-color: #f6c12e;
-      }
-
-      .carousel__slide2 {
-        height: auto;
-      }
-
-      .containeranim {
-        display: none !important;
-      }
-
-      .containeranimmobile {
-        display: block !important;
-      }
-    }
-
-    .ltw {
-      height: auto;
-      width: 100%;
-    }
-
-    .carousel__slide {
-      height: auto;
-    }
-
-    @media only screen and (max-width: 767px) {
-      .mobile-nav .logo {
-        top: 9px;
-        max-width: 100%;
-      }
-    }
-
-    .mean-bar .cs-btn {
-      display: none;
-    }
-
-    .hide-c-btn {
-      display: none;
-    }
-
-    .mean-bar .hide-c-btn {
-      display: block;
-    }
-
-    .cs-btn a:focus,
-    .cs-btn a.active {
-      color: #000000 !important;
-    }
-
-    .container-sec {
-      position: absolute;
-      bottom: 55px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick/slick-theme.css">
 </head>
 
 <body style="width: 100%; max-width: 100%; overflow-x: hidden">
@@ -404,19 +182,6 @@
   </div>
 
   <section class="home-container">
-    <!-- <div class="banner-video">
-      <video class="videoclass" autoplay loop muted playsinline style="
-            border-radius: 1px;
-            object-fit: cover;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-          ">
-        <source src="1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div> -->
-
     <div class="slider-container">
       <div class="slider-control left inactive"></div>
       <div class="slider-control right"></div>
@@ -439,12 +204,49 @@
             </video>
           </div>
         </div>
-        <!-- <div class="slide slide-2">
-            <div class="slide__bg"></div>
+        <div class="slide slide-2">
+          <div class="banner-video">
+            <video class="videoclass" autoplay loop muted playsinline style="
+                  border-radius: 1px;
+                  object-fit: cover;
+                  overflow: hidden;
+                  width: 100%;
+                  height: 100%;
+                ">
+              <source src="banner3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div class="slide slide-3">
-            <div class="slide__bg"></div>
-          </div> -->
+        </div>
+        <div class="slide slide-3">
+          <div class="banner-video">
+            <video class="videoclass" autoplay loop muted playsinline style="
+                  border-radius: 1px;
+                  object-fit: cover;
+                  overflow: hidden;
+                  width: 100%;
+                  height: 100%;
+                ">
+              <source src="banner4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>  
+        <div class="slide slide-4">
+          <div class="banner-video">
+            <video class="videoclass" autoplay loop muted playsinline style="
+                  border-radius: 1px;
+                  object-fit: cover;
+                  overflow: hidden;
+                  width: 100%;
+                  height: 100%;
+                ">
+              <source src="banner5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>  
+        
       </div>
     </div>
 
@@ -455,16 +257,14 @@
             <div class="slider__info">
               <p class="slider__title text">
                 <span class="text__first">
-                  <span class="text__word"> Advertise on cars</span>
+                  <span class="text__word"> Get Noticed Everywhere</span>
                   <span class="text__first-bg" style="background-color: #3a7e94"></span>
                 </span>
               </p>
               <p class="slider__desc text">
                 <span class="text__second">
                   <span class="text__word">
-                    Innovative technology to measure
-                    <br />
-                    campaign insight
+                  Promote Your Brand with Car Advertising
                   </span>
                   <span class="text__second-bg" style="background-color: #e688a1"></span>
                 </span>
@@ -554,14 +354,7 @@
         <div class="col-lg-6">
           <h2 style="padding-left: 10px">Why B Seen?</h2>
           <p style="color: black; padding-left: 10px">
-            B Seen is a platform that offers advertising on cars. Our cars are
-            seen by thousands of people on a daily basis and make a lasting
-            impression. Our cars are the perfect way to get your brand out
-            there and make a lasting impression on your target audience. With
-            B Seen, your business will be seen by thousands of people every
-            day. We provide a dashboard to monitor the campaign performance, a
-            heat-map & hotspots of car movement around the city, and a weekly
-            campaign report too!
+           B Seen, the premier car advertising company that helps businesses get noticed on the road. Our innovative approach to advertising on cars combines cutting-edge technology with creative design to deliver campaigns that leave a lasting impression. We use advanced monitoring tools, including heat maps and analytics reports, to track the performance of your campaign. This allows us to optimize your ads for maximum impact. With B Seen, you can rest assured that your message will be seen by thousands of potential customers every day, all while you go about your business as usual
           </p>
           <p style="color: black; padding-left: 10px">
             Measure the impact of the outdoor advertising we produce with our
@@ -887,7 +680,7 @@
                 <img src="assets/img/home-one/service/1.jpg" alt="Service" />
               </div>
               <div class="service-content service-height">
-                <img src="adadadada1.png" class="service-item-img" style="display: inline-block !important" />
+                <img src="assets/adadadada1.png" class="service-item-img" style="display: inline-block !important" />
                 <img src="adadadada2.png" class="service-icon-img" style="display: inline-block !important" />
                 <h3>Advertise</h3>
                 <p>
@@ -1038,180 +831,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- END LEAP -->
-  <!--
+  </section> 
 
-  <section class="contact-area pt-100 pb-70">
-    <div class="container">
-      <div class="section-title">
-        <h2>Choose your package</h2>
-      </div>
-      <div>
-        <div class="bseen-ad-plans-container">
-          <div class="bseen-ad-choose-tab" id="package-cateogry" style="margin-bottom: 84px"></div>
-
-          <div class="bseen-ad-details" id="bseen-ad-details"></div>
-        </div>
-        <div style="text-align: center; margin-top: 84px">
-          
-  <button type="button" class="custom-btn" data-bs-toggle="modal" data-bs-target="#customPlanModal">
-    Custom Plan
-  </button>
- 
-  <div class="modal fade packageModal" id="customPlanModal" tabindex="-1" aria-labelledby="#customPlanModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h6 class="modal-title">Make a custom Package Request</h6>
-
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="contactForm ajax-form" name="ajax-form" action="sendmail.php" method="post" class="wpcf7">
-            <div class="row">
-              <div class="col-sm-12 col-lg-12">
-                <input type="hidden" name="selectedPackage" id="selectedPackage" />
-                <input type="hidden" name="selectedPackageSub" id="selectedPackageSub" />
-              </div>
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="name" style="width: 100%; text-align: initial">Name</label>
-                  <input type="text" name="name" id="name" class="form-control" required
-                    data-error="Please enter your name" placeholder="Name" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="email" style="width: 100%; text-align: initial">Email</label>
-                  <input type="email" name="email" id="email" class="form-control" required
-                    data-error="Please enter your email" placeholder="Email" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="companyname" style="width: 100%; text-align: initial">Company name</label>
-                  <input type="text" name="companyname" id="companyname" class="form-control" required
-                    data-error="Please enter your company name" placeholder="Company Name" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="phone_number" style="width: 100%; text-align: initial">Phone number</label>
-                  <input type="tel" name="phone_number" id="phone_number" required data-error="Please enter your number"
-                    class="form-control" placeholder="966-53764577" pattern="[0-9]{3}-[0-9]{*}" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="adddur" style="width: 100%; text-align: initial">Add Duration in Months</label>
-                  <input type="number" name="adddur" id="adddur" required data-error="Please enter add duration"
-                    class="form-control" placeholder="4" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="numcars" style="width: 100%; text-align: initial">Number of Cars</label>
-                  <input type="number" name="numcars" id="numcars" required data-error="Please enter add duration"
-                    class="form-control" placeholder="1000" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-lg-12">
-                <button type="submit" class="submit-btn btn">
-                  Submit Request
-                </button>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="modal fade packageModal" id="packageModal" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h6 class="modal-title">Make a Package Request</h6>
-
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="contactForm ajax-form" name="ajax-form" action="send_package_email.php" method="post" class="wpcf7">
-            <div class="row">
-              <div class="col-sm-12 col-lg-12">
-                <div id="packageSelected"></div>
-                <input type="hidden" name="selectedPackage" id="selectedPackage" />
-                <input type="hidden" name="selectedPackageSub" id="selectedPackageSub" />
-              </div>
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" class="form-control" required
-                    data-error="Please enter your name" placeholder="Name" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" class="form-control" required
-                    data-error="Please enter your email" placeholder="Email" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="companyname">Company name</label>
-                  <input type="text" name="companyname" id="companyname" class="form-control" required
-                    data-error="Please enter your company name" placeholder="Company Name" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="form-group">
-                  <label for="phone_number">Phone number</label>
-                  <input type="tel" name="phone_number" id="phone_number" required data-error="Please enter your number"
-                    class="form-control" placeholder="966-53764577" pattern="[0-9]{3}-[0-9]{*}" />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-lg-12">
-                <button type="submit" class="submit-btn btn">
-                  Submit Request
-                </button>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </section>
-  -->
-  <!-- End Service -->
-  <!-- Quality -->
   <section class="quality-area quality-area-three">
     <div class="quality-img">
       <img src="assets/img/home-one/quality-shape.png" alt="Quality" />
@@ -1238,103 +859,142 @@
     </div>
   </section>
   <!-- End Quality -->
+ 
 
-  <!-- Work -->
-  <section class="work-area pt-100 pb-70" id="latestworks">
-    <div class="container">
-      <div class="section-title">
-        <span class="sub-title">carfleet</span>
-        <h2>Our Car Fleet</h2>
-      </div>
-      <section class="carousel krkr">
-        <div class="container-fluid px-0">
-          <div class="row">
-            <div class="col-12">
-              <div class="carousel__wrapper">
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/1.png" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/4.png" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/2.png" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/5.png" alt="Work" class="ltw" />
-                  </div>
-                </div>
-
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/1.png" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/4.png" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/2.png" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/5.png" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/3.png" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/6.png" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/7.jpg" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/8.jpg" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/9.jpg" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/10.jpg" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/11.jpg" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/12.jpg" alt="Work" class="ltw" />
-                  </div>
-                </div>
-                <div class="carousel__slide">
-                  <div class="caro-child">
-                    <img src="assets/img/latestworks/13.jpg" alt="Work" class="ltw" />
-                  </div>
-                  <div class="caro-child carochild2">
-                    <img src="assets/img/latestworks/14.jpg" alt="Work" class="ltw" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <section  id="latestworks" style="margin-top:50px;">
+    <div class="section-title">
+      <span class="sub-title">carfleet</span>
+      <h2>Our Car Fleet</h2>
     </div>
-    <!-- </div> -->
-  </section>
+    <section class="regular slider slidersliderslider"> 
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/1.png" alt="Work" class="ltw" />
+        </div>  
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/1.png" alt="Work" class="ltw" />
+        </div>  
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/2.png" alt="Work" class="ltw" />
+        </div>  
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/3.png" alt="Work" class="ltw" />
+        </div>  
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/7.jpg" alt="Work" class="ltw" />
+        </div>
+         
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/9.jpg" alt="Work" class="ltw" />
+        </div>
+       
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/11.jpg" alt="Work" class="ltw" />
+        </div>
+         
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/13.jpg" alt="Work" class="ltw" />
+        </div>
+        
+        <div class="lazydiv">
+          <img src="assets/img/latestworks/2.png" alt="Work" class="ltw" />
+        </div>
+         
+      </div>
+    </section>
+    <div  style="direction: rtl;">
+    <section class="regular2 slider slidersliderslider">
+      <div>
+        
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/5.png" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+         
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/14.jpg" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+        
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/5.png" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+         
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/6.png" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+        
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/8.jpg" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+        
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/10.jpg" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+        
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/12.jpg" alt="Work" class="ltw" />
+        </div>
+      </div>
+      <div>
+       
+        <div class="lazydiv  ">
+          <img src="assets/img/latestworks/4.png" alt="Work" class="ltw" />
+        </div>
+      </div>
+      
+    </section> 
+</div>
+  <div>
+  <section class="lazy slider slidersliderslider"> 
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar1.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar2.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar3.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar7.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar4.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar5.jpg" alt="Work" class="ltw2" />
+    </div>
+    
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar8.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar9.jpg" alt="Work" class="ltw2" />
+    </div>
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar10.jpg" alt="Work" class="ltw2" />
+     
+    </div> 
+    <div class="lazydiv">
+      <img src="assets/img/latestworks/newcar6.jpg" alt="Work" class="ltw2" />
+    </div>
+</section>
+</div>
+</section>
+
   <!-- End Work -->
   <!-- Pricing -->
-  <section class="work-area pb-70" id="nft-collection">
+  <section class="work-area pb-70" id="nft-collection" style="margin-top:50px;">
     <div class="container">
       <div class="section-title">
         <h2>Our NFT collection</h2>
@@ -1395,202 +1055,202 @@
         <div class="col-12">
           <div class="carousel__wrapper" style="background-color: black">
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/hi5.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/iStoria.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/nice.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/Onebrand.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/umq-.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/amass.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/circlys.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/ego.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/huna.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/koinz.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/limelife.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/MVP.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/nft.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/one4pay.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/plenty.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/salman.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/sheesh.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/sitt.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/smartfix.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/space.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/hi5.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/iStoria.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/nice.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/Onebrand.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/umq-.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/amass.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/circlys.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/ego.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/huna.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/koinz.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/limelife.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/MVP.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/nft.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/one4pay.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/plenty.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/salman.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/sheesh.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/sitt.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/smartfix.png" alt="Work" style="width: 100%" />
               </div>
             </div>
             <div class="carousel__slide2">
-              <div class="caro-child">
+              <div class="lazydiv">
                 <img src="logos/space.png" alt="Work" style="width: 100%" />
               </div>
             </div>
@@ -1768,15 +1428,15 @@
   <!-- Essential JS -->
   <script>
     let analytics = () => {
-      console.log("muttu");
+      // console.log("muttu");
       fetch("/analytics.php")
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
           let rightNum = document.getElementById("leftNum");
           let leftNum = document.getElementById("rightNum");
-          leftNum.innerHTML = data?.impressions + " km";
-          rightNum.innerHTML = data?.distance_traveled;
+          leftNum.innerHTML = data ? .impressions + " km";
+          rightNum.innerHTML = data ? .distance_traveled;
         })
         .catch((error) => console.error(error));
     };
@@ -1818,6 +1478,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232920844-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -1869,8 +1530,54 @@
   <script src="https://alikinvv.github.io/svg-mask-slider/js/libs/snap.svg-min.js"></script>
   <script src="https://alikinvv.github.io/svg-mask-slider/js/libs/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-  <script src="./sldier/text/index.js"></script>
-  <script src="./sldier/slider.js"></script>
+  <script src="./slider/text/index.js"></script>
+  <script src="./slider/slider.js"></script>
+  <script src="./assets/slick/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+ 
+      $(".regular").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1,
+        speed: 10000, 
+        cssEase: 'linear',
+        infinite: true,
+        draggable:false, 
+        pauseOnFocus: false,
+        pauseOnHover: false,
+      }); 
+      $(".regular2").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1,
+        speed: 10000, 
+        cssEase: 'linear',
+        infinite: true,
+        draggable:false, 
+        rtl: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+      }); 
+      $(".lazy").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1,
+        speed: 10000, 
+        cssEase: 'linear',
+        infinite: true, 
+        draggable:false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+       
+      });
+
+
+    });
+</script>
 </body>
 
 </html>
