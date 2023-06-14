@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px) {
+  #whybseen {
+    padding: 10px;
+    margin-bottom: 150px;
+  }
+
+  .whybseentitle {
+    font-size: 2rem;
+  }
+
+  .impressions-section {
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .bg-car {
+    background-color: #f6c12e;
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .partners-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .nftcoll {
+    padding: 0;
+  }
+
+  .social-media-wrapper {
+    margin-top: 90%;
+  }
+
+  .slider__info_ar {
+    margin-left: 0;
+    position: absolute;
+    top: 200px;
+    transform: translateY(0);
+    right: 20px;
+    z-index: 20;
+    color: #fff;
+    bottom: 150px;
+  }
+}
