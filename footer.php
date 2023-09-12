@@ -101,7 +101,7 @@
                                 <li>
                                     <i class='bx bx-location-plus'></i>
                                     <a
-                                        href="https://www.google.com/maps/place/MVP+Application+and+Game+Design/@24.7483128,46.6508129,15z/data=!4m5!3m4!1s0x3e2ee3ef5328e115:0x47bd4bab37056b5d!8m2!3d24.7481968!4d46.6627864">
+                                        href="https://goo.gl/maps/4oRkMkMPGbXpysEG6">
                                         3184 Imam Saud Bin Abdulaziz Bin
                                         Mohammed Rd - Al Muruj Dist - RIYADH 12281 - 6233
                                     </a>
