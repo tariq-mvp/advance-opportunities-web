@@ -112,23 +112,24 @@
             display: none;
         }
 
-        <blade media|%20only%20screen%20and%20(max-width%3A%20600px)%20%7B%0D>.languagemobile {
-            bottom: 0;
-        }
+        @media only screen and (max-width: 600px) {
+            .languagemobile {
+                bottom: 0;
+            }
 
-        .mean-container .mean-nav .navbar-nav {
-            height: 450px;
-            overflow-y: scroll;
-            position: relative;
-        }
+            .mean-container .mean-nav .navbar-nav {
+                height: 450px;
+                overflow-y: scroll;
+                position: relative;
+            }
 
-        .desktop-qr {
-            display: none;
-        }
+            .desktop-qr {
+                display: none;
+            }
 
-        .mobile-qr {
-            display: block;
-        }
+            .mobile-qr {
+                display: block;
+            }
 
         }
     </style>
@@ -185,7 +186,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="https://blog.b-seenapp.com" target="_blank" class="nav-link">Blog</a>
-                            </li>
+                              </li>
                             <li class="nav-item">
                                 <a href="contact.html" class="nav-link">For Advertisers</a>
                             </li>
@@ -716,8 +717,8 @@
                             <ul>
                                 <li>
                                     <i class='bx bx-location-plus'></i>
-                                    <a href="https://goo.gl/maps/4oRkMkMPGbXpysEG6" target="_blank"
-                                        rel="noopener noreferrer">
+                                    <a
+                                        href="https://goo.gl/maps/4oRkMkMPGbXpysEG6" target="_blank" rel="noopener noreferrer">
                                         3184 Imam Saud Bin Abdulaziz Bin
                                         Mohammed Rd - Al Muruj Dist - RIYADH 12281 - 6233
                                     </a>
@@ -745,9 +746,7 @@
                         <div class="copyright-item">
                             <p>
                                 Copyright @
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script> B-Seen
+                                <script>document.write(new Date().getFullYear())</script> B-Seen
                             </p>
                         </div>
                     </div>
