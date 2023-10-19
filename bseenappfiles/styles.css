@@ -1,0 +1,111 @@
+:root {
+  --no-of-slides: 6;
+  --slides-in-view: 4;
+  --slide-width: 500px;
+  --slide-height: 100%;
+  --iteration-time: 40s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc((var(--slide-width) * var(--no-of-slides) * -0.5))
+    );
+  }
+}
+
+.carousel__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(var(--slides-in-view) * var(--slide-width));
+  overflow: hidden;
+  /* border: 1px dashed gray; */
+  margin: 0 auto;
+}
+.caro-child {
+  /* height: 100%; */
+  margin-right: 20px;
+}
+.carochild2 {
+  height: 100%;
+  margin-top: 50px;
+}
+.caro-child > img {
+  height: 100%;
+}
+.carousel {
+  /* padding: 100px 0; */
+  padding-top: 50px;
+  background: white;
+  padding-bottom: 10px;
+  height: 1000px;
+  overflow: hidden;
+  width: calc(2 * var(--no-of-slides));
+}
+
+.carousel__slide {
+  animation: scroll var(--iteration-time) linear infinite;
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 auto;
+  width: var(--slide-width);
+  height: var(--slide-height);
+  box-sizing: border-box;
+  /*border: 1px dotted darkblue;*/
+}
+.carousel__slide2 {
+  animation: scroll var(--iteration-time) linear infinite;
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 auto;
+  width: 200px;
+  height: var(--slide-height);
+  padding:20px;
+  box-sizing: border-box;
+  /*border: 1px dotted darkblue;*/
+}
+.carousel__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 50%;
+  /*width: 100px;*/
+  margin: 15px 20px;
+}
+
+/* just for analysis remove this 3 rules later*/
+.carousel__slide {
+  position: relative;
+}
+
+.carousel {
+  counter-reset: slideNo;
+}
+
+.carousel__slide::before {
+  /* counter-increment: slideNo;
+  content: counter(slideNo); */
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  font-size: 2rem;
+  color: lime;
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --no-of-slides: 6;
+    --slides-in-view: 4;
+    --slide-width: 40%;
+    --slide-height: 500px;
+    --iteration-time: 10s;
+  }
+  .krkr {
+    height: auto;
+  }
+}
