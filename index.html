@@ -5,18 +5,18 @@
     <meta property="al:ios:app_name" content="BSEEN" />
     <meta property="al:ios:app_store_id" content="1608872523" />
     <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
+      ;(function (c, l, a, r, i, t, y) {
         c[a] =
           c[a] ||
           function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "e1vqfzee5q");
+            ;(c[a].q = c[a].q || []).push(arguments)
+          }
+        t = l.createElement(r)
+        t.async = 1
+        t.src = "https://www.clarity.ms/tag/" + i
+        y = l.getElementsByTagName(r)[0]
+        y.parentNode.insertBefore(t, y)
+      })(window, document, "clarity", "script", "e1vqfzee5q")
     </script>
     <meta
       name="viewport"
@@ -1710,7 +1710,7 @@
                 <p>
                   Copyright @
                   <script>
-                    document.write(new Date().getFullYear());
+                    document.write(new Date().getFullYear())
                   </script>
                   B-Seen
                 </p>
@@ -1780,19 +1780,19 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-232920844-1"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
 
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag("js", new Date());
+      gtag("js", new Date())
 
-      gtag("config", "UA-232920844-1");
+      gtag("config", "UA-232920844-1")
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script>
       $(document).ready(function () {
-        AOS.init();
+        AOS.init()
         var animation = bodymovin.loadAnimation({
           // animationData: { /* ... */ },
           container: document.getElementById("icon-container"), // required
@@ -1801,14 +1801,14 @@
           loop: true, // optional
           autoplay: true, // optional
           name: "Demo Animation", // optional
-        });
-      });
+        })
+      })
       $("#whybseen").hover(function () {
-        $(".containeranim").hover();
-      });
+        $(".containeranim").hover()
+      })
     </script>
     <script>
-      var path = "assets/carSlide/";
+      var path = "assets/carSlide/"
       pdt360DegViewer(
         "car3",
         33,
@@ -1821,7 +1821,7 @@
         false,
         false,
         false
-      ); //draggable
+      ) //draggable
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
@@ -1879,7 +1879,7 @@
               },
             },
           ],
-        });
+        })
         $(".regular2").slick({
           slidesToShow: 5,
           slidesToScroll: 1,
@@ -1917,7 +1917,7 @@
               },
             },
           ],
-        });
+        })
         $(".lazy").slick({
           slidesToShow: 4,
           slidesToScroll: 1,
@@ -1954,30 +1954,30 @@
               },
             },
           ],
-        });
-      });
+        })
+      })
     </script>
     <script>
       setInterval(function () {
-        let number1 = Date.now();
-        let updated = parseInt(number1.toString().substring(3)) + 2000000;
+        let number1 = Date.now()
+        let updated = parseInt(number1.toString().substring(3)) + 2000000
 
-        let formatted1 = updated.toLocaleString("en-US");
-        let number2 = updated - 6234567;
-        let formatted2 = number2.toLocaleString("en-US");
+        let formatted1 = updated.toLocaleString("en-US")
+        let number2 = updated - 6234567
+        let formatted2 = number2.toLocaleString("en-US")
 
         let data = {
           distance_traveled: formatted1,
           impressions: formatted2,
-        };
+        }
         // console.log(data);
-        let rightNum = document.getElementById("leftNum");
-        let leftNum = document.getElementById("rightNum");
+        let rightNum = document.getElementById("leftNum")
+        let leftNum = document.getElementById("rightNum")
         leftNum.innerHTML =
-          data && data.impressions ? data.impressions + " km" : "";
+          data && data.impressions ? data.impressions + " km" : ""
         rightNum.innerHTML =
-          data && data.distance_traveled ? data.distance_traveled : "";
-      }, 3000);
+          data && data.distance_traveled ? data.distance_traveled : ""
+      }, 3000)
     </script>
   </body>
 </html>

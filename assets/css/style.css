@@ -4622,7 +4622,69 @@ img.keys {
   min-height: 280px;
   text-align: center;
 }
-
+.car-expanded-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.car-expanded {
+  width: 920px;
+  background-color: #fff7df;
+}
+.car-expanded-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+.car-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pos-abs {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+.pos-abs2 {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+.carbottomcurve {
+  position: absolute;
+  bottom: -51px;
+  background-image: url("/assets/img/cars/other/Ellipse 12.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .carbottomcurve {
+    height: 200px;
+    bottom: -45px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+/* .pos-abs2 {
+  position: absolute;
+  bottom: 0;
+} */
+.cars-flex {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
 .feedback-card .quote-top {
   position: absolute;
   top: -84px;
@@ -4707,3 +4769,24 @@ img.keys {
 }
 
 /* Feedback style end here */
+/* 
+advertiser space css
+*/
+.car-underline {
+  height: 3px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #f6c12e;
+}
+#advertiser-cm-underline-5 {
+  display: none;
+}
+#advertiser-cm-underline-2 {
+  display: none;
+}
+#advertiser-cm-underline-3 {
+  display: none;
+}
+#advertiser-cm-underline-4 {
+  display: none;
+}
