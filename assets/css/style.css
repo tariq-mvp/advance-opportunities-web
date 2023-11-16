@@ -632,7 +632,13 @@ button:focus {
   width: 100vw;
   background-color: #0a9675;
 }
+
 /*-- End Advertising on Taxies --*/
+/*-- start technology --*/
+.technology {
+  padding: 120px 0;
+}
+/*-- End technology --*/
 
 /*-- Service --*/
 .service-item {

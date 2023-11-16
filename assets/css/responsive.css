@@ -1687,3 +1687,32 @@
   }
 }
 /*# sourceMappingURL=responsive.css.map */
+
+/* -------  Advertising on Taxies ----- */
+
+@media only screen and (max-width: 650px) {
+  .add-on-taxi {
+    margin-bottom: 100px;
+  }
+  .add-on-taxi h2 {
+    font-size: 25px;
+  }
+  .add-on-taxi p {
+    font-size: 13px;
+  }
+  .green-contianer {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .add-on-taxi {
+    margin-bottom: 130px;
+  }
+  .add-on-taxi h2 {
+    font-size: 25px;
+  }
+
+  .green-contianer {
+    height: 50px;
+  }
+}
