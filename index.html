@@ -441,6 +441,188 @@
         </div>
       </div>
     </section>
+    <section class="start-advertising">
+      <div class="container">
+        <div class="row">
+          <div class="advertising-content col-lg-6">
+            <h3 class="text-center">
+              Drive your business forward with B Seen and reach thousands of
+              potential customers every day.
+            </h3>
+            <button id="openPopupBtn">Start Advertising Today</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <section class="contact-area">
+        <div class="container">
+          <div
+            class="modal fade packageModal show"
+            id="customPlanModal"
+            tabindex="-1"
+            aria-labelledby="#customPlanModalLabel"
+            style="position: relative; display: block"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <form
+                    id="contactForm ajax-form"
+                    name="ajax-form"
+                    action="sendmail.php"
+                    method="post"
+                    class="wpcf7"
+                  >
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-12">
+                        <input
+                          type="hidden"
+                          name="selectedPackage"
+                          id="selectedPackage"
+                        />
+                        <input
+                          type="hidden"
+                          name="selectedPackageSub"
+                          id="selectedPackageSub"
+                        />
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                          <label
+                            for="name"
+                            style="width: 100%; text-align: initial"
+                            >Name</label
+                          >
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="form-control"
+                            required
+                            data-error="Please enter your name"
+                            placeholder="Name"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                          <label
+                            for="email"
+                            style="width: 100%; text-align: initial"
+                            >Email</label
+                          >
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                            required
+                            data-error="Please enter your email"
+                            placeholder="Email"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                          <label
+                            for="companyname"
+                            style="width: 100%; text-align: initial"
+                            >Company name</label
+                          >
+                          <input
+                            type="text"
+                            name="companyname"
+                            id="companyname"
+                            class="form-control"
+                            required
+                            data-error="Please enter your company name"
+                            placeholder="Company Name"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                          <label
+                            for="phone_number"
+                            style="width: 100%; text-align: initial"
+                            >Phone number</label
+                          >
+                          <input
+                            type="tel"
+                            name="phone_number"
+                            id="phone_number"
+                            required
+                            data-error="Please enter your number"
+                            class="form-control"
+                            placeholder="966-53764577"
+                            pattern="[0-9]{3}-[0-9]{*}"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                          <label
+                            for="adddur"
+                            style="width: 100%; text-align: initial"
+                            >Campaign Duration in Months</label
+                          >
+                          <input
+                            type="number"
+                            name="adddur"
+                            id="adddur"
+                            required
+                            data-error="Please enter duration"
+                            class="form-control"
+                            placeholder="4"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                          <label
+                            for="numcars"
+                            style="width: 100%; text-align: initial"
+                            >Number of Cars</label
+                          >
+                          <input
+                            type="number"
+                            name="numcars"
+                            id="numcars"
+                            required
+                            data-error="Please enter add duration"
+                            class="form-control"
+                            placeholder="1000"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-12">
+                        <button type="submit" class="submit-btn btn">
+                          Submit Request
+                        </button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button id="closePopupBtn">Close</button>
+    </div>
+
     <section class="add-on-taxi">
       <div class="container">
         <div class="row">
@@ -1978,6 +2160,20 @@
         rightNum.innerHTML =
           data && data.distance_traveled ? data.distance_traveled : "";
       }, 3000);
+
+      document
+        .getElementById("openPopupBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "block";
+          document.getElementById("popup").style.display = "block";
+        });
+
+      document
+        .getElementById("closePopupBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "none";
+          document.getElementById("popup").style.display = "none";
+        });
     </script>
   </body>
 </html>

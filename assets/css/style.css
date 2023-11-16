@@ -601,6 +601,68 @@ button:focus {
   }
 }
 
+/*-- Start start advertising section --*/
+.start-advertising {
+  margin: 50px 0;
+  width: 100vw;
+
+  transform: rotate(2deg);
+  flex-shrink: 0;
+  background-color: #fff7df;
+}
+.advertising-content {
+  transform: rotate(-2deg);
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advertising-content h3 {
+  color: #000;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.advertising-content button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ffcf48;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #000;
+  border: none;
+}
+/*-- End start advertising  --*/
+/*-- End start pup up  --*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+/*-- End end pup up  --*/
 /*-- Start Advertising on Taxies --*/
 
 .add-on-taxi {
