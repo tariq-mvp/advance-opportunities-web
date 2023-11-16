@@ -601,7 +601,39 @@ button:focus {
   }
 }
 
-/*-- End Process --*/
+/*-- Start Advertising on Taxies --*/
+
+.add-on-taxi {
+  background-color: #f4fffc;
+  position: relative;
+}
+
+.add-on-taxi h2 {
+  padding-top: 27px;
+  font-weight: 600;
+  font-size: 38px;
+
+  color: #000;
+}
+
+.add-on-taxi p {
+  color: #000;
+  padding-top: 20px;
+}
+.big-car-container {
+  position: relative;
+  z-index: 1;
+}
+.green-contianer {
+  position: absolute;
+  z-index: 0;
+  bottom: 10%;
+  height: 120px;
+  width: 100vw;
+  background-color: #0a9675;
+}
+/*-- End Advertising on Taxies --*/
+
 /*-- Service --*/
 .service-item {
   margin-bottom: 30px;
