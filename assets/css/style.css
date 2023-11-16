@@ -627,7 +627,7 @@ button:focus {
 .green-contianer {
   position: absolute;
   z-index: 0;
-  bottom: 10%;
+  bottom: 0;
   height: 120px;
   width: 100vw;
   background-color: #0a9675;
