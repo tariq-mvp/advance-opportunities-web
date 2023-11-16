@@ -217,3 +217,21 @@
 [28-Aug-2023 19:13:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 176
 [28-Aug-2023 19:13:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 177
 [28-Aug-2023 19:13:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 178
+[13-Sep-2023 14:47:19 UTC] PHP Notice:  Undefined offset: -1 in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 153
+[13-Sep-2023 14:47:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 154
+[13-Sep-2023 14:47:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 154
+[13-Sep-2023 14:47:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 176
+[13-Sep-2023 14:47:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 177
+[13-Sep-2023 14:47:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 178
+[14-Sep-2023 11:23:36 UTC] PHP Notice:  Undefined offset: -1 in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 153
+[14-Sep-2023 11:23:36 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 154
+[14-Sep-2023 11:23:36 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 154
+[14-Sep-2023 11:23:36 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 176
+[14-Sep-2023 11:23:36 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 177
+[14-Sep-2023 11:23:36 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 178
+[19-Oct-2023 13:22:55 UTC] PHP Notice:  Undefined offset: -1 in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 153
+[19-Oct-2023 13:22:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 154
+[19-Oct-2023 13:22:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 154
+[19-Oct-2023 13:22:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 176
+[19-Oct-2023 13:22:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 177
+[19-Oct-2023 13:22:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/baynouna/b-seenapp.com/b-seenapp.com/send_package_email.php on line 178
