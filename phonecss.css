@@ -1,27 +1,27 @@
 @media only screen and (max-width: 600px) {
-    #whybseen{
-        padding:0;
-    }
-    .whybseentitle{
-        font-size: 2rem;
-    }
-   .impressions-section{
-        position: relative;
-        margin-top: 30px;
-        padding-bottom: 50px;
-   }
-   .bg-car {
-        background-color: #f6c12e;
-        position: absolute;
-        height: 60vh;
-        width: 100%;
-        bottom: 40px;
+  #whybseen {
+    padding: 0;
   }
-  .partners-logo{
-        display: block;
-        margin-bottom: 20px;
+  .whybseentitle {
+    font-size: 2rem;
   }
-  .nftcoll{
-    padding:0;
+  .impressions-section {
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+  .bg-car {
+    background-color: #f6c12e;
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    bottom: 40px;
+  }
+  .partners-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .nftcoll {
+    padding: 0;
   }
 }

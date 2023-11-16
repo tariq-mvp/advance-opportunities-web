@@ -10,13 +10,31 @@ const swiper = new Swiper(".swiper", {
     delay: 2000,
   },
 });
+const noSlides = 5;
+function goToNextSlider() {
+  const currentSlide = swiper.activeIndex > noSlides ? 0 : swiper.activeIndex;
+  swiper.slideTo(currentSlide + 1 > noSlides ? 1 : currentSlide + 1)
+  console.log(swiper.activeIndex)
+}
+function goToPrevSlider() {
+
+  if (swiper.activeIndex === 1) {
+    swiper.activeIndex = 6
+  }
+  swiper.slideTo(swiper.activeIndex - 1)
+  console.log(swiper.activeIndex, "swiper.activeIndex")
+  // const currentSlide = swiper.activeIndex < 0 ? noSlides : currentSlide - 1
+  // swiper.slideTo(currentSlide - 1 > noSlides ? 1 : currentSlide - 1)
+  // console.log(swiper.activeIndex)
+}
 swiper.on("slideChange", function (e) {
-  const noSlides = 6;
   const currentSlide = swiper.activeIndex > noSlides ? 1 : swiper.activeIndex;
   for (let i = 1; i <= noSlides; i++) {
     if (i != currentSlide) {
       const eleColor = document.getElementById(`advertiser-cm-c-${i}`);
       eleColor.style.display = "none";
+      const dash = document.getElementById(`advertiser-cm-underline-${i}`);
+      dash.style.display = "none";
       const eleLightColor = document.getElementById(`advertiser-cm-${i}`);
       eleLightColor.style.display = "inline";
       eleColor.style.transform = "none";
@@ -28,12 +46,16 @@ swiper.on("slideChange", function (e) {
       const currentLightColorEle = document.getElementById(
         `advertiser-cm-${currentSlide}`
       );
+      const dash = document.getElementById(`advertiser-cm-underline-${i}`);
+      dash.style.display = "inline";
+
       currentLightColorEle.style.display = "none";
       currentColorEle.style.transform = "scale(1.2)";
       currentColorEle.classList.add("adc-bounce");
     }
   }
 });
+
 // Function to change advertiser quote
 function changeTestimonial(advertiser) {
   console.log(advertiser)
