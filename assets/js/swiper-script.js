@@ -12,12 +12,13 @@ const swiper = new Swiper(".swiper", {
 });
 const noSlides = 5;
 function goToNextSlider() {
+  console.log('clicked')
   const currentSlide = swiper.activeIndex > noSlides ? 0 : swiper.activeIndex;
   swiper.slideTo(currentSlide + 1 > noSlides ? 1 : currentSlide + 1)
   console.log(swiper.activeIndex)
 }
 function goToPrevSlider() {
-
+  console.log('clicked')
   if (swiper.activeIndex === 1) {
     swiper.activeIndex = 6
   }

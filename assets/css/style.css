@@ -4667,6 +4667,10 @@ img.keys {
   align-items: center;
   justify-content: center;
 }
+.arrow {
+  cursor: pointer;
+  z-index: 9999;
+}
 @media screen and (max-width: 600px) {
   .carbottomcurve {
     height: 200px;
