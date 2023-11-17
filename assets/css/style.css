@@ -667,6 +667,7 @@ button:focus {
 .popup h4 {
   font-size: 32px;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 .popup .form-control {
   margin: 15px 0;
