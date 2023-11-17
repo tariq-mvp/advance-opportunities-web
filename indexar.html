@@ -434,6 +434,98 @@
         </div>
       </div>
     </section>
+
+    <section class="start-advertising">
+      <div class="container">
+        <div class="row">
+          <div class="advertising-content col-lg-6">
+            <h3 class="text-center">
+              مع بي سين، نمكنك من الوصول الى آلاف العملاء المحتملين كل يوم
+            </h3>
+            <button id="openPopupBtn">إبدأ حملتك الإعلانية اليوم</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="overlay" id="overlay" id="closePopupBtn"></div>
+    <div class="popup" id="popup">
+      <div class="container">
+        <!-- <form action="sendmessage.php" method="post"> -->
+        <form action="https://beta.b-seenapp.com/sendmail.php" method="post">
+          <div class="row">
+            <div class="col-lg-11 col-md-10 col-sm-11">
+              <h4>إبدأ اعلانك اليوم🚕</h4>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-1">
+              <div id="closePopupBtn">
+                <img src="assets/img/Delete.svg" alt="" width="30px" />
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  required
+                  data-error="Please enter your name"
+                  placeholder="الاسم 😁"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                  data-error="Please enter your email"
+                  placeholder="الايميل 📪"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone_number"
+                  id="phone_number"
+                  required
+                  data-error="Please enter your number"
+                  class="form-control"
+                  placeholder="رقم الجوال 📞"
+                  pattern="[0-9]{3}-[0-9]{*}"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="message form-control"
+                  required
+                  data-error="Please enter your message"
+                  placeholder="  الرسالة ✍"
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 btn">
+              <button type="submit">إرسال</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <section class="add-on-taxi">
       <div class="container">
         <div class="row">
@@ -1693,6 +1785,29 @@
         rightNum.innerHTML =
           data && data.distance_traveled ? data.distance_traveled : "";
       }, 3000);
+
+      document
+        .getElementById("openPopupBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "block";
+          document.getElementById("popup").style.display = "block";
+        });
+
+      document
+        .getElementById("closePopupBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "none";
+          document.getElementById("popup").style.display = "none";
+        });
+
+      document
+        .getElementById("overlay")
+        .addEventListener("click", function (event) {
+          if (event.target === document.getElementById("overlay")) {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("popup").style.display = "none";
+          }
+        });
     </script>
   </body>
 </html>
