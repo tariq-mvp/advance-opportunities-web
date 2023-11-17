@@ -691,6 +691,105 @@ button:focus {
   box-shadow: none;
 }
 
+/* Responsive Style */
+@media only screen and (max-width: 991px) {
+  .popup {
+    top: 50%;
+    left: 50%;
+    width: 70%;
+
+    padding: 30px 15px;
+
+    border-radius: 40px;
+  }
+
+  .popup h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  .popup .form-control {
+    margin: 10px 0;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+  .popup .message {
+    height: 100px;
+  }
+  .popup button {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .popup {
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  .popup h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .popup .form-control {
+    margin: 10px 0;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+  .popup .message {
+    height: 100px;
+  }
+  .popup button {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+  #closePopupBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .popup {
+    width: 75%;
+    padding: 20px 10px;
+    border-radius: 15px;
+  }
+  .heder {
+    display: flex !important;
+    align-items: center;
+  }
+  .popup h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .popup .form-control {
+    margin: 10px 0;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+  .popup .message {
+    height: 80px;
+  }
+  .popup button {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+
+  #closePopupBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+  }
+}
+
 /*-- End end pup up  --*/
 /*-- Start Advertising on Taxies --*/
 
