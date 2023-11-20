@@ -940,6 +940,137 @@ button:focus {
   height: 100vh;
 }
 /*-- End testimonial --*/
+/*-- have coffee --*/
+.have-coffee {
+  padding: 50px 20%;
+}
+.have-coffee h4 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.have-coffee .form-control {
+  margin: 15px 0;
+  padding: 15px 10px;
+  border-radius: 15px;
+}
+.have-coffee .message {
+  height: 150px;
+}
+.have-coffee button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  color: #000;
+  background-color: #ffcf48;
+  box-shadow: 3px 4px 0px 0px #0007;
+  transition: all 0.2s ease;
+}
+.have-coffee button:hover {
+  box-shadow: none;
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 991px) {
+  .have-coffee {
+    top: 50%;
+    left: 50%;
+    width: 70%;
+
+    padding: 30px 15px;
+
+    border-radius: 40px;
+  }
+
+  .have-coffee h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  .have-coffee .form-control {
+    margin: 10px 0;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+  .have-coffee .message {
+    height: 100px;
+  }
+  .have-coffee button {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .have-coffee {
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  .have-coffee h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .have-coffee .form-control {
+    margin: 10px 0;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+  .have-coffee .message {
+    height: 100px;
+  }
+  .have-coffee button {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+  #closehave-coffeeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .have-coffee {
+    width: 75%;
+    padding: 20px 10px;
+    border-radius: 15px;
+  }
+  .heder {
+    display: flex !important;
+    align-items: center;
+  }
+  .have-coffee h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .have-coffee .form-control {
+    margin: 10px 0;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+  .have-coffee .message {
+    height: 80px;
+  }
+  .have-coffee button {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+
+  #closehave-coffeeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+  }
+}
+
+/*-- End have coffee --*/
 /*-- Quality --*/
 .quality-area {
   background-color: #000000;
