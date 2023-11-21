@@ -1069,7 +1069,7 @@ button:focus {
   position: relative;
   z-index: 0;
 }
-.download-app .row {
+.download-app .out-container {
   border-radius: 20px;
   background-color: #fff7df;
   padding: 0 20px 0 60px;
@@ -1096,11 +1096,12 @@ button:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
+  padding-bottom: 20px;
 }
 .download-app .stores {
-  padding-top: 20px;
 }
 .download-app button {
+  max-width: 200px;
   border: none;
   background-color: transparent;
 }
@@ -1121,6 +1122,114 @@ button:focus {
 .mobile-container img {
   position: relative;
   z-index: 2;
+}
+@media only screen and (max-width: 991px) {
+  .download-app {
+    padding: 40px 7%;
+  }
+  .download-app .out-container {
+    border-radius: 10px;
+    padding: 0 15px 0 20px;
+  }
+  .download-app .row .bg-white {
+    height: 100px;
+  }
+  .download-app h2 {
+    padding-top: 40px;
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .download-app p {
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-bottom: 10px;
+  }
+
+  .download-app button {
+    max-width: 150px;
+  }
+
+  .download-app button img:hover {
+    scale: 1;
+  }
+  .mobile-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .download-app {
+    padding: 40px 7%;
+  }
+  .download-app .out-container {
+    border-radius: 10px;
+    padding: 0 10px 0 25px;
+  }
+  .download-app .row .bg-white {
+    height: 100px;
+  }
+  .download-app h2 {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .download-app p {
+    font-size: 10px;
+    font-weight: 400;
+
+    padding-bottom: 15px;
+  }
+
+  .download-app button {
+    max-width: 100px;
+    border: none;
+    background-color: transparent;
+    padding: 0 2px;
+  }
+
+  .download-app button img:hover {
+    scale: 1.01;
+  }
+  .mobile-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .download-app {
+    padding: 40px 7%;
+  }
+  .download-app .out-container {
+    border-radius: 10px;
+    padding: 0 10px 0 25px;
+  }
+  .download-app .row .bg-white {
+    display: none;
+  }
+  .download-app h2 {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .download-app p {
+    font-size: 10px;
+    font-weight: 400;
+
+    padding-bottom: 15px;
+  }
+
+  .download-app button {
+    max-width: 100px;
+    border: none;
+    background-color: transparent;
+    padding: 0 2px;
+  }
+
+  .download-app button img:hover {
+    scale: 1.01;
+  }
+  .mobile-container {
+    padding-top: 20px;
+  }
 }
 /*-- End Download App --*/
 /*-- Quality --*/
