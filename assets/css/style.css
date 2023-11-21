@@ -929,6 +929,57 @@ button:focus {
 }
 
 /*-- End Service --*/
+
+/*-- FAQ section --*/
+.faq-section {
+  padding: 50px 10%;
+}
+.txt-hide {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 3s ease;
+}
+.titles {
+  text-align: center;
+}
+.faq-section h2 {
+  padding: 50px 0 20px;
+  font-weight: 600;
+  font-size: 45px;
+}
+.faq-section .sub-titl {
+  color: #000;
+  font-family: Poppins;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.faq-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 20px 40px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  transition: border-color 0.3s;
+}
+
+.faq-card:hover {
+  border-color: #333;
+}
+
+.toggle-icon {
+}
+
+.toggle-icon {
+  transform: rotate(180deg);
+}
+
+/*-- FAQ section End here --*/
 /*-- testimonial --*/
 .testimonial-section {
 }
@@ -1092,7 +1143,7 @@ button:focus {
 .download-app p {
   color: #000;
   font-family: Poppins;
-  font-size: 20px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 20px;

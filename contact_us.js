@@ -41,3 +41,12 @@ document
             document.getElementById("popup").style.display = "none";
         }
     });
+
+
+function toggleFaq(card) {
+    const answer = card.querySelector('.faq-answer');
+    const icon = card.querySelector('.toggle-icon');
+
+    answer.classList.toggle('txt-hide');
+    icon.classList.toggle('rotate-icon');
+}
