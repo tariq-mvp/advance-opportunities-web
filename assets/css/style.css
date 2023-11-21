@@ -946,9 +946,12 @@ button:focus {
 }
 .have-coffee h4 {
   font-size: 32px;
-  margin-bottom: 40px;
   font-weight: 600;
 }
+.have-coffee h6 {
+  margin-bottom: 40px;
+}
+
 .have-coffee .form-control {
   margin: 15px 0;
   padding: 15px 10px;
@@ -974,10 +977,6 @@ button:focus {
 /* Responsive Style */
 @media only screen and (max-width: 991px) {
   .have-coffee {
-    top: 50%;
-    left: 50%;
-    width: 70%;
-
     padding: 30px 15px;
 
     border-radius: 40px;
@@ -985,8 +984,11 @@ button:focus {
 
   .have-coffee h4 {
     font-size: 25px;
-    margin-bottom: 30px;
+
     font-weight: 600;
+  }
+  .have-coffee h6 {
+    margin-bottom: 30px;
   }
   .have-coffee .form-control {
     margin: 10px 0;
@@ -1008,10 +1010,9 @@ button:focus {
     border-radius: 20px;
   }
 
-  .have-coffee h4 {
-    font-size: 20px;
-    margin-bottom: 30px;
-    font-weight: 500;
+  .have-coffee h6 {
+    margin-bottom: 20px;
+    font-size: 90%;
   }
   .have-coffee .form-control {
     margin: 10px 0;
@@ -1034,20 +1035,11 @@ button:focus {
   }
 }
 @media only screen and (max-width: 575px) {
-  .have-coffee {
-    width: 75%;
-    padding: 20px 10px;
-    border-radius: 15px;
-  }
   .heder {
     display: flex !important;
     align-items: center;
   }
-  .have-coffee h4 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
+
   .have-coffee .form-control {
     margin: 10px 0;
     padding: 10px 7px;
@@ -1071,6 +1063,66 @@ button:focus {
 }
 
 /*-- End have coffee --*/
+/*-- Strat Download App --*/
+.download-app {
+  padding: 50px 10%;
+  position: relative;
+  z-index: 0;
+}
+.download-app .row {
+  border-radius: 20px;
+  background-color: #fff7df;
+  padding: 0 20px 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-app .row .bg-white {
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 120px;
+}
+.download-app h2 {
+  padding-top: 80px;
+  font-weight: 600;
+  font-size: 45px;
+}
+.download-app p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.download-app .stores {
+  padding-top: 20px;
+}
+.download-app button {
+  border: none;
+  background-color: transparent;
+}
+.download-app button img {
+  overflow: hidden;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+.download-app button img:hover {
+  scale: 1.02;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.mobile-container {
+  width: 100%;
+}
+.mobile-container img {
+  position: relative;
+  z-index: 2;
+}
+/*-- End Download App --*/
 /*-- Quality --*/
 .quality-area {
   background-color: #000000;
