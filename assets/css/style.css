@@ -934,23 +934,26 @@ button:focus {
 .faq-section {
   padding: 50px 10%;
 }
+.faq-answer {
+  max-height: 500px; /* Set a value greater than the expected height */
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Adjusted transition property */
+}
+
 .txt-hide {
   max-height: 0;
-  overflow: hidden;
-  transition: max-height 3s ease;
 }
 .titles {
   text-align: center;
+  padding: 50px 0 20px;
 }
 .faq-section h2 {
-  padding: 50px 0 20px;
   font-weight: 600;
   font-size: 45px;
 }
 .faq-section .sub-titl {
   color: #000;
   font-family: Poppins;
-
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -958,11 +961,11 @@ button:focus {
 
 .faq-card {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   cursor: pointer;
-  margin-bottom: 15px;
-  padding: 20px 40px;
+  margin-bottom: 20px;
+  padding: 40px 40px 20px 40px;
   background-color: #f8f8f8;
   border-radius: 15px;
   transition: border-color 0.3s;
@@ -975,8 +978,47 @@ button:focus {
 .toggle-icon {
 }
 
-.toggle-icon {
-  transform: rotate(180deg);
+.toggle-icon img {
+  transition: transform 0.5s ease; /* Added transition property for smooth rotation */
+}
+
+.rotate-icon img {
+  transform: rotate(135deg);
+}
+
+@media only screen and (max-width: 991px) {
+  .faq-section h2 {
+    font-size: 35px;
+  }
+  .faq-section .sub-titl {
+    font-size: 14px;
+  }
+  .faq-card {
+    margin-bottom: 15px;
+  }
+  .faq-question {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .faq-section h2 {
+    font-size: 25px;
+  }
+  .faq-section .sub-titl {
+    font-size: 10px;
+  }
+  .faq-card {
+    padding: 30px 20px 10px;
+    border-radius: 10px;
+  }
+
+  .faq-question {
+    font-size: 18px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
 }
 
 /*-- FAQ section End here --*/
