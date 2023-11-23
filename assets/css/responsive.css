@@ -25,7 +25,8 @@
     overflow-y: scroll;
   }
   .mean-container .mean-bar {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: black;
   }
   .mobile-nav .logo {
     top: 9px;
@@ -841,7 +842,8 @@
     overflow-y: scroll;
   }
   .mean-container .mean-bar {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #000000;
   }
   .mobile-nav .logo {
     top: 9px;
