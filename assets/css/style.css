@@ -956,6 +956,16 @@ button:focus {
 /*-- End end pup up  --*/
 /*-- Start Advertising on Taxies --*/
 
+.add-on-taxi-container {
+  padding: 158px 0 180px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .add-on-taxi-container {
+    padding: 20px 0 50px 0;
+  }
+}
+
 .add-on-taxi {
   background-color: #f4fffc;
   position: relative;
@@ -991,7 +1001,7 @@ button:focus {
 /*-- End Advertising on Taxies --*/
 /*-- start technology --*/
 .technology {
-  padding-top: 100px;
+  padding-bottom: 118px;
 }
 
 .technology h2 {
@@ -1006,7 +1016,7 @@ button:focus {
 
 @media only screen and (max-width: 650px) {
   .technology {
-    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1014,7 +1024,7 @@ button:focus {
 
 /*-- start cars --*/
 .cars {
-  padding: 60px 0;
+  padding: 149px 0 121px 0;
 }
 
 .cars h2 {
@@ -1100,6 +1110,10 @@ button:focus {
 }
 
 /*-- End Service --*/
+
+.what-our-client-say-container {
+  padding: 140px 0 109px 0;
+}
 
 .testimonial-title {
   margin: 0;
@@ -1230,6 +1244,9 @@ button:focus {
 
 @media screen and (max-width: 667px) {
 
+  .what-our-client-say-container {
+    padding: 60px 0 0px 0;
+  }
 
   .testimonial-card {
     width: 100%;
@@ -1274,6 +1291,10 @@ button:focus {
   letter-spacing: -2.8px;
 }
 
+.blog-main-container {
+  padding: 0 0 130px 0;
+}
+
 .blog-container {
   padding: 30px 17px;
   width: calc(100% - 34px);
@@ -1291,7 +1312,10 @@ button:focus {
     padding: 0px 17px;
     width: calc(100% - 34px);
   }
-
+  .blog-main-container {
+    padding: 0 0 50px 0;
+  }
+  
   .blog-container .custom-arrows {
     margin-top: unset;
   }
@@ -1339,10 +1363,10 @@ button:focus {
     height: 55vw;
   }
 
-  .blog-responsive-container {
+  /* .blog-responsive-container {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-  }
+  } */
 }
 
 .blog-title {
@@ -1378,7 +1402,7 @@ button:focus {
 
 /*-- FAQ section --*/
 .faq-section {
-  padding: 50px 10%;
+  padding: 0px 10% 209px 10%;
 }
 
 
@@ -1406,7 +1430,8 @@ button:focus {
 
 .titles {
   text-align: center;
-  padding: 50px 0 20px;
+  /* padding: 50px 0 20px; */
+  padding: 0px 0 20px;
 }
 
 .faq-section h2 {
@@ -1467,6 +1492,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .faq-section {
+    padding: 20px 20px 50px 20px;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   .faq-section h2 {
     font-size: 25px;
@@ -1505,7 +1536,7 @@ button:focus {
 /*-- End testimonial --*/
 /*-- have coffee --*/
 .have-coffee {
-  padding: 50px 20%;
+  padding: 0px 20% 178px 20%;
 }
 
 .have-coffee h4 {
@@ -1579,7 +1610,7 @@ button:focus {
 
 @media only screen and (max-width: 650px) {
   .have-coffee {
-    padding: 30px 15px;
+    padding: 0px 15% 30px 15%;
     border-radius: 20px;
   }
 
@@ -1645,7 +1676,7 @@ button:focus {
 /*-- End have coffee --*/
 /*-- Strat Download App --*/
 .download-app {
-  padding: 50px 10%;
+  padding: 0px 10% 215px 10%;
   position: relative;
   z-index: 0;
 }
@@ -1715,7 +1746,7 @@ button:focus {
 
 @media only screen and (max-width: 991px) {
   .download-app {
-    padding: 40px 7%;
+    padding: 0px 7% 40px 7%;
   }
 
   .download-app .out-container {
@@ -1755,7 +1786,7 @@ button:focus {
 
 @media only screen and (max-width: 766px) {
   .download-app {
-    padding: 40px 7%;
+    padding: 0px 20px 50px 20px;
   }
 
   .download-app .out-container {
@@ -1797,9 +1828,6 @@ button:focus {
 }
 
 @media only screen and (max-width: 575px) {
-  .download-app {
-    padding: 40px 7%;
-  }
 
   .download-app .out-container {
     border-radius: 10px;
