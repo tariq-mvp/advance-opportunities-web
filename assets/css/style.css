@@ -1170,23 +1170,22 @@ button:focus {
   margin: 0;
   color: #000;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 230%;
-  /* 46px */
-  letter-spacing: -0.8px;
+  letter-spacing: -1.5px;
 }
 
 .testimonial-card-profile-position {
   margin: 0;
   color: #BEBEBE;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 171%;
-  letter-spacing: -0.8px;
+  letter-spacing: -1.5px;
 }
 
 .testimonial-card-content-wrapper {
@@ -1380,6 +1379,17 @@ button:focus {
 /*-- FAQ section --*/
 .faq-section {
   padding: 50px 10%;
+}
+
+
+.faq-question-heading {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.5rem !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+  letter-spacing: -1.5px;
 }
 
 .faq-answer {
@@ -5959,4 +5969,30 @@ advertiser space css
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
+}
+
+@media screen and (max-width: 1200px) {
+  .title_bseen {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .title_bseen {
+    font-size: 2rem !important;
+  }
+
+  .faq-question-heading {
+    font-size: 1.2rem !important;
+  }
+
+  .testimonial-card-profile-name {
+    font-size: 18px;
+  }
+
+  .testimonial-card-profile-position {
+    font-size: 18px;
+  }
+
 }
