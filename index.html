@@ -55,9 +55,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <!-- Meanmenu CSS -->
@@ -124,26 +124,27 @@
           <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto navbar_m">
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link navbar-active">Home</a>
               </li>
               <li class="nav-item">
                 <a href="about.html" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="index.html#services" class="nav-link">Blog</a>
+                <a href="#section1" class="nav-link scroll-link">Blog</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="index.html#latestworks" class="nav-link">Investor Relation</a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a href="index.html#howitworks" class="nav-link">Contact</a>
+                <a href="contact-us.html" class="nav-link">Contact</a>
               </li>
               <li class="nav-item d-flex flex-row g-2 mt-4">
-              <div class="advertisers-login d-flex d-lg-none lang-btn m-2" onclick="window.open('https://advertiser.b-seenapp.com/','mywindow');">
-                Advertisers Login
-              </div>
-        
-              <!-- <div class="lang-dropdown d-flex d-lg-none lang-btn m-2">
+                <div class="advertisers-login d-flex d-lg-none lang-btn m-2"
+                  onclick="window.open('https://advertiser.b-seenapp.com/','mywindow');">
+                  Advertisers Login
+                </div>
+
+                <!-- <div class="lang-dropdown d-flex d-lg-none lang-btn m-2">
                 <div class="dropdown">
                   <button class="dropbtn text-black">
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
@@ -165,30 +166,33 @@
                   </div>
                 </div>
               </div> -->
-              <div class="lang-dropdown d-flex d-lg-none lang-btn m-2">
-                <div class="dropdown" style="font-family: El Messiri;">
-                  <button class="dropbtn text-black" onclick="window.location.href='indexar.html'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-                      <g clip-path="url(#clip0_541_2048)">
-                        <path d="M4.5 9C3.29803 9 2.16795 8.53191 1.31802 7.68198C0.468086 6.83205 0 5.70197 0 4.5C0 3.29803 0.468086 2.16795 1.31802 1.31802C2.16795 0.468086 3.29803 0 4.5 0C5.70197 0 6.83205 0.468086 7.68198 1.31802C8.53191 2.16795 9 3.29803 9 4.5C9 5.70197 8.53191 6.83205 7.68198 7.68198C6.83205 8.53191 5.70197 9 4.5 9ZM4.5 0.703125C2.40642 0.703125 0.703125 2.40642 0.703125 4.5C0.703125 6.59358 2.40642 8.29688 4.5 8.29688C6.59358 8.29688 8.29688 6.59358 8.29688 4.5C8.29688 2.40642 6.59358 0.703125 4.5 0.703125ZM6.93079 3.90234L6.43359 3.40514L4.5 5.33874L2.56641 3.40514L2.06921 3.90234L4.5 6.33314L6.93079 3.90234Z" fill="white"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_541_2048">
-                          <rect width="9" height="9" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    عربي
-                    <img src="assets/lang/arabic.png" width="24px" height="24px"/>
-                  </button>
+                <div class="lang-dropdown d-flex d-lg-none lang-btn m-2">
+                  <div class="dropdown" style="font-family: El Messiri;">
+                    <button class="dropbtn text-black" onclick="window.location.href='indexar.html'">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                        <g clip-path="url(#clip0_541_2048)">
+                          <path
+                            d="M4.5 9C3.29803 9 2.16795 8.53191 1.31802 7.68198C0.468086 6.83205 0 5.70197 0 4.5C0 3.29803 0.468086 2.16795 1.31802 1.31802C2.16795 0.468086 3.29803 0 4.5 0C5.70197 0 6.83205 0.468086 7.68198 1.31802C8.53191 2.16795 9 3.29803 9 4.5C9 5.70197 8.53191 6.83205 7.68198 7.68198C6.83205 8.53191 5.70197 9 4.5 9ZM4.5 0.703125C2.40642 0.703125 0.703125 2.40642 0.703125 4.5C0.703125 6.59358 2.40642 8.29688 4.5 8.29688C6.59358 8.29688 8.29688 6.59358 8.29688 4.5C8.29688 2.40642 6.59358 0.703125 4.5 0.703125ZM6.93079 3.90234L6.43359 3.40514L4.5 5.33874L2.56641 3.40514L2.06921 3.90234L4.5 6.33314L6.93079 3.90234Z"
+                            fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_541_2048">
+                            <rect width="9" height="9" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      عربي
+                      <img src="assets/lang/arabic.png" width="24px" height="24px" />
+                    </button>
+                  </div>
                 </div>
-              </div>
               </li>
             </ul>
-            <div class="advertisers-login d-none d-lg-flex" onclick="window.open('https://advertiser.b-seenapp.com/','mywindow');">
+            <div class="advertisers-login d-none d-lg-flex"
+              onclick="window.open('https://advertiser.b-seenapp.com/','mywindow');">
               Advertisers Login
             </div>
-  
+
             <!-- <div class="lang-dropdown d-none d-lg-flex">
               <div class="dropdown">
                 <button class="dropbtn">
@@ -213,7 +217,7 @@
                 </div>
               </div>
             </div> -->
-  
+
             <div class="lang-dropdown d-none d-lg-flex">
               <div class="dropdown" style="font-family: El Messiri;">
                 <button class="dropbtn" onclick="window.location.href='indexar.html'">
@@ -230,11 +234,11 @@
                     </defs>
                   </svg>
                   عربي
-                  <img src="assets/icons/sa.svg" width="24px" height="24px"/>
+                  <img src="assets/icons/sa.svg" width="24px" height="24px" />
                 </button>
               </div>
             </div>
-  
+
           </div>
         </nav>
       </div>
@@ -349,7 +353,7 @@
               maximum visibility and exposure for your business in this vibrant
               urban landscape
             </p>
-  
+
             <div class="big-car-container col-lg-12">
               <img src="assets/img/addOnTaxi-1.png" width="100%" />
             </div>
@@ -384,7 +388,7 @@
     <div class="container">
       <div class="section-title">
         <h1 style="text-align: left" class="title_bseen">Advertisers Spaces</h1>
-        <p class="sub_title_bseen"  style="text-align: left">
+        <p class="sub_title_bseen" style="text-align: left">
           We offer a wide range of products to meet your outdoor advertising
           needs
         </p>
@@ -457,8 +461,8 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class=" swiper-slide">
-              <div class="car-expanded-wrapper">
-                <img src="assets/img/cars/sedan/sedanresult.png" alt="" srcset="" class="car-expanded" />
+                <div class="car-expanded-wrapper">
+                  <img src="assets/img/cars/sedan/sedanresult.png" alt="" srcset="" class="car-expanded" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -485,7 +489,7 @@
           </div>
         </div>
         <div class="arrow" onclick="goToNextSlider()">
-          <img src="assets/img/cars/other/Group 2287.png"  />
+          <img src="assets/img/cars/other/Group 2287.png" />
         </div>
         <div class="carbottomcurve"></div>
       </div>
@@ -674,10 +678,10 @@
                   </div>
                   <div class="testimonial-card-content-wrapper">
                     <p class="sub_title_bseen">
-                  It was great to work with B-seen. The team were extremely
-                  friendly and helpful. We loved seeing the cars driving
-                  around Riyadh with LEAP branding. It gave us great exposure
-                  around the city.
+                      It was great to work with B-seen. The team were extremely
+                      friendly and helpful. We loved seeing the cars driving
+                      around Riyadh with LEAP branding. It gave us great exposure
+                      around the city.
                     </p>
                   </div>
                 </div>
@@ -694,7 +698,7 @@
                       <div>
                         <h3 class="testimonial-card-profile-name">Khaled Hassoun</h3>
                         <p class="testimonial-card-profile-position">
-                    Co Founder & CEO of Circlys </p>
+                          Co Founder & CEO of Circlys </p>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="20" viewBox="0 0 134 25" fill="none">
@@ -738,9 +742,9 @@
                       <div>
                         <h3 class="testimonial-card-profile-name">Khalid Al Olayan</h3>
                         <p class="testimonial-card-profile-position">
-                          Business Development Manager of 
+                          Business Development Manager of
                           Daleel Store
-                         </p>
+                        </p>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="20" viewBox="0 0 134 25" fill="none">
@@ -763,13 +767,13 @@
                   </div>
                   <div class="testimonial-card-content-wrapper">
                     <p class="sub_title_bseen">
-                  We are accustomed to seeing outdoor ads fixed in single
-                  location. B Seen has created a new and innovative concept
-                  for us to make our ads roam around the city to have a faster
-                  & larger reach to our audience. I’m happy with our
-                  experience with B Seen, and the campaign goals were achieved
-                  wonderfully.
-                
+                      We are accustomed to seeing outdoor ads fixed in single
+                      location. B Seen has created a new and innovative concept
+                      for us to make our ads roam around the city to have a faster
+                      & larger reach to our audience. I’m happy with our
+                      experience with B Seen, and the campaign goals were achieved
+                      wonderfully.
+
                     </p>
                   </div>
                 </div>
@@ -790,7 +794,7 @@
 
   <!-- Blog Section -->
 
-  <section class="contact-area blog-main-container blog-responsive-container" id="feedback">
+  <section id="section1" class="contact-area blog-main-container blog-responsive-container">
     <div class="container">
       <div class="section-title">
         <h1 class="title_bseen" style="text-align: left">Blogs.</h1>
@@ -806,37 +810,43 @@
         <div class="blog-swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/img/blog/blog-1.png" alt="" />
-              <h4 class="blog-title">Car Advertising Campaigns Most Effective for Outdoor Advertising</h4>
+              <img src="assets/img/blog/blog-1.png" alt="" style="cursor: pointer;"
+                onclick="window.location.href='blog-details.html'" />
+              <h4 class="blog-title" style="cursor: pointer;" onclick="window.location.href='blog-details.html'">Car
+                Advertising Campaigns Most Effective for Outdoor Advertising</h4>
               <p class="sub_title_bseen">Car advertisement campaigns become some of the best examples of advertising
                 and
                 marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
                 compelling way, the best car marketing campaigns have always captured the imagination, delighted
                 viewers, and
                 most important thing is getting results</p>
-              <p class="blog-read-more">Read more</p>
+              <p class="blog-read-more" onclick="window.location.href='blog-details.html'">Read more</p>
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/blog/blog-1.png" alt="" />
-              <h4 class="blog-title">Car Advertising Campaigns Most Effective for Outdoor Advertising</h4>
+              <img src="assets/img/blog/blog-1.png" alt="" style="cursor: pointer;"
+                onclick="window.location.href='blog-details.html'" />
+              <h4 class="blog-title" style="cursor: pointer;" onclick="window.location.href='blog-details.html'">Car
+                Advertising Campaigns Most Effective for Outdoor Advertising</h4>
               <p class="sub_title_bseen">Car advertisement campaigns become some of the best examples of advertising
                 and
                 marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
                 compelling way, the best car marketing campaigns have always captured the imagination, delighted
                 viewers, and
                 most important thing is getting results</p>
-              <p class="blog-read-more">Read more</p>
+              <p class="blog-read-more" onclick="window.location.href='blog-details.html'">Read more</p>
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/blog/blog-1.png" alt="" />
-              <h4 class="blog-title">Car Advertising Campaigns Most Effective for Outdoor Advertising</h4>
+              <img src="assets/img/blog/blog-1.png" alt="" style="cursor: pointer;"
+                onclick="window.location.href='blog-details.html'" />
+              <h4 class="blog-title" style="cursor: pointer;" onclick="window.location.href='blog-details.html'">Car
+                Advertising Campaigns Most Effective for Outdoor Advertising</h4>
               <p class="sub_title_bseen">Car advertisement campaigns become some of the best examples of advertising
                 and
                 marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
                 compelling way, the best car marketing campaigns have always captured the imagination, delighted
                 viewers, and
                 most important thing is getting results</p>
-              <p class="blog-read-more">Read more</p>
+              <p class="blog-read-more" onclick="window.location.href='blog-details.html'">Read more</p>
             </div>
           </div>
         </div>
@@ -847,41 +857,6 @@
         </div>
       </div>
   </section>
-
-  <!-- <section class="contact-area pt-100 pb-70">
-      <div class="container">
-        <h1 class="blog-h1" style="text-align: left">Blogs.</h1>
-      </div>
-      <div class="row blog-container">
-        <div class="col-lg-4">
-          <img src="assets/img/blog/blog-1.png" alt="" />
-          <h4 class="blog-title">Car Advertising Campaigns Most Effective for Outdoor Advertising</h4>
-          <p class="blog-description">Car advertisement campaigns become some of the best examples of advertising and
-            marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
-            compelling way, the best car marketing campaigns have always captured the imagination, delighted viewers, and
-            most important thing is getting results</p>
-          <p class="blog-read-more">Read more</p>
-        </div>
-        <div class="col-lg-4">
-          <img src="assets/img/blog/blog-1.png" alt="" />
-          <h4 class="blog-title">Car Advertising Campaigns Most Effective for Outdoor Advertising</h4>
-          <p class="blog-description">Car advertisement campaigns become some of the best examples of advertising and
-            marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
-            compelling way, the best car marketing campaigns have always captured the imagination, delighted viewers, and
-            most important thing is getting results</p>
-          <p class="blog-read-more">Read more</p>
-        </div>
-        <div class="col-lg-4">
-          <img src="assets/img/blog/blog-1.png" alt="" />
-          <h4 class="blog-title">Car Advertising Campaigns Most Effective for Outdoor Advertising</h4>
-          <p class="blog-description">Car advertisement campaigns become some of the best examples of advertising and
-            marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
-            compelling way, the best car marketing campaigns have always captured the imagination, delighted viewers, and
-            most important thing is getting results</p>
-          <p class="blog-read-more">Read more</p> 
-        </div>
-      </div>
-    </section> -->
   <!-- Blog Section end here -->
 
   <!-- F&Q section -->
@@ -906,7 +881,7 @@
               </p>
             </div>
             <div class="toggle-icon">
-              <img src="assets/img/home-page/more.svg" alt="less" />
+              <img src="assets/img/home-page/more.svg" alt="less" style="max-width: unset;" />
             </div>
           </div>
           <div class="faq-card" onclick="toggleFaq(this)">
@@ -915,24 +890,51 @@
                 How many times can I change the design before printing?
               </h3>
               <p class="faq-answer txt-hide sub_title_bseen">
-                On a monthly basis, the average distance that cars travel is
-                between 1,800 and 4,500 kilometers.
+                There are no restrictions on the number of changes you can make, so take your time and ensure that the
+                designs perfectly reflect your vision.
               </p>
             </div>
             <div class="toggle-icon">
-              <img src="assets/img/home-page/more.svg" alt="less" />
+              <img src="assets/img/home-page/more.svg" alt="less" style="max-width: unset;" />
             </div>
           </div>
           <div class="faq-card" onclick="toggleFaq(this)">
             <div class="text-container">
               <h3 class="faq-question-heading">What are the types of cars?</h3>
               <p class="faq-answer txt-hide sub_title_bseen">
-                On a monthly basis, the average distance that cars travel is
-                between 1,800 and 4,500 kilometers.
+                There are no restrictions on the number of changes you can make, so take your time and ensure that the
+                designs perfectly reflect your vision. </p>
               </p>
             </div>
             <div class="toggle-icon">
-              <img src="assets/img/home-page/more.svg" alt="less" />
+              <img src="assets/img/home-page/more.svg" alt="less" style="max-width: unset;" />
+            </div>
+          </div>
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="text-container">
+              <h3 class="faq-question-heading">What are the companies that you advertise for?</h3>
+              <p class="faq-answer txt-hide sub_title_bseen">
+                We cater to a diverse portfolio of clients, including restaurants, cafes, mobile applications,
+                educational institutions, e-commerce platforms, retail stores, health and wellness centers, real estate
+                agencies, travel and tourism companies, financial services, automotive dealerships, entertainment
+                venues, technology firms, and various service providers, all seeking to broaden their market reach
+                through our advertising services.
+              </p>
+            </div>
+            <div class="toggle-icon">
+              <img src="assets/img/home-page/more.svg" alt="less" style="max-width: unset;" />
+            </div>
+          </div>
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="text-container">
+              <h3 class="faq-question-heading">What is the procedure in the event of a car accident?</h3>
+              <p class="faq-answer txt-hide sub_title_bseen">
+                In the event of a car accident, the advertisement sticker will be removed from it and a replacement car
+                will be provided urgently at no charge or cost to the advertiser.
+              </p>
+            </div>
+            <div class="toggle-icon">
+              <img src="assets/img/home-page/more.svg" alt="less" style="max-width: unset;" />
             </div>
           </div>
         </div>
@@ -948,7 +950,8 @@
         <div class="bg-white"></div>
         <div class="col-lg-9 col-md-8 col-sm-8">
           <h2 class="title_bseen">Download the App!</h2>
-          <p class="sub_title_bseen" style="font-size: 1rem; font-weight: 400;">Track & manage your campaigns from B Seen mobile app</p>
+          <p class="sub_title_bseen" style="font-size: 1rem; font-weight: 400;">Track & manage your campaigns from B
+            Seen mobile app</p>
           <div class="stores row">
             <button class="col-lg-4">
               <img src="assets/img/home-page/AppStore.png" alt="" />
@@ -1080,7 +1083,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#section1" class="scroll-link">
                         Blogs
                       </a>
                     </li>
@@ -1430,6 +1433,29 @@
     function goToPrevTestimonialSlide() {
       testimonial_swiper.slidePrev();
     }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all links with the class 'scroll-link'
+      const scrollLinks = document.querySelectorAll('.scroll-link');
+
+      // Add click event listeners to each scroll link
+      scrollLinks.forEach(function (scrollLink) {
+        scrollLink.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          // Get the target section ID from the href attribute
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+
+          // Scroll to the target section with smooth behavior
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
   </script>
 </body>
 
