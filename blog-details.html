@@ -128,7 +128,7 @@
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
+                                <a href="contact-us.html" class="nav-link">About Us</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="index.html#services" class="nav-link">Blog</a>
@@ -251,7 +251,10 @@
     <!-- End Navbar Area -->
 
     <!-- Start Blog Detail Section  -->
-    <section class="blog-detail-container">
+
+    <section id="blog-content"></section>
+
+    <!-- <section class="blog-detail-container">
         <p class="blog-detail-paragraph">Tuesday 14 November 2023 - Written by Ali Hammadi</p>
         <h1 class="blog-detail-heading">
             Car Advertising Campaigns Most Effective for Outdoor Advertising Car Advertising
@@ -306,7 +309,8 @@
             Viola Outdoor, a division of Viola Communications, the leading media communications specialists based in Abu
             Dhabi, is proud to announce a ground-breaking advancement in the realm of Digital Out Of Home (DOOH) media.
         </h4>
-    </section>
+    </section> -->
+
     <!-- End Blog Detail Section -->
 
     <!-- Footer -->
@@ -359,25 +363,25 @@
                                     <h3>Company</h3>
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="contact-us.html">
                                                 About Us
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="contact-us.html">
                                                 Join our team
                                             </a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="#">
                                                 Blogs
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-lg-4">
+                        <!-- <div class="col-sm-4 col-lg-4">
                             <div class="footer-item">
                                 <div class="footer-service">
                                     <h3>Advertisers</h3>
@@ -395,19 +399,19 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-sm-4 col-lg-4">
                             <div class="footer-item">
                                 <div class="footer-service">
                                     <h3>Contact</h3>
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="contact-us.html">
                                                 Contact Sales
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="contact-us.html">
                                                 Location
                                             </a>
                                         </li>
@@ -715,6 +719,177 @@
         function goToPrevTestimonialSlide() {
             testimonial_swiper.slidePrev();
         }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to get the title parameter from the URL
+            function getUrlParameter(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+
+            // Get the title from the URL
+            const title = getUrlParameter('title');
+
+            // Load content based on the title
+            const blogContentSection = document.getElementById('blog-content');
+            if (title === "car-advertising-campaign") {
+                blogContentSection.innerHTML = `<section class="blog-detail-container">
+                    <p class="blog-detail-paragraph">Tuesday 14 November 2023 - Written by Ali Hammadi</p>
+                    <h1 class="blog-detail-heading">
+                        Car Advertising Campaigns Most Effective for Outdoor Advertising Car Advertising
+                        Campaigns Most Effective for Outdoor Advertising
+                    </h1>
+                    <div class="blog-detail-wrapper">
+                        <img src="assets/img/blog-detail/Rectangle 21.svg" style="width: 100%; height: 100%;" />
+                    </div>
+                    <h4 class="blog-detail-content">
+                        In an exciting collaboration with Firefly, the pioneering mobile marketing media solution provider, Viola
+                        Outdoor is set to redefine Abu Dhabi’s DOOH landscape by introducing Firefly's cutting-edge
+                        Hardware-as-a-Service (HAAS) and Software-as-a-Service (SAAS) offerings in the UAE’s capital.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        Firefly's innovative HAAS and SAAS solutions will empower Viola Outdoor to unlock unparalleled marketing
+                        opportunities, revolutionizing the way brands engage with audiences. Leveraging Firefly's state-of-the-art
+                        roof-top digital LED screens, Viola Outdoor will now extend its portfolio of Digital Out of Home products to
+                        Abu Dhabi's esteemed Tawasul fleet of taxis, ensuring an expanded reach and unprecedented impact.
+                        Ammar Sharaf, Group CEO and Board Member of Viola Communications, expressed his enthusiasm for the
+                        partnership, stating, "Firefly's dynamic digital vehicle-top screens enable us to provide unique eye-level
+                        marketing opportunities, strengthening our association with Tawasul taxis." Sharaf further elaborated on
+                        Firefly's remarkable technology, highlighting its use of proprietary GPS and internet connections to deliver
+                        geo-targeted and dynamic messaging capabilities that captivate passers-by.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        By integrating Firefly's programmable vehicle-top LED screens into Viola's digital portfolio through
+                        Tawasul's taxi fleet, advertisers will benefit from the widest possible coverage, reaching a substantial
+                        audience. Tawasul Taxis alone transport approximately 23,000 passengers and cover a distance of 350,000 km
+                        per day throughout Abu Dhabi and Al Ain, ensuring unrivaled exposure for brands partnering with Viola
+                        Outdoor.
+                        Sharaf emphasized that the introduction of Firefly's game-changing solutions aligns seamlessly with Viola's
+                        digital OOH transformation plan, stating, "Since we launched our digital OOH transformation plan, our goal
+                        has remained constant: to help advertisers reach people in key, premium areas with the highest quality sites
+                        and screens." He further added, "Viola Outdoor's partnership with Firefly and Tawasul is a game-changing
+                        addition to marketers' arsenal, empowering them to elevate their campaigns and seize new opportunities.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">ABOUT FIREFLY</h4>
+                    <h4 class="blog-detail-content">
+                        Fueled by the most advanced tracking, measurement, and optimization capabilities available in the
+                        Out-of-Home space, Firefly is an innovative data-first ad network. Leveraging the industry’s first ever
+                        audience planning capabilities, they deliver the most relevant messages at the most relevant moments with
+                        their suite of dynamic car top, in-car, and experiential solutions.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        Firefly’s proprietary screens deliver dynamic content based on location-based, GPS-enabled triggers. They
+                        empower brands to efficiently engage consumers in major U.S. markets, Canada, and the United Kingdom.
+                        Founded by Kaan Gunay (CEO), Firefly has offices in New York City, Los Angeles, Las Vegas, Miami, Chicago,
+                        London, and Istanbul. To learn more: visit fireflyon.com.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">ABOUT VIOLA OUTDOOR</h4>
+                    <h4 class="blog-detail-content">
+                        Viola Outdoor, a division of Viola Communications, the leading media communications specialists based in Abu
+                        Dhabi, is proud to announce a ground-breaking advancement in the realm of Digital Out Of Home (DOOH) media.
+                    </h4>
+                </section>`
+            } else if (title === "leap-social-media") {
+                blogContentSection.innerHTML = `<section class="blog-detail-container">
+                    <p class="blog-detail-paragraph">Tuesday 25 March 2023 - Written by Ali Hammadi</p>
+                    <h1 class="blog-detail-heading">
+                        B Seen featured in LEAP social media!
+                    </h1>
+                    <div class="blog-detail-wrapper">
+                        <img src="assets/img/blog/blog-2.jpg" style="width: 100%; height: 100%;" />
+                    </div>
+                    <h4 class="blog-detail-content">
+                        B Seen featured in LEAP social media! Our innovative approach of advertising on cars and the technology to digitalize outdoor advertising has captured the attention of many, and it’s great to see it getting recognition on a social media platforms. With the ever-increasing importance of social media in marketing, this feature will surely help our company gain more exposure and grow its customer base.
+                    </h4>
+                </section>`
+            } else if (title === "leap-2023") {
+                blogContentSection.innerHTML = `<section class="blog-detail-container">
+                    <p class="blog-detail-paragraph">Tuesday 14 November 2023 - Written by Ali Hammadi</p>
+                    <h1 class="blog-detail-heading">
+                        How to Be Seen LEAP23
+                    </h1>
+                    <div class="blog-detail-wrapper">
+                        <img src="assets/img/blog/blog-3.jpg" style="width: 100%; height: 100%;" />
+                    </div>
+                    <h4 class="blog-detail-content">
+                        LEAP 2023 is an exciting event for entrepreneurs, startups, and investors looking to connect and share their experiences, knowledge, and ideas. As a participant, we had the opportunity to network with like-minded individuals and learn about the latest trends and innovations in the startup world.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        We were able to share our story and the challenges we faced along the way. LEAP 2023 is a great event to showcase our vision, passion, and determination to succeed in the startup ecosystem.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        Through our talk, we were able to inspire and motivate other aspiring entrepreneurs to pursue their dreams and overcome the obstacles they may face. We also shared our insights into what it takes to build a successful startup, from ideation to product development, market validation, and scaling.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        LEAP 2023 provides a supportive and engaging environment where you can connect with industry experts, mentors, and potential investors who can offer guidance, feedback, and support for your startup journey. The event will give you the opportunity to learn from other entrepreneurs’ successes and failures, and gain valuable knowledge and skills to help you grow and succeed.
+                    </h4>
+                </section>`
+            } else if (title === "reason-to-use-outdoor") {
+                blogContentSection.innerHTML = `<section class="blog-detail-container">
+                    <p class="blog-detail-paragraph">Tuesday 14 November 2023 - Written by Ali Hammadi</p>
+                    <h1 class="blog-detail-heading">
+                        Reasons to Use Outdoor Advertising
+                    </h1>
+                    <div class="blog-detail-wrapper">
+                        <img src="assets/img/blog/blog-4.png" style="width: 100%; height: 100%;" />
+                    </div>
+                    <h4 class="blog-detail-content">
+                        Outdoor advertising can’t be turned off. There’s no fast-forward button, no premium ad-free package, and no blockers to turn them off. Outdoor advertising is always about broadcasting your message to the masses and building awareness.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">Cost-effective</h4>
+                    <h4 class="blog-detail-content">
+                        Outdoor advertising can be very cost-effective if you are looking at creating brand awareness and brand building.  The Cost-effectiveness of outdoor advertising is dependent on the visibility to a larger number of people.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">Reach a different audience</h4>
+                    <h4 class="blog-detail-content">
+                        Targeted outdoor advertising campaigns can be highly effective at getting in front of customers from all walks of life. While Outdoor excels at exposure across mainstream audiences, it can also be effective at reaching difficult audiences because of its huge national coverage and to reach large numbers of people with huge impact.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">Timing</h4>
+                    <h4 class="blog-detail-content">
+                        Outdoor can find your customers at the right time, on the high street, on the road, or at the point of purchase. As part of the fabric of everyday life Outdoor advertising can be used to reach customers at key influential decision-making times.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">Complementary</h4>
+                    <h4 class="blog-detail-content">
+                        As part of a varied media mix, Outdoor can deliver repeated impacts to consumers consistently over time to magnify ROI. Building awareness in this way can generate a halo effect for other channels, helping to reduce customer acquisition costs.
+                    </h4>
+                    <h4 class="blog-detail-content" style="margin-bottom: 0;">Designs</h4>
+                    <h4 class="blog-detail-content">
+                        Making your brand stand out is a genuine challenge, and designs are key. There is a design out there for every brand from digital screens and of course car advertising. Clever cars design, messaging and choice of designs posting can turn a campaign into an attention-grabbing headline that delivers fantastic results.
+                    </h4>
+                </section>`
+            } else if (title === "advertising-on-cars") {
+                blogContentSection.innerHTML = `<section class="blog-detail-container">
+                    <p class="blog-detail-paragraph">Tuesday 14 November 2023 - Written by Ali Hammadi</p>
+                    <h1 class="blog-detail-heading">
+                        Advertising on cars
+                    </h1>
+                    <div class="blog-detail-wrapper">
+                        <img src="assets/img/blog/blog-5.jpg" style="width: 100%; height: 100%;" />
+                    </div>
+                    <h4 class="blog-detail-content">
+                        If you’re looking to learn about advertising on cars, then this blog post is for you! We’ll go over what car advertising is, why it’s effective, and some tips and tricks on how to get started.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        Car advertising is a form of marketing that uses cars as mobile billboards. This can be done in a number of ways, such as wrapping a car in an advertisement or placing decals on a car.
+                        </h4>
+                    <h4 class="blog-detail-content">
+                        Car advertising is an extremely effective form of marketing due to its high reach and frequency. A car can travel hundreds of miles in a day and be seen by thousands of people. This makes car advertising an excellent way to reach a large audience with your message.
+                    </h4>
+                    <h4 class="blog-detail-content">
+                        If you’re interested in using car advertising to promote your business, there are a few things you need to keep in mind. First, you need to make sure your ad is eye-catching and capable of grabbing attention. Second, you need to make sure your ad is placed in a high-traffic area where it will be seen by as many people as possible.
+                    </h4>
+                </section>`
+            } else {
+                blogContentSection.innerHTML = `
+                    <section class="blog-detail-container" style="display: flex; justify-content: center; align-items: center; min-height: 500px">
+                    <h3 style="margin-top: 30px; text-align: center; color:#ff3501;">
+                        404 Page Not Found
+                    </h3>
+                </section>`
+            }
+        });
     </script>
 </body>
 
