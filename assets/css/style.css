@@ -6071,13 +6071,20 @@ advertiser space css
 
 .blog-detail-content {
   margin-bottom: 50px;
-  color: #000;
+  /* color: #000;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 181%;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.8px; */
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -6110,7 +6117,7 @@ advertiser space css
 
   .blog-detail-content {
     margin-bottom: 30px;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .blog-detail-wrapper {
@@ -6130,22 +6137,36 @@ advertiser space css
   margin-top: 0;
   color: #000;
   font-family: Poppins;
+  font-size: 3rem !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+  letter-spacing: -2.8px;
+  /* color: #000;
+  font-family: Poppins;
   font-size: 65px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -2.6px;
+  letter-spacing: -2.6px; */
 }
 
 .contact-us-dont-worry {
   margin-bottom: 0;
   margin-top: 0;
-  color: #000;
+  /* color: #000;
   font-family: Poppins;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: 216.5%;
+  letter-spacing: -1px; */
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   letter-spacing: -1px;
 }
 
@@ -6156,12 +6177,12 @@ advertiser space css
   width: 100%;
   color: #888;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
-  padding: 8px 0px 56px 19px;
+  padding: 15px 10px;
 }
 
 .contact-us-have-coffee-wrapper {
@@ -6178,12 +6199,12 @@ advertiser space css
   background: #FFF;
   color: #888;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
-  padding: 8px 0px 0px 19px;
+  padding: 15px 10px; 
 }
 
 .contact-us-first-section-btn-wrapper {
@@ -6213,10 +6234,6 @@ advertiser space css
   .contact-us-have-coffee-container {
     padding: 150px 300px 132px 300px;
   }
-
-  .contact-us-have-coffee {
-    font-size: 55px;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -6226,13 +6243,9 @@ advertiser space css
 }
 
 @media screen and (max-width: 1200px) {
-
+  
   .contact-us-have-coffee {
-    font-size: 40px;
-  }
-
-  .contact-us-dont-worry {
-    font-size: 20px;
+    font-size: 2.5rem !important;
   }
 }
 
@@ -6249,13 +6262,7 @@ advertiser space css
   }
 
   .contact-us-have-coffee {
-    font-size: 23px;
-    letter-spacing: -1px;
-  }
-
-  .contact-us-dont-worry {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 2rem !important;
   }
 
   .contact-us-have-coffee-wrapper {
@@ -6297,12 +6304,19 @@ advertiser space css
   margin-top: 0;
   text-align: center;
   color: #000;
+  font-family: El Messiri;  
+  font-size: 3rem !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+  letter-spacing: -2.8px;
+  /* color: #000;
   text-align: center;
   font-family: El Messiri;
   font-size: 70px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: normal; */
 }
 
 .contact-us-dont-worry-ar {
@@ -6311,11 +6325,18 @@ advertiser space css
   text-align: center;
   color: #000;
   font-family: El Messiri;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+  /* color: #000;
+  font-family: El Messiri;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: 216.5%;
-  letter-spacing: -1px;
+  letter-spacing: -1px; */
 }
 
 .contact-us-input-ar {
@@ -6325,12 +6346,12 @@ advertiser space css
   width: 100%;
   color: #888;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
-  padding: 8px 22px 56px 0px;
+  padding: 15px 10px;
 }
 
 .contact-us-have-coffee-wrapper-ar {
@@ -6347,12 +6368,12 @@ advertiser space css
   background: #FFF;
   color: #888;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
-  padding: 8px 22px 0px 0px;
+  padding: 15px 10px;
 }
 
 .contact-us-first-section-btn-wrapper-ar {
@@ -6387,10 +6408,6 @@ advertiser space css
   .contact-us-have-coffee-container-ar {
     padding: 150px 300px 132px 300px;
   }
-
-  .contact-us-have-coffee-ar {
-    font-size: 55px;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -6399,10 +6416,18 @@ advertiser space css
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-us-have-coffee-ar {
+    font-size: 2.5rem !important;
+  }
+}
+
 @media screen and (max-width: 991px) {
+
   .contact-us-have-coffee-container-ar {
     padding: 150px 100px 132px 100px;
   }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -6412,15 +6437,15 @@ advertiser space css
   }
 
   .contact-us-have-coffee-ar {
-    font-size: 30px;
+    font-size: 2rem !important;
   }
 
-  .contact-us-dont-worry-ar {
+  /* .contact-us-dont-worry-ar {
     font-size: 15px;
     line-height: normal;
     font-weight: 500;
     letter-spacing: -0.8px;
-  }
+  } */
 
   .contact-us-have-coffee-wrapper-ar {
     padding-top: 30px;
@@ -6451,9 +6476,8 @@ advertiser space css
   }
 
 }
-
-
 /* End Contact us ar */
+
 
 .contact-us-location {
   display: flex;
@@ -6465,11 +6489,10 @@ advertiser space css
 .contact-us-location-title {
   margin-bottom: 0;
   color: #000;
-  text-align: center;
   font-family: Poppins;
-  font-size: 70px;
+  font-size: 3rem !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600 !important;
   line-height: normal;
   letter-spacing: -2.8px;
 }
@@ -6478,13 +6501,13 @@ advertiser space css
   margin-bottom: 20px;
   margin-top: 22px;
   color: #000;
-  text-align: center;
   font-family: Poppins;
-  font-size: 20px;
+  text-align: center;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
 }
 
 .contact-us-get-direction-btn {
@@ -6523,6 +6546,12 @@ advertiser space css
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-us-location-title {
+    font-size: 2.5rem !important;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .contact-us-location-container {
     padding: 47px 100px 149px 100px;
@@ -6531,17 +6560,24 @@ advertiser space css
 
 @media screen and (max-width: 767px) {
   .contact-us-location-container {
-    padding: 50px 20px;
+    padding: 50px 0px 80px 0px;
   }
 
   .contact-us-location-title {
-    font-size: 30px;
+    font-size: 2rem !important;
     margin-top: 0;
   }
 
   .contact-us-location-sub-title {
     margin-top: 10px;
-    font-size: 15px;
+  }
+
+  .contact-us-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
   }
 }
 
@@ -6580,18 +6616,19 @@ advertiser space css
 
 }
 
+/* Faq Section */
 .contact-us-faq-container {
   padding: 0px 138px 307px 138px;
 }
 
 .contact-us-faq-title {
   margin-bottom: 0;
-  color: #000;
   text-align: center;
+  color: #000;
   font-family: Poppins;
-  font-size: 70px;
+  font-size: 3rem !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600 !important;
   line-height: normal;
   letter-spacing: -2.8px;
 }
@@ -6599,12 +6636,12 @@ advertiser space css
 .contact-us-faq-sub-title {
   margin-bottom: 0;
   text-align: center;
-  color: rgba(178, 178, 178, 0.87);
+  color: #000;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 299.25%;
+  line-height: normal;
   letter-spacing: -1px;
 }
 
@@ -6618,7 +6655,7 @@ advertiser space css
   justify-content: space-between;
   cursor: pointer;
   margin-bottom: 20px;
-  padding: 43px 73px 42px 38px;
+  padding: 40px 40px 40px 40px;
   background-color: #f8f8f8;
   border-radius: 30px;
   transition: border-color 0.3s;
@@ -6626,19 +6663,22 @@ advertiser space css
 }
 
 .contact-us-faq-question {
+  margin-bottom: 0;
   color: #000;
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 1.5rem !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600 !important;
   line-height: normal;
-  letter-spacing: -1.6px;
+  letter-spacing: -1.5px;
 }
 
 .contact-us-faq-answer {
+  margin-bottom: 0;
+  margin-top: 10px;
   color: #000;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -6648,36 +6688,18 @@ advertiser space css
 
 @media screen and (max-width: 1300px) {
 
-  .contact-us-faq-title {
-    font-size: 50px;
-  }
-
-  .contact-us-faq-sub-title {
-    font-size: 23px;
-  }
-
   .contact-us-faq-container {
     padding: 0px 100px 307px 100px;
   }
+}
 
-  .contact-us-faq-question {
-    font-size: 30px;
-  }
-
-  .contact-us-faq-answer {
-    font-size: 20px;
+@media screen and (max-width: 1200px) {
+  .contact-us-faq-title {
+    font-size: 2.5rem !important;
   }
 }
 
 @media screen and (max-width: 991px) {
-
-  .contact-us-faq-title {
-    font-size: 40px;
-  }
-
-  .contact-us-faq-sub-title {
-    font-size: 20px;
-  }
 
   .contact-us-faq-container {
     padding: 0px 80px 307px 80px;
@@ -6687,16 +6709,13 @@ advertiser space css
 @media screen and (max-width: 767px) {
   .contact-us-faq-title {
     text-align: unset;
-    font-size: 25px;
+    font-size: 2rem !important;
     margin-top: 0;
-    letter-spacing: -1px;
   }
 
   .contact-us-faq-sub-title {
     text-align: unset;
-    font-size: 15px;
     margin-top: 0;
-    line-height: normal;
   }
 
   .contact-us-faq-wrapper {
@@ -6714,12 +6733,7 @@ advertiser space css
   }
 
   .contact-us-faq-question {
-    font-size: 18px;
-    letter-spacing: -1px;
-  }
-
-  .contact-us-faq-answer {
-    font-size: 15px;
+    font-size: 1.2rem !important;
   }
 
   .contact-us-faq-responsive-icon {
