@@ -18,7 +18,7 @@ if (isset($_POST["name"])) {
 		exit();
 	} else {
 		//Headers
-		$to = "ohoud@b-seenapp.com"; // Your email address goes here
+		$to = "info@b-seenapp.com"; // Your email address goes here
 		// $to = "gillian@thebooklyapp.ae";
 		$subject = 'B Seen Website - Contact Us Form';
 		$headers = "MIME-Version: 1.0\r\n";

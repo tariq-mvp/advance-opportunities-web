@@ -255,7 +255,7 @@ button:focus {
 .main-nav nav .navbar-nav .nav-item a.active {
   /* color: #f6c12e; */
   color: white;
-  border-bottom: 1px solid #f6c12e;
+  /* border-bottom: 1px solid #f6c12e; */
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu {
