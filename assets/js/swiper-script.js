@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 300,
-  effect: "cube",
+  // effect: "cube",
   cubeEffect: {
     slideShadows: false,
     shadow: false,

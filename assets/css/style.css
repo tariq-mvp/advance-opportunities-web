@@ -6071,13 +6071,6 @@ advertiser space css
 
 .blog-detail-content {
   margin-bottom: 50px;
-  /* color: #000;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 181%;
-  letter-spacing: -0.8px; */
   color: #000;
   font-family: Poppins;
   font-size: 1rem;
@@ -6125,6 +6118,91 @@ advertiser space css
   }
 
 }
+
+/* privacy policy */
+
+.privacy-container {
+  padding: 182px 458px 103px 440px;
+}
+
+.privacy-heading {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.privacy-content {
+  margin-bottom: 50px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.privacy-question {
+  margin-bottom: 20px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.privacy-answer {
+  margin-bottom: 10px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+@media screen and (max-width: 1500px) {
+  .privacy-container {
+    padding: 182px 300px 103px 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .privacy-container {
+    padding: 182px 200px 103px 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .privacy-container {
+    padding: 150px 100px 103px 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .privacy-container {
+    padding: 80px 20px 20px 20px;
+  }
+
+  .privacy-heading {
+    font-size: 2rem;
+  }
+
+  .blog-detail-content {
+    margin-bottom: 30px;
+  }
+}
+
 
 
 /* contact us */
