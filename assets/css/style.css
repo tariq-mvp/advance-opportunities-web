@@ -301,22 +301,50 @@ button:focus {
 }
 
 /*-- End Navbar --*/
-
+/* background-image: url("../img/banner-bg.svg"); */
 .home-banner .bg-img {
-  /* margin-top: 76px; */
-  background-image: url("../img/banner-bg.svg");
+  background-image: url("../img/B-Seen-Forest5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 42.33vw;
   position: relative;
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  overflow: hidden;
+} 
+
+
+/* .home-banner {
+  position: relative;
+  width: 100vw;
+  height: 45vw;
+  overflow: hidden;
 }
 
+.home-banner .bg-img {
+  background-image: url("../img/B-Seen-Forest4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: mover 20s infinite linear;
+}
+
+@keyframes mover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+} */
+
 .home-banner .bg-img p {
+  /* margin: auto; */
   margin-bottom: 100px;
   max-width: 1000px;
   color: #FFF;
