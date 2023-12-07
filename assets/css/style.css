@@ -36,6 +36,12 @@ body {
   color: #858584;
   background-color: #ffffff;
   font-size: 15px;
+  overscroll-behavior-x: none; 
+  -webkit-overflow-scrolling: touch;
+}
+
+body, html {
+  overflow-x: hidden;
 }
 
 h1,
