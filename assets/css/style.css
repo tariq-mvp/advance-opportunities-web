@@ -6114,6 +6114,32 @@ advertiser space css
   letter-spacing: -1px;
 }
 
+.blog-detail-content-custom-h3 {
+  margin-bottom: 0px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.blog-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 70px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media screen and (max-width: 1500px) {
   .blog-detail-container {
     padding: 182px 300px 103px 300px;

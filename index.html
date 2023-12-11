@@ -268,7 +268,7 @@
     <div class="popup" id="popup">
       <div class="container">
         <form action="https://bseen.sa/sendmail.php" method="post">
-        <!-- <form action="https://beta.b-seenapp.com/sendmail.php" method="post"> -->
+          <!-- <form action="https://beta.b-seenapp.com/sendmail.php" method="post"> -->
           <div class="row">
             <div class="col-lg-11 col-md-10 col-sm-11">
               <h4 class="title_bseen">Start Advertising Today🚕</h4>
@@ -423,58 +423,60 @@
               srcset="" />
           </a> -->
       </div>
-      </div>
-      <div style="background-color: #FFF7DF;">
-        <div style="
+    </div>
+    <div style="background-color: #FFF7DF;">
+      <div style="
                 display: flex;
                 align-items: center;
                 position: relative;
                 justify-content: center;
               ">
-          <div class="arrow" onclick="goToPrevSlider()">
-            <div style="width: 60px; height: 60px; border-radius: 100%; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; display: flex; justify-content: center; align-items: center;">
-              <img src="assets/img/cars/other/arrow-left.svg" />
-            </div>
+        <div class="arrow" onclick="goToPrevSlider()">
+          <div
+            style="width: 60px; height: 60px; border-radius: 100%; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; display: flex; justify-content: center; align-items: center;">
+            <img src="assets/img/cars/other/arrow-left.svg" />
           </div>
-          <div style="width: 80%">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class=" swiper-slide">
-                  <div class="car-expanded-wrapper">
-                    <img src="assets/img/cars/sedan/sedanresult.png" alt="" srcset="" class="car-expanded" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="car-expanded-wrapper">
-                    <img src="assets/img/cars/taxi/taxiresult.png" alt="" srcset="" class="car-expanded" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="car-expanded-wrapper">
-                    <img src="assets/img/cars/van/vanresult.png" alt="" srcset="" class="car-expanded" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="car-expanded-wrapper">
-                    <img src="assets/img/cars/dokker/dokkerresult.png" alt="" srcset="" class="car-expanded" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="car-expanded-wrapper">
-                    <img src="assets/img/cars/truck/truckresult.png" alt="" srcset="" class="car-expanded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="arrow" onclick="goToNextSlider()">
-            <div style="width: 60px; height: 60px; border-radius: 100%; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; display: flex; justify-content: center; align-items: center;">
-              <img src="assets/img/cars/other/arrow-right.svg" />
-              </div>
-          </div>
-          <div class="carbottomcurve"></div>
         </div>
+        <div style="width: 80%">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class=" swiper-slide">
+                <div class="car-expanded-wrapper">
+                  <img src="assets/img/cars/sedan/sedanresult.png" alt="" srcset="" class="car-expanded" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-expanded-wrapper">
+                  <img src="assets/img/cars/taxi/taxiresult.png" alt="" srcset="" class="car-expanded" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-expanded-wrapper">
+                  <img src="assets/img/cars/van/vanresult.png" alt="" srcset="" class="car-expanded" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-expanded-wrapper">
+                  <img src="assets/img/cars/dokker/dokkerresult.png" alt="" srcset="" class="car-expanded" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-expanded-wrapper">
+                  <img src="assets/img/cars/truck/truckresult.png" alt="" srcset="" class="car-expanded" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow" onclick="goToNextSlider()">
+          <div
+            style="width: 60px; height: 60px; border-radius: 100%; background-color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; display: flex; justify-content: center; align-items: center;">
+            <img src="assets/img/cars/other/arrow-right.svg" />
+          </div>
+        </div>
+        <div class="carbottomcurve"></div>
       </div>
+    </div>
   </section>
   <!-- Advertisers Spaces end here-->
   <!-- Testimonial -->
@@ -790,8 +792,8 @@
         ">
       <div class="blog-container blog">
         <div class="blog-swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+          <div class="swiper-wrapper" id="blog-posts">
+            <!-- <div class="swiper-slide" >
               <img src="assets/img/blog/blog-2.jpg" alt="" style="cursor: pointer;"
                 onclick="window.location.href='blog-details.html?title=leap-social-media'" />
               <h4 class="blog-title" style="cursor: pointer;"
@@ -840,19 +842,6 @@
                 This makes car advertising an excellent way to reach a large audience with your message.</p>
               <p class="blog-read-more" onclick="window.location.href='blog-details.html?title=advertising-on-cars'">
                 Read more</p>
-            </div>
-            <!-- <div class="swiper-slide">
-              <img src="assets/img/blog/blog-1.png" alt="" style="cursor: pointer;"
-                onclick="window.location.href='blog-details.html?title=car-advertising-campaign'" />
-              <h4 class="blog-title" style="cursor: pointer;" onclick="window.location.href='blog-details.html?title=car-advertising-campaign'">Car
-                Advertising Campaigns Most Effective for Outdoor Advertising</h4>
-              <p class="sub_title_bseen">Car advertisement campaigns become some of the best examples of advertising
-                and
-                marketing at this time because they tend to mix innovation, inspiration, and emotion in an incredibly
-                compelling way, the best car marketing campaigns have always captured the imagination, delighted
-                viewers, and
-                most important thing is getting results</p>
-              <p class="blog-read-more" onclick="window.location.href='blog-details.html?title=car-advertising-campaign'">Read more</p>
             </div> -->
           </div>
         </div>
@@ -960,10 +949,12 @@
             Seen mobile app</p>
           <div class="stores row">
             <button class="col-lg-4">
-              <img src="assets/img/home-page/AppStore.png" alt="" onclick="window.open('https://apps.apple.com/sa/app/b-seen/id1608872523','mywindow');"/>
+              <img src="assets/img/home-page/AppStore.png" alt=""
+                onclick="window.open('https://apps.apple.com/sa/app/b-seen/id1608872523','mywindow');" />
             </button>
             <button class="col-lg-4">
-              <img src="assets/img/home-page/playStore.png" alt="" onclick="window.open('https://play.google.com/store/apps/details?id=com.mvpapps.bseen&pcampaignid=web_share','mywindow');"/>
+              <img src="assets/img/home-page/playStore.png" alt=""
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.mvpapps.bseen&pcampaignid=web_share','mywindow');" />
             </button>
             <button class="col-lg-4">
               <img src="assets/img/home-page/huawei.png" alt="" />
@@ -983,7 +974,7 @@
   <section class="have-coffee">
     <div class="container">
       <form action="https://bseen.sa/sendmail.php" method="post">
-      <!-- <form action="https://beta.b-seenapp.com/sendmail.php" method="post"> -->
+        <!-- <form action="https://beta.b-seenapp.com/sendmail.php" method="post"> -->
         <div class="row">
           <div class="col-lg-12">
             <div class="text-center">
@@ -1174,22 +1165,22 @@
           </div>
           <div class="col-lg-5">
             <div class="copyright-item copyright-right">
-                  <ul style="margin-bottom: 10px;">
-                    <li>
-                      <a href="termsandconditionsar.html">
-                        Terms & Conditions
-                      </a>
-                    </li>
-                    <li><span>-</span></li>
-                    <li>
-                      <a href="privacypolicy.html">
-                        Privacy Policy
-                      </a>
-                    </li>
-                  </ul>
-                    Made with
-                    <img src="assets/img/love.svg" />
-                    B Seen
+              <ul style="margin-bottom: 10px;">
+                <li>
+                  <a href="termsandconditionsar.html">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li><span>-</span></li>
+                <li>
+                  <a href="privacypolicy.html">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+              Made with
+              <img src="assets/img/love.svg" />
+              B Seen
             </div>
           </div>
         </div>
@@ -1406,6 +1397,70 @@
   </script>
   <script src="./contact_us.js" type="text/javascript" charset="utf-8"></script>
   <script>
+    var blog_swiper;
+    document.addEventListener('DOMContentLoaded', function () {
+      const apiUrl = 'https://blog.b-seenapp.com/wp-json/wp/v2/posts?per_page=100';
+      const blogPostsContainer = document.getElementById('blog-posts');
+      blogPostsContainer.innerHTML = `<div class="blog-spinner"></div>`
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(posts => {
+          displayPosts(posts);
+        })
+        .catch(error => console.error('Error fetching posts:', error));
+
+      function displayPosts(posts) {
+        
+        blogPostsContainer.innerHTML = '';
+        posts.forEach(post => {
+            const postElement = document.createElement('div');
+            postElement.classList.add('swiper-slide'); 
+            const tempDoc = new DOMParser().parseFromString(post?.content?.rendered, 'text/html');
+            const textContentWithoutImages = tempDoc.body.textContent;
+            postElement.innerHTML = `
+                <img src=${post?.yoast_head_json?.og_image[0]?.url} alt="" style="cursor: pointer;" onclick="window.location.href='blog-details.html?id=${post?.id}'" />
+                <h4 class="blog-title" style="cursor: pointer;" onclick="window.location.href='blog-details.html?id=${post?.id}'">${post?.title?.rendered}</h4>
+                <div class="sub_title_bseen" style="-webkit-box-orient: vertical; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4;">${textContentWithoutImages}</div>
+                <p class="blog-read-more" onclick="window.location.href='blog-details.html?id=${post?.id}'">Read more</p>
+            `;
+            blogPostsContainer.appendChild(postElement); 
+        });
+        blog_swiper = new Swiper('.blog-swiper-container', {
+          slidesPerView: 3,
+          loop: true,
+          spaceBetween: 60,
+          autoplay: true,
+          // initialSlide: 0,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            991: {
+              // initialSlide: 2,
+              slidesPerView: 2,
+            },
+            768: {
+              // initialSlide: 1,
+              slidesPerView: 1
+            },
+          },
+        });
+      } 
+    });
+    function goToNextSlide() {
+      blog_swiper.slideNext();
+    }
+
+    function goToPrevSlide() {
+      blog_swiper.slidePrev();
+    }
+  </script>
+  <!-- <script>
     var blog_swiper = new Swiper('.blog-swiper-container', {
       slidesPerView: 3,
       loop: true,
@@ -1439,7 +1494,7 @@
     function goToPrevSlide() {
       blog_swiper.slidePrev();
     }
-  </script>
+  </script> -->
   <script>
     var testimonial_swiper = new Swiper('.testimonial-swiper-container', {
       slidesPerView: 3,
@@ -1496,6 +1551,8 @@
       });
     });
   </script>
+
+
 </body>
 
 </html>

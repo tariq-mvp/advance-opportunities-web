@@ -93,19 +93,6 @@
 </head>
 
 <body style="width: 100%; max-width: 100%; overflow-x: hidden">
-    <!-- Preloader -->
-    <!-- <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Preloader -->
 
     <!-- Start Navbar Area -->
     <div class="navbar-area fixed-top">
@@ -226,7 +213,9 @@
 
     <!-- Start Blog Detail Section  -->
 
-    <section id="blog-content"></section>
+    <section id="blog-content">
+    </section>
+
 
     <!-- <section class="blog-detail-container">
         <p class="blog-detail-paragraph">Tuesday 14 November 2023 - Written by Ali Hammadi</p>
@@ -338,9 +327,9 @@
                                     <ul>
                                         <li>
                                             <a href="index.html">
-                                              Home
+                                                Home
                                             </a>
-                                          </li>
+                                        </li>
                                         <li>
                                             <a href="index.html#section2">
                                                 Advertising Spaces
@@ -362,32 +351,33 @@
                         </div>
                         <div class="col-sm-6 col-lg-6">
                             <div class="footer-item">
-                              <div class="footer-service footer-find">
-                                <h3>Find Us</h3>
-                                <ul>
-                                  <li>
-                                    <i class="bx bx-location-plus"></i>
-                                    <a href="https://goo.gl/maps/4oRkMkMPGbXpysEG6" target="_blank" rel="noopener noreferrer">
-                                      3184 Imam Saud Bin Abdulaziz Bin Mohammed Rd - Al Muruj
-                                      Dist - RIYADH 12281 - 6233
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <i class="bx bx-phone-call"></i>
-                                    <a href="tel:+966550418023">
-                                      +966 55 041 8023
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <i class="bx bx-mail-send"></i>
-                                    <a href="mailto:info@b-seenapp.com">
-                                      info@b-seenapp.com
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
+                                <div class="footer-service footer-find">
+                                    <h3>Find Us</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="bx bx-location-plus"></i>
+                                            <a href="https://goo.gl/maps/4oRkMkMPGbXpysEG6" target="_blank"
+                                                rel="noopener noreferrer">
+                                                3184 Imam Saud Bin Abdulaziz Bin Mohammed Rd - Al Muruj
+                                                Dist - RIYADH 12281 - 6233
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="bx bx-phone-call"></i>
+                                            <a href="tel:+966550418023">
+                                                +966 55 041 8023
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="bx bx-mail-send"></i>
+                                            <a href="mailto:info@b-seenapp.com">
+                                                info@b-seenapp.com
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,17 +399,17 @@
                         <div class="copyright-item copyright-right">
                             <ul style="margin-bottom: 10px;">
                                 <li>
-                                  <a href="termsandconditionsar.html">
-                                    Terms & Conditions
-                                  </a>
+                                    <a href="termsandconditionsar.html">
+                                        Terms & Conditions
+                                    </a>
                                 </li>
                                 <li><span>-</span></li>
                                 <li>
-                                  <a href="privacypolicy.html">
-                                    Privacy Policy
-                                  </a>
+                                    <a href="privacypolicy.html">
+                                        Privacy Policy
+                                    </a>
                                 </li>
-                              </ul>
+                            </ul>
                             Made with
                             <img src="assets/img/love.svg" />
                             B Seen
@@ -703,7 +693,7 @@
         }
     </script>
 
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Function to get the title parameter from the URL
             function getUrlParameter(name) {
@@ -870,6 +860,52 @@
                         404 Page Not Found
                     </h3>
                 </section>`
+            }
+        });
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to get the title parameter from the URL
+            function getUrlParameter(id) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(id);
+            }
+            function formatDate(dateString) {
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                return new Date(dateString).toLocaleDateString('en-US', options);
+            }
+            // Get the title from the URL
+            const title = getUrlParameter('id');
+            const apiUrl = `https://blog.b-seenapp.com/wp-json/wp/v2/posts/${title}`;
+            const blogContentSection = document.getElementById('blog-content');
+            blogContentSection.innerHTML = `<section class="blog-detail-container">
+                <div class="blog-spinner"></div>
+                </section>`;
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(posts => {
+                    displayPosts(posts);
+                })
+                .catch(error => console.error('Error fetching posts:', error));
+            function displayPosts(post) {
+                const articlePublishedTime = post?.yoast_head_json?.article_published_time;
+                const tempDoc = new DOMParser().parseFromString(post?.content?.rendered, 'text/html');
+                const textContentWithoutImages = tempDoc.body.textContent;
+                let contentWithoutImagesAndP = post?.content?.rendered.replace(/<img[^>]*>|<\/?p[^>]*>/g, '');
+                const formattedDate = formatDate(articlePublishedTime);
+                contentWithoutImagesAndP = contentWithoutImagesAndP.replace(/<h3[^>]*>/g, '<h3 class="blog-detail-content-custom-h3">');
+                console.log("contentWithoutImagesAndP", contentWithoutImagesAndP)
+                blogContentSection.innerHTML = `
+            <section class="blog-detail-container">
+                    <p class="blog-detail-paragraph">${formattedDate} - Written by Ali Hammadi</p>
+                    <h1 class="blog-detail-heading">
+                        ${post?.title?.rendered}
+                    </h1>
+                    <div class="blog-detail-wrapper">
+                        <img src=${post?.yoast_head_json?.og_image[0]?.url} style="width: 100%; height: 100%;" />
+                    </div>
+                        ${contentWithoutImagesAndP}
+                </section>`;
             }
         });
     </script>
