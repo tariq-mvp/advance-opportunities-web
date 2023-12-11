@@ -894,7 +894,8 @@
                 let contentWithoutImagesAndP = post?.content?.rendered.replace(/<img[^>]*>|<\/?p[^>]*>/g, '');
                 const formattedDate = formatDate(articlePublishedTime);
                 contentWithoutImagesAndP = contentWithoutImagesAndP.replace(/<h3[^>]*>/g, '<h3 class="blog-detail-content-custom-h3">');
-                console.log("contentWithoutImagesAndP", contentWithoutImagesAndP)
+                contentWithoutImagesAndP = contentWithoutImagesAndP.replace(/<h4[^<>]*><\/h4>/g, '');
+                contentWithoutImagesAndP = contentWithoutImagesAndP.replace(/<h4[^>]*>/g, '<h4 class="blog-detail-content">');
                 blogContentSection.innerHTML = `
             <section class="blog-detail-container">
                     <p class="blog-detail-paragraph">${formattedDate} - Written by Ali Hammadi</p>
