@@ -21,9 +21,6 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="title" content="Bseen" />
-    <meta name="description"
-        content="B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression" />
-    <meta name="keywords" content="Bseen,best,online,advertisements,nft,collections,company" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
@@ -865,6 +862,29 @@
     </script> -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+
+            function setMetaDescription(title, slug, description) {
+                const metaDescriptionTag = document.createElement('meta');
+                metaDescriptionTag.name = 'description';
+                metaDescriptionTag.content = description;
+                document.head.appendChild(metaDescriptionTag);
+
+                document.title = "";
+                document.title = title;
+
+                const slugTag = document.createElement('meta');
+                slugTag.name = 'slug';
+                slugTag.content = slug;
+                document.head.appendChild(slugTag);
+            }
+
+            function setMetaKeywords(keywords) {
+                const metaKeywordsTag = document.createElement('meta');
+                metaKeywordsTag.name = 'keywords';
+                metaKeywordsTag.content = keywords.join(', ');
+                document.head.appendChild(metaKeywordsTag);
+            }
+
             // Function to get the title parameter from the URL
             function getUrlParameter(id) {
                 const urlParams = new URLSearchParams(window.location.search);
@@ -884,6 +904,8 @@
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(posts => {
+                    setMetaDescription(posts?.yoast_head_json?.title || "B-Seen", posts?.slug || "", posts?.yoast_head_json?.description || "B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression");
+                    setMetaKeywords(posts?.yoast_head_json?.schema?.["@graph"][0]?.keywords || ["Bseen", "best", "online", "advertisements"]);
                     displayPosts(posts);
                 })
                 .catch(error => console.error('Error fetching posts:', error));
