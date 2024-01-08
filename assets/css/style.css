@@ -6084,7 +6084,7 @@ advertiser space css
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.48px;
+  letter-spacing: 0;
 }
 
 .blog-detail-heading {
@@ -6096,7 +6096,7 @@ advertiser space css
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 }
 
 .blog-detail-wrapper {
@@ -6111,7 +6111,7 @@ advertiser space css
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 }
 
 .blog-detail-content-custom-h3 {
@@ -6122,7 +6122,7 @@ advertiser space css
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .blog-spinner {
