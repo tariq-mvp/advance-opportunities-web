@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+
+  <div id="content">
+    <!-- Content will be dynamically loaded here -->
+  </div>
+
+  <script>
+    function loadContent() {
+      var pageNumber = window.location.pathname.split('/').pop();
+      var content;
+
+      switch (pageNumber) {
+        case "1":
+          content = "<h1>Blog Page 1</h1><p>This is the content for Blog Page 1.</p>";
+          break;
+        case "2":
+          content = "<h1>Blog Page 2</h1><p>This is the content for Blog Page 2.</p>";
+          break;
+        // Add more cases for additional pages
+        
+        default:
+          content = "<h1>Page Not Found</h1><p>The requested page does not exist.</p>";
+      }
+
+      document.getElementById("content").innerHTML = content;
+    }
+
+    document.addEventListener("DOMContentLoaded", loadContent);
+    window.addEventListener("popstate", loadContent);
+  </script>
+
+</body>
+</html>
