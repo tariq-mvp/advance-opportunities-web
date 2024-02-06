@@ -864,13 +864,12 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             function setMetaDescription(title, slug, description) {
+                document.title = title;
+
                 const metaDescriptionTag = document.createElement('meta');
                 metaDescriptionTag.name = 'description';
                 metaDescriptionTag.content = description;
                 document.head.appendChild(metaDescriptionTag);
-
-                document.title = "";
-                document.title = title;
 
                 const slugTag = document.createElement('meta');
                 slugTag.name = 'slug';
@@ -904,8 +903,8 @@
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(posts => {
-                    setMetaDescription(posts?.yoast_head_json?.title || "B-Seen", posts?.slug || "", posts?.yoast_head_json?.description || "B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression");
-                    setMetaKeywords(posts?.yoast_head_json?.schema?.["@graph"][0]?.keywords || ["Bseen", "best", "online", "advertisements"]);
+                    setMetaDescription(posts.yoast_head_json.title, posts.slug, posts.yoast_head_json.description);
+                    setMetaKeywords(posts.yoast_head_json.schema?.["@graph"][0].keywords);
                     displayPosts(posts);
                 })
                 .catch(error => console.error('Error fetching posts:', error));
