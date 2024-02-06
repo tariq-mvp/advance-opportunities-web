@@ -904,7 +904,7 @@
                 .then(response => response.json())
                 .then(posts => {
                     setMetaDescription(posts.yoast_head_json.title, posts.slug, posts.yoast_head_json.description);
-                    setMetaKeywords(posts.yoast_head_json.schema?.["@graph"][0].keywords);
+                    // setMetaKeywords(posts.yoast_head_json.schema?.["@graph"][0].keywords);
                     displayPosts(posts);
                 })
                 .catch(error => console.error('Error fetching posts:', error));
