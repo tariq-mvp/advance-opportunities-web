@@ -80,7 +80,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
     <link rel="stylesheet" href="leap_saudi.css" />
     <!--END LEAP SAUDI -->
-    <title>B-Seen</title>
+    <!-- <title>B-Seen</title> -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="css/engcss.css" rel="stylesheet" />
@@ -865,13 +865,14 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             function setMetaDescription(title, slug, description) {
+                // document.title = "";
+                document.title = title;
+
                 const metaDescriptionTag = document.createElement('meta');
                 metaDescriptionTag.name = 'description';
                 metaDescriptionTag.content = description;
                 document.head.appendChild(metaDescriptionTag);
 
-                document.title = "";
-                document.title = title;
 
                 const slugTag = document.createElement('meta');
                 slugTag.name = 'slug';
@@ -905,8 +906,8 @@
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(posts => {
-                    setMetaDescription(posts?.yoast_head_json?.title || "B-Seen", posts?.slug || "", posts?.yoast_head_json?.description || "B Seen is a platform that offers advertising on cars. Our cars are seen by thousands of people on a daily basis and make a lasting impression");
-                    setMetaKeywords(posts?.yoast_head_json?.schema?.["@graph"][0]?.keywords || ["Bseen", "best", "online", "advertisements"]);
+                    setMetaDescription(posts?.yoast_head_json?.title, posts?.slug, posts?.yoast_head_json?.description);
+                    // setMetaKeywords(posts?.yoast_head_json?.schema?.["@graph"][0]?.keywords || ["Bseen", "best", "online", "advertisements"]);
                     displayPosts(posts);
                 })
                 .catch(error => console.error('Error fetching posts:', error));
