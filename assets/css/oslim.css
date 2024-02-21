@@ -2378,6 +2378,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 100%;
     background-color: var(--oslim-white);
     padding: 37px 60px 32px;
+    margin-top: 10px;
 }
 
 .welcome-one__feature-single:before {
