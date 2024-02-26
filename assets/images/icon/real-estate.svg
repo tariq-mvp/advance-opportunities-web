@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<svg data-name="Layer 1" id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M425.26,445.52H392.85V283.18h-28.5V173.71H337.64V128.39h-20V88.23H264.15V58.32a8.16,8.16,0,0,0-16.31,0V88.23H194.32v40.16h-20v45.32H147.65V283.18h-28.5V445.52H86.74a8.16,8.16,0,0,0,0,16.31H425.26a8.16,8.16,0,0,0,0-16.31ZM348,190v93.16H284.36V190H348ZM321.32,144.7v29h-37v-29h37Zm-57.17-17.5V104.55h37.22v23.84H263.91A8.09,8.09,0,0,0,264.15,127.2Zm-53.52-22.65h37.21V127.2a8.09,8.09,0,0,0,.24,1.19H210.63ZM190.68,144.7h37v29h-37ZM164,190h63.68v93.16H164Zm-28.49,255.5v-146h92.17v146Zm108.48,0V144.7h24.1V445.52Zm40.41,0v-146h92.17v146Z"
+        fill="#70dffa"
+    />
+    <rect height="18.38" width="18.38" x="149.98" y="316.55" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="185.33" y="316.55" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="149.98" y="359.67" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="185.33" y="359.67" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="185.33" y="205.85" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="185.33" y="248.97" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="149.98" y="402.79" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="185.33" y="402.79" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="343.63" y="316.55" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="308.28" y="316.55" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="343.63" y="359.67" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="308.28" y="359.67" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="308.28" y="205.85" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="308.28" y="248.97" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="343.63" y="402.79" fill="#70dffa"/>
+    <rect height="18.38" width="18.38" x="308.28" y="402.79" fill="#70dffa"/>
+</svg>
